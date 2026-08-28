@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T10:10:30Z",
+  "generated_at": "2026-08-28T10:14:03Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 5,
+      "last_seq": 6,
       "messages": [
         {
           "seq": 1,
@@ -34,6 +34,12 @@
           "ts": "2026-08-28T10:09:44.622026Z",
           "from": "bot",
           "text": "hellow world"
+        },
+        {
+          "seq": 6,
+          "ts": "2026-08-28T10:13:00.323879Z",
+          "from": "saylor",
+          "text": "There's no second best"
         }
       ]
     }
