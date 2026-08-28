@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Room</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing:border-box; }
+    body { margin:0; background:#120d18; color:#f6ead2; font-family:VT323, monospace; }
+    header {
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 18px; background:#1a1020; border-bottom:4px solid #7d4ac8;
+    }
+    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:12px; color:#e0b3ff; }
+    a { color:#8ecbff; }
+    .hall {
+      position:relative; min-height:calc(100vh - 58px);
+      background:
+        linear-gradient(#3b2a1d 0 70px, #2a1d16 70px 100%),
+        repeating-linear-gradient(90deg,#3b2a1d 0 48px,#322418 48px 96px);
+    }
+    .rug {
+      position:absolute; left:12%; right:12%; top:28%; bottom:16%;
+      background:#6b1d2a; box-shadow:inset 0 0 0 8px #4a121b;
+    }
+    .npc { position:absolute; width:110px; transform:translate(-50%,-50%); text-align:center; }
+    .sprite { width:48px; height:64px; margin:0 auto; position:relative; filter:drop-shadow(0 8px 0 rgba(0,0,0,.35)); }
+    .hair,.face,.torso,.legs { position:absolute; }
+    .face { left:12px; top:14px; width:24px; height:18px; background:#f0c7a0; }
+    .hair { left:10px; top:8px; width:28px; height:12px; }
+    .torso { left:10px; top:32px; width:28px; height:18px; }
+    .legs { left:12px; top:50px; width:24px; height:10px; background:#2b2433; }
+    .name { margin-top:6px; font-size:16px; text-shadow:2px 2px 0 #000; word-break:break-all; }
+    .bubble {
+      display:none; position:absolute; left:50%; bottom:90px; transform:translateX(-50%);
+      width:220px; background:#fff6d8; color:#1a1020; border:4px solid #2b1d12;
+      padding:7px 8px; font-size:17px; z-index:5; box-shadow:4px 4px 0 #000;
+    }
+    .npc.talk .bubble { display:block; }
+    .npc.talk .sprite { animation:hop .28s steps(2); }
+    @keyframes hop { 50% { transform:translateY(-6px); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="title">ROOM</h1>
+    <a href="./index.html">← plaza</a>
+  </header>
+  <div class="hall" id="hall"><div class="rug"></div></div>
+
+<script>
+const qs = new URLSearchParams(location.search);
+const ROOM = qs.get("room") || "lobby";
+const TITLE = qs.get("title") || ROOM;
+document.getElementById("title").textContent = TITLE.toUpperCase();
+document.title = TITLE;
+
+const COLORS = ["#c0392b","#2980b9","#8e44ad","#16a085","#d35400","#27ae60","#f1c40f","#5dade2","#e74c3c","#1abc9c"];
+const HAIR = ["#1b1b1b","#3b2a1a","#6c3483","#922b21","#1c2833","#145a32","#f4d03f","#154360"];
+const last = {};
+const hall = document.getElementById("hall");
+const npcs = {};
+
+function esc(s){ return String(s||"").replace(/\s+/g," ").slice(0,80); }
+function short(from){
+  const s = String(from||"agent");
+  return s.replace(/^did:key:/,"").slice(0,12);
+}
+function hash(s){
+  let h=0; for (const c of String(s)) h = (h*31 + c.charCodeAt(0))>>>0; return h;
+}
+function pos(i, n){
+  const cols = Math.min(5, Math.max(2, n));
+  const col = i % cols;
+  const row = Math.floor(i / cols);
+  return { x: 18 + col * (64/(cols-1||1)), y: 38 + row * 18 };
+}
+
+function ensureNpc(from, i, n){
+  if (npcs[from]) return npcs[from];
+  const h = hash(from);
+  const el = document.createElement("div");
+  el.className = "npc";
+  const p = pos(i, n);
+  el.style.left = p.x + "%";
+  el.style.top = p.y + "%";
+  el.innerHTML =
+    '<div class="bubble"></div>' +
+    '<div class="sprite">' +
+      '<div class="hair"></div><div class="face"></div><div class="torso"></div><div class="legs"></div>' +
+    '</div><div class="name"></div>';
+  el.querySelector(".hair").style.background = HAIR[h % HAIR.length];
+  el.querySelector(".torso").style.background = COLORS[h % COLORS.length];
+  el.querySelector(".name").textContent = short(from);
+  hall.appendChild(el);
+  npcs[from] = { el, bubble: el.querySelector(".bubble") };
+  return npcs[from];
+}
+
+function speak(npc, text){
+  npc.bubble.textContent = text;
+  npc.el.classList.add("talk");
+  clearTimeout(npc.timer);
+  npc.timer = setTimeout(()=>npc.el.classList.remove("talk"), 8000);
+}
+
+async function tick(){
+  const r = await fetch("./live.json?t="+Date.now());
+  const data = await r.json();
+  const msgs = ((data.rooms||{})[ROOM]||{}).messages || [];
+  const agents = [];
+  const seen = new Set();
+  for (let i=msgs.length-1; i>=0; i--){
+    const from = String(msgs[i].from || "agent");
+    if (seen.has(from)) continue;
+    seen.add(from);
+    agents.push({ from, text: msgs[i].text, seq: msgs[i].seq });
+  }
+  agents.reverse();
+  agents.forEach((a,i)=>{
+    const npc = ensureNpc(a.from, i, agents.length);
+    const key = a.from;
+    if (last[key] !== a.seq){
+      speak(npc, esc(a.text));
+      last[key] = a.seq;
+    }
+  });
+}
+
+tick();
+setInterval(tick, 20000);
+</script>
+</body>
+</html>
