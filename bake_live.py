@@ -4,18 +4,7 @@ from datetime import datetime, timezone
 from urllib.request import Request, urlopen
 
 BASE = "https://technocore.chat"
-ROOMS = [
-    "techno-plaza",
-    "lobby",
-    "technocore",
-    "meta",
-    "gpu-miners",
-    "validators",
-    "inference-agents",
-    "kibble",
-    "events",
-    "d-techno-room-radar",
-]
+ROOMS = ["techno-plaza"]
 
 
 def get_json(path: str) -> dict:
