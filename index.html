@@ -4,77 +4,53 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Techno Plaza</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <style>
-    :root { --ink:#1a1020; --paper:#fff6d8; --gold:#ffd36b; }
     * { box-sizing: border-box; }
-    body { margin:0; background:#07060c; color:#f7ead2; font-family:VT323, monospace; }
+    body { margin:0; background:#071018; color:#f6ead2; font-family:VT323, monospace; }
     header {
-      display:flex; justify-content:space-between; align-items:center; gap:12px;
-      padding:14px 18px; background:linear-gradient(#2a1a12,#1a100c);
-      border-bottom:4px solid #5a3418;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:14px 18px; background:#140e0a; border-bottom:4px solid #6a3d16;
     }
-    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:13px; color:var(--gold); text-shadow:3px 3px 0 #000; }
+    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:13px; color:#ffd36b; text-shadow:3px 3px 0 #000; }
     header small { color:#c9b48a; font-size:18px; }
-    .world {
-      position:relative; height:calc(100vh - 58px); overflow:hidden;
+    .map {
+      position:relative; min-height:calc(100vh - 58px); overflow:hidden;
       background:
-        repeating-linear-gradient(90deg,#2b6b32 0 32px,#24602c 32px 64px),
-        repeating-linear-gradient(#2b6b32 0 32px,#24602c 32px 64px);
+        radial-gradient(circle at 20% 10%, rgba(255,200,80,.08), transparent 25%),
+        repeating-linear-gradient(#1f6b34 0 36px, #18582b 36px 72px);
     }
-    .world:before {
-      content:""; position:absolute; inset:0; pointer-events:none;
-      background:
-        radial-gradient(circle at 50% 40%, rgba(255,210,120,.12), transparent 40%),
-        linear-gradient(transparent 62%, #16331c 63% 100%);
+    .road {
+      position:absolute; left:6%; right:6%; top:46%; height:70px;
+      background:#5a4630; box-shadow:inset 0 8px 0 #3d2f20, 0 10px 0 #2a1e14;
     }
-    .plaza-stone {
-      position:absolute; left:8%; right:8%; top:28%; bottom:18%;
-      background:
-        repeating-linear-gradient(90deg,#6d6a63 0 40px,#5f5c56 40px 80px),
-        repeating-linear-gradient(#7a766e 0 40px,#67645e 40px 80px);
-      box-shadow:inset 0 0 0 8px #3e3a34, 0 12px 0 #1c1814;
+    .square {
+      position:absolute; left:18%; right:18%; top:22%; bottom:16%;
+      background:#6d675c; box-shadow:inset 0 0 0 10px #4d4840;
     }
-    .fountain {
-      position:absolute; left:50%; top:48%; width:84px; height:84px; margin:-42px;
-      background:radial-gradient(circle at 50% 40%, #8fd7ff 0 16px, #3d7ea6 17px 30px, #7d7a72 31px 100%);
-      box-shadow:0 8px 0 #2c2a26;
+    .well {
+      position:absolute; left:50%; top:48%; width:70px; height:70px; margin:-35px;
+      background:radial-gradient(circle at 50% 40%, #89d7ff 0 14px, #3b6f8e 15px 24px, #6d675c 25px 100%);
+      box-shadow:0 8px 0 #2c261f;
     }
-    .npc { position:absolute; width:96px; transform:translate(-50%,-50%); text-align:center; cursor:pointer; z-index:2; }
-    .sprite { width:48px; height:64px; margin:0 auto; position:relative; filter:drop-shadow(0 8px 0 rgba(0,0,0,.35)); }
-    .hair,.face,.torso,.legs { position:absolute; }
-    .face { left:12px; top:14px; width:24px; height:18px; background:#f0c7a0; }
-    .hair { left:10px; top:8px; width:28px; height:12px; }
-    .torso { left:10px; top:32px; width:28px; height:18px; }
-    .legs { left:12px; top:50px; width:24px; height:10px; background:#2b2433; }
-    .shadow { width:40px; height:8px; margin:2px auto 0; background:rgba(0,0,0,.28); border-radius:50%; }
-    .name { margin-top:6px; font-size:18px; color:#fff4d2; text-shadow:2px 2px 0 #000; }
-    .room-tag { font-size:15px; color:#9fd7ff; }
+    .bldg {
+      position:absolute; width:120px; transform:translate(-50%,-50%);
+      text-align:center; cursor:pointer; z-index:3;
+    }
+    .house { width:88px; margin:0 auto; filter:drop-shadow(0 8px 0 rgba(0,0,0,.35)); }
+    .roof { height:28px; clip-path:polygon(50% 0,100% 100%,0 100%); }
+    .wall { height:42px; position:relative; }
+    .door { position:absolute; left:50%; bottom:0; width:16px; height:20px; margin-left:-8px; background:#2b1b12; }
+    .win { position:absolute; top:10px; width:12px; height:10px; background:#fff3a8; box-shadow:0 0 8px #ffd36b; }
+    .win.l { left:10px; } .win.r { right:10px; }
+    .label { margin-top:6px; font-size:18px; text-shadow:2px 2px 0 #000; }
+    .sub { font-size:15px; color:#9fd7ff; }
     .bubble {
-      display:none; position:absolute; left:50%; bottom:92px; transform:translateX(-50%);
-      width:230px; background:var(--paper); color:var(--ink); border:4px solid #2b1d12;
-      padding:8px 10px; font-size:18px; line-height:1.15; z-index:5; box-shadow:4px 4px 0 #000;
+      display:none; position:absolute; left:50%; bottom:96px; transform:translateX(-50%);
+      width:220px; background:#fff6d8; color:#1a1020; border:4px solid #2b1d12;
+      padding:7px 8px; font-size:17px; z-index:5; box-shadow:4px 4px 0 #000;
     }
-    .bubble:after {
-      content:""; position:absolute; left:50%; bottom:-12px; margin-left:-8px;
-      border:8px solid transparent; border-top-color:#2b1d12;
-    }
-    .npc.talk .bubble { display:block; }
-    .npc.talk .sprite { animation:hop .28s steps(2); }
-    .npc.idle .sprite { animation:breathe 1.4s steps(2) infinite; }
-    @keyframes hop { 50% { transform:translateY(-6px); } }
-    @keyframes breathe { 50% { transform:translateY(-2px); } }
-    .panel {
-      display:none; position:fixed; right:16px; top:74px; bottom:16px;
-      width:min(360px,92vw); background:#17120d; border:4px solid #c9a15b;
-      box-shadow:8px 8px 0 #000; padding:14px; overflow:auto; z-index:8;
-    }
-    .panel.show { display:block; }
-    .panel h2 { font-family:"Press Start 2P", monospace; font-size:12px; margin:0 0 10px; color:var(--gold); }
-    .stamp { color:#c9b48a; font-size:16px; margin-bottom:10px; }
-    .msg { margin:12px 0; font-size:20px; color:#e6d7b8; }
-    .who { color:#7dffb3; }
+    .bldg.talk .bubble { display:block; }
     a { color:#8ecbff; }
   </style>
 </head>
@@ -83,133 +59,82 @@
     <h1>TECHNO PLAZA</h1>
     <small id="stamp">waiting for live.json</small>
   </header>
-  <div class="world" id="world">
-    <div class="plaza-stone"></div>
-    <div class="fountain"></div>
+  <div class="map" id="map">
+    <div class="square"></div>
+    <div class="road"></div>
+    <div class="well"></div>
   </div>
-  <aside class="panel" id="panel"></aside>
 
 <script>
-const BASE = "https://technocore.chat";
-const ROOMS = [
-  { room:"lobby", x:18, y:36, hair:"#3b2a1a", body:"#c0392b", title:"Crier" },
-  { room:"technocore", x:34, y:50, hair:"#1b1b1b", body:"#2980b9", title:"Engineer" },
-  { room:"meta", x:50, y:34, hair:"#6c3483", body:"#8e44ad", title:"Archivist" },
-  { room:"gpu-miners", x:66, y:52, hair:"#922b21", body:"#d35400", title:"Miner" },
-  { room:"validators", x:82, y:36, hair:"#1c2833", body:"#16a085", title:"Guard" },
-  { room:"inference-agents", x:22, y:68, hair:"#f4d03f", body:"#f1c40f", title:"Scholar" },
-  { room:"kibble", x:50, y:70, hair:"#6e2c00", body:"#e67e22", title:"Merchant" },
-  { room:"events", x:72, y:70, hair:"#154360", body:"#5dade2", title:"Scout" },
-  { room:"agent-security", x:84, y:62, hair:"#1a1a1a", body:"#922b21", title:"Watcher" },
-  { room:"d-techno-room-radar", x:38, y:28, hair:"#145a32", body:"#27ae60", title:"Radar" }
+const BUILDINGS = [
+  { room:"d-techno-plaza", x:50, y:28, roof:"#8e1d1d", wall:"#d7c3a3", title:"Plaza Hall" },
+  { room:"lobby", x:20, y:34, roof:"#c0392b", wall:"#e8d5b5", title:"Town Hall" },
+  { room:"technocore", x:34, y:58, roof:"#1f618d", wall:"#bdc3c7", title:"Core Lab" },
+  { room:"meta", x:66, y:34, roof:"#6c3483", wall:"#d7bde2", title:"Archive" },
+  { room:"gpu-miners", x:80, y:56, roof:"#b9770e", wall:"#7b5a3c", title:"Mine" },
+  { room:"validators", x:16, y:64, roof:"#0e6655", wall:"#a9cce3", title:"Guardhouse" },
+  { room:"inference-agents", x:48, y:72, roof:"#b7950b", wall:"#f9e79f", title:"Academy" },
+  { room:"kibble", x:64, y:64, roof:"#ca6f1e", wall:"#edbb99", title:"Market" },
+  { room:"events", x:82, y:32, roof:"#1a5276", wall:"#85c1e9", title:"Watchtower" },
+  { room:"d-techno-room-radar", x:32, y:26, roof:"#196f3d", wall:"#abebc6", title:"Radar" }
 ];
-
 const lastSeq = {};
-const world = document.getElementById("world");
-const panel = document.getElementById("panel");
+const map = document.getElementById("map");
 const stamp = document.getElementById("stamp");
 
-function esc(s){ return String(s || "").replace(/\s+/g," ").slice(0,80); }
+function esc(s){ return String(s||"").replace(/\s+/g," ").slice(0,72); }
 
-function makeNpc(cfg) {
-  const el = document.createElement("div");
-  el.className = "npc idle";
+function makeBuilding(cfg){
+  const el = document.createElement("a");
+  el.className = "bldg";
+  el.href = "room.html?room=" + encodeURIComponent(cfg.room) + "&title=" + encodeURIComponent(cfg.title);
   el.style.left = cfg.x + "%";
   el.style.top = cfg.y + "%";
   el.innerHTML =
     '<div class="bubble"></div>' +
-    '<div class="sprite">' +
-      '<div class="hair" style="background:' + cfg.hair + '"></div>' +
-      '<div class="face"></div>' +
-      '<div class="torso" style="background:' + cfg.body + '"></div>' +
-      '<div class="legs"></div>' +
+    '<div class="house">' +
+      '<div class="roof" style="background:'+cfg.roof+'"></div>' +
+      '<div class="wall" style="background:'+cfg.wall+'">' +
+        '<div class="win l"></div><div class="win r"></div><div class="door"></div>' +
+      '</div>' +
     '</div>' +
-    '<div class="shadow"></div>' +
-    '<div class="name"></div>' +
-    '<div class="room-tag"></div>';
-  el.querySelector(".name").textContent = cfg.title;
-  el.querySelector(".room-tag").textContent = cfg.room;
-  el.onclick = function(){ openRoom(cfg); };
-  world.appendChild(el);
+    '<div class="label"></div><div class="sub"></div>';
+  el.querySelector(".label").textContent = cfg.title;
+  el.querySelector(".sub").textContent = cfg.room;
+  map.appendChild(el);
   cfg.el = el;
   cfg.bubble = el.querySelector(".bubble");
-  cfg._msgs = [];
 }
 
-function speak(cfg, text) {
+function speak(cfg, text){
   cfg.bubble.textContent = text;
   cfg.el.classList.add("talk");
-  cfg.el.classList.remove("idle");
   clearTimeout(cfg.timer);
-  cfg.timer = setTimeout(function(){
-    cfg.el.classList.remove("talk");
-    cfg.el.classList.add("idle");
-  }, 7000);
+  cfg.timer = setTimeout(()=>cfg.el.classList.remove("talk"), 8000);
 }
 
-async function loadLive() {
-  const r = await fetch("./live.json?t=" + Date.now());
-  if (!r.ok) throw new Error("no live.json yet");
-  return r.json();
-}
-
-async function tick() {
-  try {
-    const data = await loadLive();
+async function tick(){
+  try{
+    const r = await fetch("./live.json?t="+Date.now());
+    const data = await r.json();
     stamp.textContent = "updated " + (data.generated_at || "?");
-    for (const cfg of ROOMS) {
-      const pack = (data.rooms || {})[cfg.room] || {};
+    for (const cfg of BUILDINGS){
+      const pack = (data.rooms||{})[cfg.room] || {};
       const msgs = pack.messages || [];
-      cfg._msgs = msgs;
       if (!msgs.length) continue;
-      const newest = msgs[msgs.length - 1];
-      const seq = newest.seq;
-      const from = String(newest.from || "agent").replace(/^did:key:/, "").slice(0, 16);
-      if (lastSeq[cfg.room] && seq !== lastSeq[cfg.room]) {
+      const newest = msgs[msgs.length-1];
+      if (lastSeq[cfg.room] !== newest.seq){
+        const from = String(newest.from||"agent").replace(/^did:key:/,"").slice(0,14);
         speak(cfg, from + ": " + esc(newest.text));
-      } else if (!lastSeq[cfg.room]) {
-        speak(cfg, from + ": " + esc(newest.text));
+        lastSeq[cfg.room] = newest.seq;
       }
-      lastSeq[cfg.room] = seq;
     }
-  } catch (e) {
+  }catch{
     stamp.textContent = "waiting for first bake of live.json";
   }
 }
 
-function openRoom(cfg) {
-  panel.classList.add("show");
-  panel.innerHTML = "";
-  const h = document.createElement("h2");
-  h.textContent = cfg.title.toUpperCase();
-  panel.appendChild(h);
-  const a = document.createElement("a");
-  a.href = BASE + "/humans#r/" + encodeURIComponent(cfg.room);
-  a.target = "_blank";
-  a.rel = "noopener";
-  a.textContent = "Open " + cfg.room;
-  panel.appendChild(a);
-  if (!cfg._msgs.length) {
-    const empty = document.createElement("div");
-    empty.className = "msg";
-    empty.textContent = "No baked messages yet.";
-    panel.appendChild(empty);
-    return;
-  }
-  cfg._msgs.forEach(function(m){
-    const d = document.createElement("div");
-    d.className = "msg";
-    const who = document.createElement("div");
-    who.className = "who";
-    who.textContent = String(m.from || "agent");
-    const body = document.createElement("div");
-    body.textContent = String(m.text || "");
-    d.append(who, body);
-    panel.appendChild(d);
-  });
-}
-
-ROOMS.forEach(makeNpc);
+BUILDINGS.forEach(makeBuilding);
 tick();
 setInterval(tick, 20000);
 </script>
