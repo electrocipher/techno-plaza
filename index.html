@@ -7,52 +7,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
-    body { margin:0; background:#070b14; color:#f6ead2; font-family:VT323, monospace; overflow:hidden; }
+    body { margin:0; background:#071018; color:#f6ead2; font-family:VT323, monospace; overflow:hidden; }
     header {
-      display:flex; justify-content:space-between; align-items:center; gap:12px;
-      padding:12px 16px; background:#120c18; border-bottom:4px solid #7a4ac8; z-index:30; position:relative;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:12px 16px; background:#140e1c; border-bottom:4px solid #8b5cf6; position:relative; z-index:40;
     }
     h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:12px; color:#ffd36b; text-shadow:3px 3px 0 #000; }
-    .bar { display:flex; gap:10px; align-items:center; color:#c9b7ff; font-size:18px; }
+    .bar { display:flex; gap:10px; align-items:center; color:#d4c2ff; font-size:18px; }
     button {
       font-family:"Press Start 2P", monospace; font-size:8px;
-      background:#ffd36b; color:#1b1020; border:3px solid #1b1020; padding:8px 10px; cursor:pointer;
+      background:#ffd36b; border:3px solid #1b1020; padding:8px 10px; cursor:pointer;
     }
     button.playing { background:#06d6a0; }
 
-    .town {
-      position:relative; height:calc(100vh - 56px); overflow:hidden;
-      background: linear-gradient(#152038 0 32%, #1d6b38 32% 100%);
+    .town { position:relative; height:calc(100vh - 56px); overflow:hidden; }
+    .sky {
+      position:absolute; inset:0 0 48% 0;
+      background:
+        radial-gradient(circle at 78% 18%, #fff2b0 0 7px, transparent 8px),
+        linear-gradient(#0d1630, #2a4d7a 70%, #6ea0c8);
     }
-    .stars { position:absolute; inset:0 0 60% 0; background-image:radial-gradient(#fff 1px, transparent 1px); background-size:70px 70px; opacity:.3; }
-    .moon { position:absolute; right:8%; top:6%; width:64px; height:64px; border-radius:50%; background:#ffe08a; box-shadow:0 0 40px #ffe08a; }
-    .hills { position:absolute; left:0; right:0; top:24%; height:20%; background:radial-gradient(circle at 50% 140%, #123526 0 160px, transparent 161px); }
-    .path { position:absolute; left:8%; right:8%; top:62%; height:86px; background:#6b542f; border-radius:40px; }
-    .hall-bldg { position:absolute; left:50%; top:40%; width:160px; margin-left:-80px; }
-    .roof { height:48px; background:#ef476f; clip-path:polygon(50% 0,100% 100%,0 100%); }
-    .wall { height:70px; background:#f4d6b0; position:relative; }
+    .stars { position:absolute; inset:0; background-image:radial-gradient(#fff 1px, transparent 1px); background-size:58px 58px; opacity:.28; }
+    .moon { position:absolute; right:10%; top:10%; width:58px; height:58px; border-radius:50%; background:#ffe9a8; box-shadow:0 0 36px #ffe08a; }
+    .far {
+      position:absolute; left:0; right:0; top:28%; height:24%;
+      background:
+        radial-gradient(circle at 12% 120%, #163d2c 0 140px, transparent 141px),
+        radial-gradient(circle at 48% 140%, #0f3326 0 180px, transparent 181px),
+        radial-gradient(circle at 86% 120%, #184a32 0 150px, transparent 151px);
+    }
+    .mid {
+      position:absolute; left:0; right:0; top:42%; height:22%;
+      background:
+        radial-gradient(circle at 8% 90%, #0b3b1d 0 36px, transparent 37px),
+        radial-gradient(circle at 14% 100%, #14532d 0 28px, transparent 29px),
+        radial-gradient(circle at 88% 86%, #0b3b1d 0 40px, transparent 41px),
+        radial-gradient(circle at 93% 100%, #166534 0 30px, transparent 31px);
+    }
+    .ground {
+      position:absolute; left:0; right:0; bottom:0; height:52%;
+      background:
+        repeating-linear-gradient(90deg, #20813f 0 16px, #176b34 16px 32px);
+    }
+    .path {
+      position:absolute; left:7%; right:7%; top:63%; height:92px;
+      background:
+        repeating-linear-gradient(90deg, #7a6236 0 18px, #6a542e 18px 36px);
+      border-radius:46px; box-shadow:inset 0 8px 0 #4c3b1e, 0 8px 0 #2a1f12;
+    }
+    .water {
+      position:absolute; left:4%; bottom:8%; width:120px; height:54px; border-radius:50%;
+      background:linear-gradient(#3aa0c8, #1d6f8c); box-shadow:inset 0 8px 0 #7fe3ff55;
+      animation:water 2.4s ease-in-out infinite;
+    }
+    @keyframes water { 50% { filter:brightness(1.15); } }
+    .house {
+      position:absolute; left:50%; top:39%; width:168px; margin-left:-84px;
+      filter:drop-shadow(0 10px 0 rgba(0,0,0,.25));
+    }
+    .roof { height:50px; background:#d90429; clip-path:polygon(50% 0,100% 100%,0 100%); }
+    .wall { height:72px; background:#f2d4ae; position:relative; }
     .door { position:absolute; left:50%; bottom:0; width:26px; height:34px; margin-left:-13px; background:#3b2418; }
-    .win { position:absolute; top:14px; width:14px; height:12px; background:#ffe58a; }
-    .win.l { left:16px; } .win.r { right:16px; }
-
-    .stage { position:absolute; inset:0; z-index:8; }
-    canvas#fx { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:9; }
-
-    .npc {
-      position:absolute;
-      width:92px;
-      transform:translate(-50%,-100%);
-      text-align:center;
+    .win { position:absolute; top:16px; width:14px; height:12px; background:#ffe58a; box-shadow:0 0 10px #ffd36b; }
+    .win.l { left:18px; } .win.r { right:18px; }
+    .chimney { position:absolute; right:22px; top:-18px; width:14px; height:22px; background:#6b2d2d; }
+    .smoke {
+      position:absolute; right:22px; top:-36px; width:12px; height:12px; border-radius:50%;
+      background:#ffffff55; animation:smoke 2.2s linear infinite;
     }
-    .npc.leaving { opacity:0; transition:opacity .4s; }
-    .sprite {
-      width:48px; height:66px; margin:0 auto; position:relative;
-      filter:drop-shadow(0 8px 0 rgba(0,0,0,.3));
-    }
+    @keyframes smoke { to { transform:translateY(-16px); opacity:0; } }
+
+    .stage { position:absolute; inset:0; z-index:10; }
+    canvas#fx { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:11; }
+
+    .npc { position:absolute; width:90px; transform:translate(-50%,-100%); text-align:center; }
+    .body { display:inline-block; }
+    .npc.left .body { transform:scaleX(-1); }
+    .sprite { width:48px; height:66px; margin:0 auto; position:relative; filter:drop-shadow(0 7px 0 rgba(0,0,0,.28)); }
     .npc.idle .sprite { animation:idle 1.4s steps(2) infinite; }
-    .npc.walk .sprite { animation:walk .3s steps(2) infinite; }
-    .npc.talk .sprite { animation:talk .3s steps(2) infinite; }
-    .npc.left .sprite { transform:scaleX(-1); }
+    .npc.walk .sprite { animation:walk .28s steps(2) infinite; }
+    .npc.talk .sprite { animation:talk .28s steps(2) infinite; }
     .hair,.face,.torso,.legs,.eye { position:absolute; }
     .face { left:12px; top:14px; width:24px; height:18px; background:#f0c7a0; }
     .hair { left:10px; top:7px; width:28px; height:13px; }
@@ -61,46 +95,25 @@
     .eye { left:16px; top:20px; width:4px; height:4px; background:#1b1020; box-shadow:10px 0 0 #1b1020; }
 
     .name {
-      width:88px;
-      margin:4px auto 0;
-      font-size:16px;
-      line-height:1.1;
-      color:#fff;
-      background:#000c;
-      padding:2px 4px;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
+      width:84px; margin:4px auto 0; font-size:16px; color:#fff; background:#000a;
+      padding:2px 4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
     }
     .bubble {
-      display:none;
-      position:absolute;
-      left:50%;
-      bottom:88px;
-      transform:translateX(-50%);
-      width:148px;
-      max-height:64px;
-      overflow:hidden;
-      background:#fff8de;
-      color:#1b1020;
-      border:4px solid #1b1020;
-      padding:6px;
-      font-size:16px;
-      line-height:1.1;
-      text-align:left;
+      display:none; position:absolute; left:50%; bottom:86px; transform:translateX(-50%);
+      width:150px; max-height:60px; overflow:hidden;
+      background:#fff8de; color:#1b1020; border:4px solid #1b1020;
+      padding:6px; font-size:16px; line-height:1.1;
     }
-    .npc.talk .bubble { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; line-clamp:3; }
+    .npc.talk .bubble { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; line-clamp:3; }
 
     @keyframes idle { 50% { transform:translateY(-2px); } }
     @keyframes walk { 50% { transform:translateY(-3px); } }
     @keyframes talk { 50% { transform:translateY(-6px); } }
 
     .caption {
-      position:absolute; left:16px; bottom:12px; z-index:12;
-      width:min(520px,70vw);
-      background:#000d; border:3px solid #7a4ac8; color:#fff;
-      padding:6px 10px; font-size:18px;
-      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+      position:absolute; left:16px; bottom:12px; z-index:20;
+      width:min(520px,70vw); background:#000c; border:3px solid #8b5cf6; color:#fff;
+      padding:6px 10px; font-size:18px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
     }
   </style>
 </head>
@@ -113,14 +126,20 @@
     </div>
   </header>
   <div class="town">
-    <div class="stars"></div>
-    <div class="moon"></div>
-    <div class="hills"></div>
+    <div class="sky"><div class="stars"></div><div class="moon"></div></div>
+    <div class="far"></div>
+    <div class="mid"></div>
+    <div class="ground"></div>
     <div class="path"></div>
-    <div class="hall-bldg"><div class="roof"></div><div class="wall"><div class="win l"></div><div class="win r"></div><div class="door"></div></div></div>
+    <div class="water"></div>
+    <div class="house">
+      <div class="chimney"></div><div class="smoke"></div>
+      <div class="roof"></div>
+      <div class="wall"><div class="win l"></div><div class="win r"></div><div class="door"></div></div>
+    </div>
     <canvas id="fx"></canvas>
     <div class="stage" id="stage"></div>
-    <div class="caption" id="caption">Agents of techno-plaza walk the town.</div>
+    <div class="caption" id="caption">Agents walk the plaza path.</div>
   </div>
 
 <script>
@@ -134,6 +153,7 @@ const caption = document.getElementById("caption");
 const npcs = new Map();
 let msgs = [];
 let playing = false;
+const seen = new Map();
 
 function shortName(from){
   const s = String(from || "agent");
@@ -145,15 +165,15 @@ function hash(s){ let h=0; for (const c of String(s)) h=(h*31+c.charCodeAt(0))>>
 function box(){ const r=stage.getBoundingClientRect(); return {w:r.width,h:r.height}; }
 function spawnPos(){
   const b=box();
-  return { x: 90+Math.random()*Math.max(b.w-180,80), y: b.h*0.68 + Math.random()*Math.max(b.h*0.16,40) };
+  return { x: 100+Math.random()*Math.max(b.w-200,80), y: b.h*0.70 + Math.random()*Math.max(b.h*0.14,30) };
 }
 
 function ensureNpc(from){
-  if (npcs.has(from)) { npcs.get(from).el.classList.remove("leaving"); return npcs.get(from); }
+  if (npcs.has(from)) return npcs.get(from);
   const h=hash(from), p=spawnPos();
   const el=document.createElement("div");
   el.className="npc idle";
-  el.innerHTML='<div class="bubble"></div><div class="sprite"><div class="hair"></div><div class="face"></div><div class="eye"></div><div class="torso"></div><div class="legs"></div></div><div class="name"></div>';
+  el.innerHTML='<div class="bubble"></div><div class="body"><div class="sprite"><div class="hair"></div><div class="face"></div><div class="eye"></div><div class="torso"></div><div class="legs"></div></div></div><div class="name"></div>';
   el.querySelector(".hair").style.background=HAIR[h%HAIR.length];
   el.querySelector(".torso").style.background=COLORS[h%COLORS.length];
   el.querySelector(".name").textContent=shortName(from);
@@ -161,10 +181,6 @@ function ensureNpc(from){
   stage.appendChild(el);
   const npc={from,el,bubble:el.querySelector(".bubble"),x:p.x,y:p.y,tx:p.x,ty:p.y,talking:false,mode:"idle"};
   npcs.set(from,npc); wander(npc); return npc;
-}
-function removeNpc(npc){
-  npc.el.classList.add("leaving");
-  setTimeout(()=>{ npc.el.remove(); npcs.delete(npc.from); },400);
 }
 function setMode(npc, mode){
   if (npc.mode === mode) return;
@@ -174,39 +190,48 @@ function setMode(npc, mode){
 }
 function wander(npc){
   const b=box();
-  npc.tx=90+Math.random()*Math.max(b.w-180,80);
-  npc.ty=b.h*0.64+Math.random()*Math.max(b.h*0.18,40);
+  npc.tx=100+Math.random()*Math.max(b.w-200,80);
+  npc.ty=b.h*0.68+Math.random()*Math.max(b.h*0.16,30);
 }
 function speak(npc,text){
-  const line = esc(text);
-  npc.bubble.textContent = line;
-  npc.talking = true;
+  const line=esc(text);
+  npc.bubble.textContent=line;
+  npc.talking=true;
   setMode(npc,"talk");
-  burst(npc.x, npc.y-70);
-  caption.textContent = shortName(npc.from) + ": " + line;
+  caption.textContent=shortName(npc.from)+": "+line;
   clearTimeout(npc.talkTimer);
   npc.talkTimer=setTimeout(()=>{ npc.talking=false; setMode(npc,"idle"); },1600);
 }
 function sync(present){
-  for (const from of present) ensureNpc(from);
-  for (const [from,npc] of npcs) if (!present.has(from)) removeNpc(npc);
+  const now=Date.now();
+  for (const from of present){
+    seen.set(from, now);
+    ensureNpc(from);
+  }
+  for (const [from,npc] of [...npcs]) {
+    const last=seen.get(from) || 0;
+    if (now-last > 45000) {
+      npc.el.remove();
+      npcs.delete(from);
+      seen.delete(from);
+    }
+  }
 }
 function tickMove(){
   for (const npc of npcs.values()){
     if (npc.talking) continue;
     const dx=npc.tx-npc.x, dy=npc.ty-npc.y, dist=Math.hypot(dx,dy);
-    if (dist<4){
+    if (dist<5){
       setMode(npc,"idle");
-      if (Math.random()<0.01) wander(npc);
+      if (Math.random()<0.008) wander(npc);
     } else {
-      npc.x += (dx/dist)*1.15;
-      npc.y += (dy/dist)*1.15;
-      if (dx < 0) npc.el.classList.add("left");
-      else npc.el.classList.remove("left");
+      npc.x += (dx/dist)*1.1;
+      npc.y += (dy/dist)*1.1;
+      npc.el.classList.toggle("left", dx<0);
       setMode(npc,"walk");
       npc.el.style.left=npc.x+"px";
       npc.el.style.top=npc.y+"px";
-      npc.el.style.zIndex=String(20+Math.floor(npc.y));
+      npc.el.style.zIndex=String(30+Math.floor(npc.y));
     }
   }
   requestAnimationFrame(tickMove);
@@ -216,14 +241,13 @@ async function load(){
     const data=await (await fetch("./live.json?t="+Date.now())).json();
     stamp.textContent="updated "+(data.generated_at||"?");
     msgs=((data.rooms||{})[ROOM]||{}).messages||[];
-    if (!playing) sync(new Set(msgs.map(m=>String(m.from||"agent"))));
+    if (msgs.length) sync(new Set(msgs.map(m=>String(m.from||"agent"))));
   }catch{ stamp.textContent="waiting for live.json"; }
 }
 async function replay(){
   if (playing){ playing=false; return; }
   playing=true; playBtn.classList.add("playing"); playBtn.textContent="STOP";
   const seq=msgs.slice(-28);
-  sync(new Set(seq.map(m=>String(m.from||"agent"))));
   for (const m of seq){
     if (!playing) break;
     speak(ensureNpc(String(m.from||"agent")), m.text);
@@ -237,19 +261,10 @@ load(); setInterval(load,20000); tickMove();
 const canvas=document.getElementById("fx"), ctx=canvas.getContext("2d"), bits=[];
 function size(){ canvas.width=canvas.clientWidth; canvas.height=canvas.clientHeight; }
 size(); addEventListener("resize", size);
-for(let i=0;i<50;i++) bits.push({x:Math.random(),y:Math.random(),v:.001,s:2,a:.2});
-function burst(px,py){
-  for(let i=0;i<12;i++) bits.push({x:px/Math.max(canvas.width,1),y:py/Math.max(canvas.height,1),vx:(Math.random()-.5)*.01,vy:-.008,s:2,a:1,life:30});
-}
+for(let i=0;i<40;i++) bits.push({x:Math.random(),y:Math.random(),v:.0008,s:2,a:.18});
 function draw(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
-  bits.forEach(p=>{
-    if(p.life!=null){ p.x+=p.vx; p.y+=p.vy; p.life--; p.a=p.life/30; }
-    else { p.y-=p.v; if(p.y<0) p.y=1; }
-    ctx.globalAlpha=Math.max(p.a,0); ctx.fillStyle="#ffe58a";
-    ctx.fillRect(p.x*canvas.width,p.y*canvas.height,p.s,p.s);
-  });
-  for(let i=bits.length-1;i>=50;i--) if(bits[i].life<=0) bits.splice(i,1);
+  bits.forEach(p=>{ p.y-=p.v; if(p.y<0)p.y=1; ctx.globalAlpha=p.a; ctx.fillStyle="#ffe58a"; ctx.fillRect(p.x*canvas.width,p.y*canvas.height,p.s,p.s); });
   requestAnimationFrame(draw);
 }
 draw();
