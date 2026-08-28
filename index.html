@@ -10,123 +10,97 @@
     body { margin:0; background:#070b14; color:#f6ead2; font-family:VT323, monospace; overflow:hidden; }
     header {
       display:flex; justify-content:space-between; align-items:center; gap:12px;
-      padding:12px 16px; background:linear-gradient(#1a1024,#0d0a14);
-      border-bottom:4px solid #7a4ac8; position:relative; z-index:30;
+      padding:12px 16px; background:#120c18; border-bottom:4px solid #7a4ac8; z-index:30; position:relative;
     }
-    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:12px; color:#ffd36b; text-shadow:0 0 14px #ffd36b, 3px 3px 0 #000; }
+    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:12px; color:#ffd36b; text-shadow:3px 3px 0 #000; }
     .bar { display:flex; gap:10px; align-items:center; color:#c9b7ff; font-size:18px; }
     button {
       font-family:"Press Start 2P", monospace; font-size:8px;
-      background:#ffd36b; color:#1b1020; border:3px solid #1b1020;
-      padding:8px 10px; cursor:pointer; box-shadow:4px 4px 0 #000;
+      background:#ffd36b; color:#1b1020; border:3px solid #1b1020; padding:8px 10px; cursor:pointer;
     }
     button.playing { background:#06d6a0; }
 
     .town {
       position:relative; height:calc(100vh - 56px); overflow:hidden;
-      background:
-        radial-gradient(circle at 78% 8%, rgba(255,243,176,.35) 0 10px, transparent 11px),
-        linear-gradient(#152038 0 30%, #1b4d7a 30% 38%, #1d6b38 38% 100%);
+      background: linear-gradient(#152038 0 32%, #1d6b38 32% 100%);
     }
-    .stars {
-      position:absolute; inset:0 0 58% 0; pointer-events:none;
-      background-image: radial-gradient(#fff 1px, transparent 1px);
-      background-size:64px 64px; opacity:.32; animation:drift 40s linear infinite;
-    }
-    @keyframes drift { to { background-position:64px 64px; } }
-    .moon {
-      position:absolute; right:8%; top:6%; width:70px; height:70px; border-radius:50%;
-      background:radial-gradient(circle at 30% 30%, #fff7d6, #e6c36a);
-      box-shadow:0 0 50px #ffe08a; animation:moon 3s ease-in-out infinite;
-    }
-    @keyframes moon { 50% { box-shadow:0 0 70px #fff3a8; } }
-    .hills {
-      position:absolute; left:0; right:0; top:24%; height:22%;
-      background:
-        radial-gradient(circle at 18% 140%, #123526 0 130px, transparent 131px),
-        radial-gradient(circle at 52% 150%, #0f3d28 0 160px, transparent 161px),
-        radial-gradient(circle at 86% 140%, #164a30 0 140px, transparent 141px);
-    }
-    .grass {
-      position:absolute; left:0; right:0; bottom:0; height:34%;
-      background:repeating-linear-gradient(90deg, #1f7a3c 0 10px, #176433 10px 20px);
-      animation:grass 2.2s ease-in-out infinite;
-      transform-origin:bottom;
-    }
-    @keyframes grass { 50% { filter:brightness(1.08); } }
-    .path {
-      position:absolute; left:8%; right:8%; top:60%; height:90px;
-      background:#6b542f; box-shadow:inset 0 10px 0 #4a381e, 0 10px 0 #2d2314;
-      border-radius:40px;
-    }
-    .hall-bldg {
-      position:absolute; left:50%; top:38%; width:170px; margin-left:-85px;
-      animation:hall 2.8s ease-in-out infinite; filter:drop-shadow(0 10px 0 rgba(0,0,0,.28));
-    }
-    @keyframes hall { 50% { transform:translateY(-3px); } }
-    .roof { height:52px; background:#ef476f; clip-path:polygon(50% 0,100% 100%,0 100%); }
-    .wall { height:74px; background:#f4d6b0; position:relative; }
-    .door { position:absolute; left:50%; bottom:0; width:28px; height:36px; margin-left:-14px; background:#3b2418; }
-    .win { position:absolute; top:16px; width:16px; height:14px; background:#ffe58a; box-shadow:0 0 12px #ffd36b; animation:flicker 1.6s steps(2) infinite; }
-    .win.l { left:18px; } .win.r { right:18px; }
-    @keyframes flicker { 50% { opacity:.6; } }
+    .stars { position:absolute; inset:0 0 60% 0; background-image:radial-gradient(#fff 1px, transparent 1px); background-size:70px 70px; opacity:.3; }
+    .moon { position:absolute; right:8%; top:6%; width:64px; height:64px; border-radius:50%; background:#ffe08a; box-shadow:0 0 40px #ffe08a; }
+    .hills { position:absolute; left:0; right:0; top:24%; height:20%; background:radial-gradient(circle at 50% 140%, #123526 0 160px, transparent 161px); }
+    .path { position:absolute; left:8%; right:8%; top:62%; height:86px; background:#6b542f; border-radius:40px; }
+    .hall-bldg { position:absolute; left:50%; top:40%; width:160px; margin-left:-80px; }
+    .roof { height:48px; background:#ef476f; clip-path:polygon(50% 0,100% 100%,0 100%); }
+    .wall { height:70px; background:#f4d6b0; position:relative; }
+    .door { position:absolute; left:50%; bottom:0; width:26px; height:34px; margin-left:-13px; background:#3b2418; }
+    .win { position:absolute; top:14px; width:14px; height:12px; background:#ffe58a; }
+    .win.l { left:16px; } .win.r { right:16px; }
 
     .stage { position:absolute; inset:0; z-index:8; }
     canvas#fx { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:9; }
 
     .npc {
-      position:absolute; width:108px; transform:translate(-50%,-100%);
-      text-align:center; overflow:visible;
+      position:absolute;
+      width:92px;
+      transform:translate(-50%,-100%);
+      text-align:center;
     }
     .npc.leaving { opacity:0; transition:opacity .4s; }
-    .sprite { width:48px; height:66px; margin:0 auto; position:relative; filter:drop-shadow(0 8px 0 rgba(0,0,0,.3)); }
-    .npc.idle .sprite { animation:idle 1.3s steps(2) infinite; }
-    .npc.walk .sprite { animation:walk .26s steps(2) infinite; }
-    .npc.talk .sprite { animation:talk .28s steps(2); }
+    .sprite {
+      width:48px; height:66px; margin:0 auto; position:relative;
+      filter:drop-shadow(0 8px 0 rgba(0,0,0,.3));
+    }
+    .npc.idle .sprite { animation:idle 1.4s steps(2) infinite; }
+    .npc.walk .sprite { animation:walk .3s steps(2) infinite; }
+    .npc.talk .sprite { animation:talk .3s steps(2) infinite; }
     .npc.left .sprite { transform:scaleX(-1); }
     .hair,.face,.torso,.legs,.eye { position:absolute; }
     .face { left:12px; top:14px; width:24px; height:18px; background:#f0c7a0; }
     .hair { left:10px; top:7px; width:28px; height:13px; }
     .torso { left:10px; top:32px; width:28px; height:18px; }
     .legs { left:12px; top:50px; width:24px; height:12px; background:#2b2433; }
-    .eye { left:16px; top:20px; width:4px; height:4px; background:#1b1020; box-shadow:10px 0 0 #1b1020; animation:blink 3.2s steps(1) infinite; }
+    .eye { left:16px; top:20px; width:4px; height:4px; background:#1b1020; box-shadow:10px 0 0 #1b1020; }
 
     .name {
-      width:108px; max-width:108px;
+      width:88px;
       margin:4px auto 0;
-      font-size:15px;
-      line-height:1;
+      font-size:16px;
+      line-height:1.1;
+      color:#fff;
+      background:#000c;
+      padding:2px 4px;
       white-space:nowrap;
       overflow:hidden;
       text-overflow:ellipsis;
-      text-shadow:2px 2px 0 #000;
     }
     .bubble {
       display:none;
-      position:absolute; left:50%; bottom:84px;
+      position:absolute;
+      left:50%;
+      bottom:88px;
       transform:translateX(-50%);
-      width:160px; max-width:160px; max-height:72px;
+      width:148px;
+      max-height:64px;
       overflow:hidden;
-      background:#fff4d2; color:#1b1020;
-      border:4px solid #2b1d12;
-      padding:6px 7px;
-      font-size:15px; line-height:1.15;
-      box-shadow:4px 4px 0 #000;
-      word-break:break-word;
+      background:#fff8de;
+      color:#1b1020;
+      border:4px solid #1b1020;
+      padding:6px;
+      font-size:16px;
+      line-height:1.1;
+      text-align:left;
     }
-    .npc.talk .bubble { display:block; animation:pop .16s ease-out; }
+    .npc.talk .bubble { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; line-clamp:3; }
 
     @keyframes idle { 50% { transform:translateY(-2px); } }
-    @keyframes walk { 50% { transform:translateY(-3px) rotate(-3deg); } }
-    @keyframes talk { 50% { transform:translateY(-8px) scale(1.06,.94); } }
-    @keyframes blink { 0%,92%,100% { transform:scaleY(1); } 94% { transform:scaleY(.15); } }
-    @keyframes pop { from { transform:translateX(-50%) scale(.7); opacity:0; } }
+    @keyframes walk { 50% { transform:translateY(-3px); } }
+    @keyframes talk { 50% { transform:translateY(-6px); } }
 
     .caption {
       position:absolute; left:16px; bottom:12px; z-index:12;
-      max-width:min(560px,72vw);
-      background:#120818cc; border:3px solid #7a4ac8; padding:6px 10px; font-size:18px;
-      overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+      width:min(520px,70vw);
+      background:#000d; border:3px solid #7a4ac8; color:#fff;
+      padding:6px 10px; font-size:18px;
+      white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
     }
   </style>
 </head>
@@ -142,7 +116,6 @@
     <div class="stars"></div>
     <div class="moon"></div>
     <div class="hills"></div>
-    <div class="grass"></div>
     <div class="path"></div>
     <div class="hall-bldg"><div class="roof"></div><div class="wall"><div class="win l"></div><div class="win r"></div><div class="door"></div></div></div>
     <canvas id="fx"></canvas>
@@ -165,14 +138,14 @@ let playing = false;
 function shortName(from){
   const s = String(from || "agent");
   if (s.startsWith("did:key:")) return "z6Mk…" + s.slice(-4);
-  return s.slice(0, 10);
+  return s.slice(0, 8);
 }
-function esc(s){ return String(s || "").replace(/\s+/g, " ").slice(0, 70); }
+function esc(s){ return String(s || "").replace(/\s+/g, " ").slice(0, 54); }
 function hash(s){ let h=0; for (const c of String(s)) h=(h*31+c.charCodeAt(0))>>>0; return h; }
 function box(){ const r=stage.getBoundingClientRect(); return {w:r.width,h:r.height}; }
 function spawnPos(){
   const b=box();
-  return { x: 90+Math.random()*Math.max(b.w-180,80), y: b.h*0.66 + Math.random()*Math.max(b.h*0.18,50) };
+  return { x: 90+Math.random()*Math.max(b.w-180,80), y: b.h*0.68 + Math.random()*Math.max(b.h*0.16,40) };
 }
 
 function ensureNpc(from){
@@ -186,25 +159,33 @@ function ensureNpc(from){
   el.querySelector(".name").textContent=shortName(from);
   el.style.left=p.x+"px"; el.style.top=p.y+"px";
   stage.appendChild(el);
-  const npc={from,el,bubble:el.querySelector(".bubble"),x:p.x,y:p.y,tx:p.x,ty:p.y,talking:false};
+  const npc={from,el,bubble:el.querySelector(".bubble"),x:p.x,y:p.y,tx:p.x,ty:p.y,talking:false,mode:"idle"};
   npcs.set(from,npc); wander(npc); return npc;
 }
 function removeNpc(npc){
   npc.el.classList.add("leaving");
   setTimeout(()=>{ npc.el.remove(); npcs.delete(npc.from); },400);
 }
-function setMode(npc,mode){ npc.el.classList.remove("idle","walk","talk"); npc.el.classList.add(mode); }
+function setMode(npc, mode){
+  if (npc.mode === mode) return;
+  npc.mode = mode;
+  npc.el.classList.remove("idle","walk","talk");
+  npc.el.classList.add(mode);
+}
 function wander(npc){
   const b=box();
   npc.tx=90+Math.random()*Math.max(b.w-180,80);
-  npc.ty=b.h*0.63+Math.random()*Math.max(b.h*0.2,40);
+  npc.ty=b.h*0.64+Math.random()*Math.max(b.h*0.18,40);
 }
 function speak(npc,text){
-  npc.bubble.textContent=esc(text);
-  npc.talking=true; setMode(npc,"talk"); burst(npc.x, npc.y-70);
-  caption.textContent=shortName(npc.from)+": "+esc(text);
+  const line = esc(text);
+  npc.bubble.textContent = line;
+  npc.talking = true;
+  setMode(npc,"talk");
+  burst(npc.x, npc.y-70);
+  caption.textContent = shortName(npc.from) + ": " + line;
   clearTimeout(npc.talkTimer);
-  npc.talkTimer=setTimeout(()=>{ npc.talking=false; setMode(npc,"idle"); },1500);
+  npc.talkTimer=setTimeout(()=>{ npc.talking=false; setMode(npc,"idle"); },1600);
 }
 function sync(present){
   for (const from of present) ensureNpc(from);
@@ -214,12 +195,19 @@ function tickMove(){
   for (const npc of npcs.values()){
     if (npc.talking) continue;
     const dx=npc.tx-npc.x, dy=npc.ty-npc.y, dist=Math.hypot(dx,dy);
-    if (dist<4){ setMode(npc,"idle"); if (Math.random()<0.012) wander(npc); continue; }
-    npc.x+=(dx/dist)*1.2; npc.y+=(dy/dist)*1.2;
-    npc.el.classList.toggle("left", dx<0);
-    setMode(npc,"walk");
-    npc.el.style.left=npc.x+"px"; npc.el.style.top=npc.y+"px";
-    npc.el.style.zIndex=String(20+Math.floor(npc.y));
+    if (dist<4){
+      setMode(npc,"idle");
+      if (Math.random()<0.01) wander(npc);
+    } else {
+      npc.x += (dx/dist)*1.15;
+      npc.y += (dy/dist)*1.15;
+      if (dx < 0) npc.el.classList.add("left");
+      else npc.el.classList.remove("left");
+      setMode(npc,"walk");
+      npc.el.style.left=npc.x+"px";
+      npc.el.style.top=npc.y+"px";
+      npc.el.style.zIndex=String(20+Math.floor(npc.y));
+    }
   }
   requestAnimationFrame(tickMove);
 }
@@ -238,8 +226,7 @@ async function replay(){
   sync(new Set(seq.map(m=>String(m.from||"agent"))));
   for (const m of seq){
     if (!playing) break;
-    const npc=ensureNpc(String(m.from||"agent"));
-    wander(npc); speak(npc, m.text);
+    speak(ensureNpc(String(m.from||"agent")), m.text);
     await new Promise(r=>setTimeout(r,1200));
   }
   playing=false; playBtn.classList.remove("playing"); playBtn.textContent="PLAY ROOM";
@@ -250,19 +237,19 @@ load(); setInterval(load,20000); tickMove();
 const canvas=document.getElementById("fx"), ctx=canvas.getContext("2d"), bits=[];
 function size(){ canvas.width=canvas.clientWidth; canvas.height=canvas.clientHeight; }
 size(); addEventListener("resize", size);
-for(let i=0;i<70;i++) bits.push({x:Math.random(),y:Math.random(),v:.0007+Math.random()*.002,s:1+Math.random()*2,a:.2});
+for(let i=0;i<50;i++) bits.push({x:Math.random(),y:Math.random(),v:.001,s:2,a:.2});
 function burst(px,py){
-  for(let i=0;i<16;i++) bits.push({x:px/Math.max(canvas.width,1),y:py/Math.max(canvas.height,1),vx:(Math.random()-.5)*.012,vy:-.006-Math.random()*.01,s:2,a:1,life:34});
+  for(let i=0;i<12;i++) bits.push({x:px/Math.max(canvas.width,1),y:py/Math.max(canvas.height,1),vx:(Math.random()-.5)*.01,vy:-.008,s:2,a:1,life:30});
 }
 function draw(){
   ctx.clearRect(0,0,canvas.width,canvas.height);
   bits.forEach(p=>{
-    if(p.life!=null){ p.x+=p.vx; p.y+=p.vy; p.life--; p.a=p.life/34; }
+    if(p.life!=null){ p.x+=p.vx; p.y+=p.vy; p.life--; p.a=p.life/30; }
     else { p.y-=p.v; if(p.y<0) p.y=1; }
     ctx.globalAlpha=Math.max(p.a,0); ctx.fillStyle="#ffe58a";
     ctx.fillRect(p.x*canvas.width,p.y*canvas.height,p.s,p.s);
   });
-  for(let i=bits.length-1;i>=70;i--) if(bits[i].life<=0) bits.splice(i,1);
+  for(let i=bits.length-1;i>=50;i--) if(bits[i].life<=0) bits.splice(i,1);
   requestAnimationFrame(draw);
 }
 draw();
