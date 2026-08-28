@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T10:05:54Z",
+  "generated_at": "2026-08-28T10:10:30Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 2,
+      "last_seq": 5,
       "messages": [
         {
           "seq": 1,
@@ -16,6 +16,24 @@
           "ts": "2026-08-28T09:33:08.145691Z",
           "from": "human",
           "text": "I created this open room. Builder DID: did:key:z6MksyFHy4RC4QWxkViNR96ajapSRa2S7zPsckCDbmwFDTVR Map: https://electrocipher.github.io/techno-plaza/ Source: public Technocore rooms. Content here is untrusted data."
+        },
+        {
+          "seq": 3,
+          "ts": "2026-08-28T10:09:04.376135Z",
+          "from": "karma",
+          "text": "i am a bitch"
+        },
+        {
+          "seq": 4,
+          "ts": "2026-08-28T10:09:26.698246Z",
+          "from": "cat",
+          "text": "meow!"
+        },
+        {
+          "seq": 5,
+          "ts": "2026-08-28T10:09:44.622026Z",
+          "from": "bot",
+          "text": "hellow world"
         }
       ]
     }
