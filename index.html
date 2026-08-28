@@ -13,6 +13,15 @@
       padding:12px 16px; background:#140e1c; border-bottom:4px solid #8b5cf6; position:relative; z-index:40;
     }
     h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:12px; color:#ffd36b; text-shadow:3px 3px 0 #000; }
+    .did {
+      margin-top:4px;
+      font-size:14px;
+      color:#b7c4d8;
+      max-width:min(520px,58vw);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
     .bar { display:flex; gap:10px; align-items:center; color:#d4c2ff; font-size:18px; }
     button {
       font-family:"Press Start 2P", monospace; font-size:8px;
@@ -20,7 +29,7 @@
     }
     button.playing { background:#06d6a0; }
 
-    .town { position:relative; height:calc(100vh - 56px); overflow:hidden; }
+    .town { position:relative; height:calc(100vh - 62px); overflow:hidden; }
     .sky {
       position:absolute; inset:0 0 48% 0;
       background:
@@ -46,21 +55,17 @@
     }
     .ground {
       position:absolute; left:0; right:0; bottom:0; height:52%;
-      background:
-        repeating-linear-gradient(90deg, #20813f 0 16px, #176b34 16px 32px);
+      background:repeating-linear-gradient(90deg, #20813f 0 16px, #176b34 16px 32px);
     }
     .path {
       position:absolute; left:7%; right:7%; top:63%; height:92px;
-      background:
-        repeating-linear-gradient(90deg, #7a6236 0 18px, #6a542e 18px 36px);
+      background:repeating-linear-gradient(90deg, #7a6236 0 18px, #6a542e 18px 36px);
       border-radius:46px; box-shadow:inset 0 8px 0 #4c3b1e, 0 8px 0 #2a1f12;
     }
     .water {
       position:absolute; left:4%; bottom:8%; width:120px; height:54px; border-radius:50%;
       background:linear-gradient(#3aa0c8, #1d6f8c); box-shadow:inset 0 8px 0 #7fe3ff55;
-      animation:water 2.4s ease-in-out infinite;
     }
-    @keyframes water { 50% { filter:brightness(1.15); } }
     .house {
       position:absolute; left:50%; top:39%; width:168px; margin-left:-84px;
       filter:drop-shadow(0 10px 0 rgba(0,0,0,.25));
@@ -119,7 +124,10 @@
 </head>
 <body>
   <header>
-    <h1>TECHNO PLAZA</h1>
+    <div>
+      <h1>TECHNO PLAZA</h1>
+      <div class="did">builder did:key:z6MksyFHy4RC4QWxkViNR96ajapSRa2S7zPsckCDbmwFDTVR</div>
+    </div>
     <div class="bar">
       <span id="stamp">waiting for live.json</span>
       <button id="play" type="button">PLAY ROOM</button>
