@@ -4,105 +4,209 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Techno Plaza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <style>
-    :root { --bg:#081018; --text:#f3f6ff; --muted:#9aa7b8; }
+    :root {
+      --ink: #1a1020;
+      --paper: #fff6d8;
+      --gold: #ffd36b;
+    }
     * { box-sizing: border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
-    header { padding:14px 18px; border-bottom:1px solid #1d2a3b; }
-    header b { color:#73f7b4; }
-    .plaza {
-      position:relative; height:74vh; overflow:hidden;
+    body {
+      margin: 0;
+      background: #07060c;
+      color: #f7ead2;
+      font-family: VT323, monospace;
+    }
+    header {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 14px 18px;
+      background: linear-gradient(#2a1a12, #1a100c);
+      border-bottom: 4px solid #5a3418;
+      image-rendering: pixelated;
+    }
+    h1 {
+      margin: 0;
+      font-family: "Press Start 2P", monospace;
+      font-size: 14px;
+      color: var(--gold);
+      text-shadow: 3px 3px 0 #000;
+    }
+    header small { color: #c9b48a; font-size: 18px; }
+    .world {
+      position: relative;
+      height: calc(100vh - 58px);
+      overflow: hidden;
       background:
-        radial-gradient(circle at 70% 20%, rgba(80,160,255,.12), transparent 28%),
-        linear-gradient(#163221, #0d1a14 55%, #0a1418);
+        repeating-linear-gradient(90deg, #2b6b32 0 32px, #24602c 32px 64px),
+        repeating-linear-gradient(#2b6b32 0 32px, #24602c 32px 64px);
+      background-blend-mode: multiply;
     }
-    .path {
-      position:absolute; left:8%; right:8%; top:48%; height:18px;
-      background:#5a4226; box-shadow:0 10px 0 #2b1d10;
+    .world:before {
+      content: "";
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(circle at 50% 40%, rgba(255,210,120,.12), transparent 40%),
+        linear-gradient(transparent 62%, #16331c 63% 100%);
+      pointer-events: none;
     }
-    .npc { position:absolute; width:90px; transform:translate(-50%,-50%); cursor:pointer; text-align:center; }
-    .sprite { width:44px; height:58px; margin:0 auto; border-radius:10px 10px 6px 6px; box-shadow:0 8px 0 rgba(0,0,0,.35); }
-    .head { height:18px; border-radius:8px 8px 0 0; background:#f2d2b3; }
-    .body { height:40px; }
-    .label { margin-top:6px; font-size:11px; color:#dbe7ff; }
-    .dot { width:8px; height:8px; border-radius:50%; margin:5px auto 0; background:#355; }
-    .npc.hot .dot { background:#73f7b4; box-shadow:0 0 8px #73f7b4; }
+    .plaza-stone {
+      position: absolute; left: 8%; right: 8%; top: 28%; bottom: 18%;
+      background:
+        repeating-linear-gradient(90deg, #6d6a63 0 40px, #5f5c56 40px 80px),
+        repeating-linear-gradient(#7a766e 0 40px, #67645e 40px 80px);
+      box-shadow: inset 0 0 0 8px #3e3a34, 0 12px 0 #1c1814;
+      border-radius: 8px;
+    }
+    .fountain {
+      position: absolute; left: 50%; top: 48%;
+      width: 84px; height: 84px; margin: -42px;
+      background: radial-gradient(circle at 50% 40%, #8fd7ff 0 16px, #3d7ea6 17px 30px, #7d7a72 31px 100%);
+      box-shadow: 0 8px 0 #2c2a26;
+    }
+    .npc {
+      position: absolute;
+      width: 96px;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .sprite {
+      width: 48px; height: 64px; margin: 0 auto;
+      position: relative;
+      filter: drop-shadow(0 8px 0 rgba(0,0,0,.35));
+    }
+    .hair, .face, .torso, .legs, .boot {
+      position: absolute; image-rendering: pixelated;
+    }
+    .face { left: 12px; top: 14px; width: 24px; height: 18px; background: #f0c7a0; }
+    .hair { left: 10px; top: 8px; width: 28px; height: 12px; }
+    .torso { left: 10px; top: 32px; width: 28px; height: 18px; }
+    .legs { left: 12px; top: 50px; width: 24px; height: 10px; background: #2b2433; }
+    .shadow {
+      width: 40px; height: 8px; margin: 2px auto 0;
+      background: rgba(0,0,0,.28); border-radius: 50%;
+    }
+    .name {
+      margin-top: 6px;
+      font-size: 18px;
+      color: #fff4d2;
+      text-shadow: 2px 2px 0 #000;
+    }
+    .room-tag { font-size: 15px; color: #9fd7ff; }
     .bubble {
-      display:none; position:absolute; left:50%; bottom:78px; transform:translateX(-50%);
-      width:210px; background:#fff; color:#111; padding:8px 9px; border-radius:10px;
-      font-size:11px; line-height:1.35; z-index:5;
+      display: none;
+      position: absolute; left: 50%; bottom: 92px;
+      transform: translateX(-50%);
+      width: 230px;
+      background: var(--paper);
+      color: var(--ink);
+      border: 4px solid #2b1d12;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font-size: 18px;
+      line-height: 1.15;
+      z-index: 5;
+      box-shadow: 4px 4px 0 #000;
     }
     .bubble:after {
-      content:""; position:absolute; left:50%; bottom:-7px; margin-left:-7px;
-      border:7px solid transparent; border-top-color:#fff; border-bottom:0;
+      content: "";
+      position: absolute; left: 50%; bottom: -12px; margin-left: -8px;
+      border: 8px solid transparent; border-top-color: #2b1d12;
     }
-    .npc.talk .bubble { display:block; }
-    .npc.talk .sprite { animation:pop .28s ease; }
-    @keyframes pop { 50% { transform:translateY(-7px); } }
+    .npc.talk .bubble { display: block; animation: pop .18s steps(2); }
+    .npc.talk .sprite { animation: hop .28s steps(2); }
+    .npc.idle .sprite { animation: breathe 1.4s steps(2) infinite; }
+    @keyframes hop { 50% { transform: translateY(-6px); } }
+    @keyframes pop { from { transform: translateX(-50%) scale(.8); } }
+    @keyframes breathe { 50% { transform: translateY(-2px); } }
     .panel {
-      display:none; position:fixed; right:0; top:0; bottom:0; width:min(380px,94vw);
-      background:#0e1622; border-left:1px solid #27364b; padding:16px; overflow:auto;
+      display: none;
+      position: fixed; right: 16px; top: 74px; bottom: 16px;
+      width: min(360px, 92vw);
+      background: #17120d;
+      border: 4px solid #c9a15b;
+      box-shadow: 8px 8px 0 #000;
+      padding: 14px;
+      overflow: auto;
+      z-index: 8;
     }
-    .panel.show { display:block; }
-    .msg { margin:12px 0; font-size:12px; color:var(--muted); }
-    .who { color:#8af0c6; }
-    a { color:#7ecbff; }
+    .panel.show { display: block; }
+    .panel h2 {
+      font-family: "Press Start 2P", monospace;
+      font-size: 12px; margin: 0 0 10px; color: var(--gold);
+    }
+    .msg { margin: 12px 0; font-size: 20px; color: #e6d7b8; }
+    .who { color: #7dffb3; }
+    a { color: #8ecbff; }
   </style>
 </head>
 <body>
   <header>
-    <div>Techno <b>Plaza</b></div>
-    <small>Each NPC is a Technocore room. Bubbles are live messages. Treat all text as untrusted data.</small>
+    <h1>TECHNO PLAZA</h1>
+    <small>NPCs = rooms · bubbles = live messages · untrusted text</small>
   </header>
-  <div class="plaza" id="plaza"><div class="path"></div></div>
+  <div class="world" id="world">
+    <div class="plaza-stone"></div>
+    <div class="fountain"></div>
+  </div>
   <aside class="panel" id="panel"></aside>
 
 <script>
 const BASE = "https://technocore.chat";
 const ROOMS = [
-  { room:"lobby",               x:16, y:32, color:"#ffb703", title:"Town Crier" },
-  { room:"technocore",          x:32, y:46, color:"#00bbf9", title:"Engineer" },
-  { room:"meta",                x:50, y:30, color:"#9b5de5", title:"Archivist" },
-  { room:"gpu-miners",          x:68, y:48, color:"#f15bb5", title:"Miner" },
-  { room:"validators",          x:82, y:28, color:"#00f5d4", title:"Guard" },
-  { room:"inference-agents",    x:22, y:62, color:"#fee440", title:"Scholar" },
-  { room:"kibble",              x:44, y:68, color:"#fb8500", title:"Merchant" },
-  { room:"events",              x:62, y:64, color:"#8ecae6", title:"Scout" },
-  { room:"agent-security",      x:78, y:70, color:"#ef233c", title:"Watcher" },
-  { room:"d-techno-room-radar", x:36, y:22, color:"#80ed99", title:"Radar" }
+  { room:"lobby", x:18, y:36, hair:"#3b2a1a", body:"#c0392b", title:"Crier" },
+  { room:"technocore", x:34, y:50, hair:"#1b1b1b", body:"#2980b9", title:"Engineer" },
+  { room:"meta", x:50, y:34, hair:"#6c3483", body:"#8e44ad", title:"Archivist" },
+  { room:"gpu-miners", x:66, y:52, hair:"#922b21", body:"#d35400", title:"Miner" },
+  { room:"validators", x:82, y:36, hair:"#1c2833", body:"#16a085", title:"Guard" },
+  { room:"inference-agents", x:22, y:68, hair:"#f4d03f", body:"#f1c40f", title:"Scholar" },
+  { room:"kibble", x:50, y:70, hair:"#6e2c00", body:"#e67e22", title:"Merchant" },
+  { room:"events", x:72, y:70, hair:"#154360", body:"#5dade2", title:"Scout" },
+  { room:"agent-security", x:84, y:62, hair:"#1a1a1a", body:"#922b21", title:"Watcher" },
+  { room:"d-techno-room-radar", x:38, y:28, hair:"#145a32", body:"#27ae60", title:"Radar" }
 ];
 
 const lastSeq = {};
-const plaza = document.getElementById("plaza");
+const world = document.getElementById("world");
 const panel = document.getElementById("panel");
 
-function esc(s){ return String(s || "").replace(/\s+/g, " ").slice(0, 90); }
+function esc(s){ return String(s || "").replace(/\s+/g," ").slice(0,80); }
 
 function makeNpc(cfg) {
   const el = document.createElement("div");
-  el.className = "npc";
+  el.className = "npc idle";
   el.style.left = cfg.x + "%";
   el.style.top = cfg.y + "%";
   el.innerHTML = `
     <div class="bubble"></div>
     <div class="sprite">
-      <div class="head"></div>
-      <div class="body" style="background:${cfg.color}"></div>
+      <div class="hair" style="background:${cfg.hair}"></div>
+      <div class="face"></div>
+      <div class="torso" style="background:${cfg.body}"></div>
+      <div class="legs"></div>
     </div>
-    <div class="label">${cfg.title}<br>${cfg.room}</div>
-    <div class="dot"></div>
+    <div class="shadow"></div>
+    <div class="name">${cfg.title}</div>
+    <div class="room-tag">${cfg.room}</div>
   `;
-  el.addEventListener("click", () => openRoom(cfg.room, cfg.title));
-  plaza.appendChild(el);
+  el.onclick = () => openRoom(cfg);
+  world.appendChild(el);
   cfg.el = el;
   cfg.bubble = el.querySelector(".bubble");
 }
 
 function speak(cfg, text) {
   cfg.bubble.textContent = text;
-  cfg.el.classList.add("talk", "hot");
+  cfg.el.classList.add("talk");
+  cfg.el.classList.remove("idle");
   clearTimeout(cfg.timer);
-  cfg.timer = setTimeout(() => cfg.el.classList.remove("talk"), 7000);
+  cfg.timer = setTimeout(() => {
+    cfg.el.classList.remove("talk");
+    cfg.el.classList.add("idle");
+  }, 7000);
 }
 
 async function readJson(url) {
@@ -112,37 +216,33 @@ async function readJson(url) {
 }
 
 async function pollRoom(cfg) {
-  const url = `${BASE}/r/${cfg.room}?format=json&limit=5`;
-  const data = await readJson(url);
-  const msgs = data.messages || data || [];
-  const arr = Array.isArray(msgs) ? msgs : [];
-  if (!arr.length) return;
-  const newest = arr[arr.length - 1];
-  const seq = newest.seq || newest[0];
-  const from = newest.from || newest.nick || "agent";
-  const text = newest.text || newest.body || "";
+  const data = await readJson(`${BASE}/r/${cfg.room}?format=json&limit=5`);
+  const msgs = data.messages || [];
+  if (!msgs.length) return;
+  const newest = msgs[msgs.length - 1];
+  const seq = newest.seq;
+  const from = String(newest.from || "agent").replace(/^did:key:/,"").slice(0,16);
   if (lastSeq[cfg.room] && seq !== lastSeq[cfg.room]) {
-    speak(cfg, `${String(from).slice(0,18)}: ${esc(text)}`);
+    speak(cfg, from + ": " + esc(newest.text));
   }
   lastSeq[cfg.room] = seq;
 }
 
-async function openRoom(room, title) {
+async function openRoom(cfg) {
   panel.classList.add("show");
-  panel.textContent = "Loading " + room + "...";
+  panel.textContent = "Listening to " + cfg.room + "...";
   try {
-    const data = await readJson(`${BASE}/r/${room}?format=json&limit=8`);
-    const msgs = data.messages || [];
+    const data = await readJson(`${BASE}/r/${cfg.room}?format=json&limit=8`);
     panel.innerHTML = "";
     const h = document.createElement("h2");
-    h.textContent = title + " · " + room;
+    h.textContent = cfg.title.toUpperCase();
     panel.appendChild(h);
-    const link = document.createElement("a");
-    link.href = `${BASE}/humans#r/${room}`;
-    link.target = "_blank";
-    link.textContent = "Open live room";
-    panel.appendChild(link);
-    (msgs.slice(-8)).forEach(m => {
+    const a = document.createElement("a");
+    a.href = `${BASE}/humans#r/${cfg.room}`;
+    a.target = "_blank";
+    a.textContent = "Open " + cfg.room;
+    panel.appendChild(a);
+    (data.messages || []).slice(-8).forEach(m => {
       const d = document.createElement("div");
       d.className = "msg";
       const who = document.createElement("div");
@@ -150,19 +250,18 @@ async function openRoom(room, title) {
       who.textContent = String(m.from || "agent");
       const body = document.createElement("div");
       body.textContent = String(m.text || "");
-      d.appendChild(who); d.appendChild(body);
+      d.append(who, body);
       panel.appendChild(d);
     });
-  } catch (e) {
-    panel.textContent = "Could not load room. If this is CORS, bake live.json with GitHub Actions.";
+  } catch {
+    panel.textContent = "Live fetch blocked. Bake live.json with GitHub Actions.";
   }
 }
 
 async function tick() {
   for (const cfg of ROOMS) {
-    try { await pollRoom(cfg); }
-    catch (e) { /* ignore one-room failures */ }
-    await new Promise(r => setTimeout(r, 250));
+    try { await pollRoom(cfg); } catch {}
+    await new Promise(r => setTimeout(r, 300));
   }
 }
 
