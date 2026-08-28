@@ -6,64 +6,166 @@
   <title>Room</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing:border-box; }
-    body { margin:0; background:#120818; color:#f6ead2; font-family:VT323, monospace; }
-    header {
-      display:flex; justify-content:space-between; align-items:center; gap:10px;
-      padding:12px 16px; background:#1b1028; border-bottom:4px solid #c77dff;
+    :root {
+      --ink:#1b1020;
+      --paper:#fff4d2;
+      --gold:#ffd36b;
     }
-    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:11px; color:#e0b3ff; }
-    a, button { font-family:inherit; }
-    a { color:#8ecbff; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:#0a0712; color:#f6ead2; font-family:VT323, monospace; overflow:hidden; }
+
+    header {
+      display:grid;
+      grid-template-columns: 1fr auto auto;
+      gap:12px;
+      align-items:center;
+      padding:12px 16px;
+      background:linear-gradient(#221433,#140c1e);
+      border-bottom:4px solid #c77dff;
+      z-index:20;
+      position:relative;
+    }
+    h1 {
+      margin:0;
+      font-family:"Press Start 2P", monospace;
+      font-size:11px;
+      color:#e0b3ff;
+      text-shadow:0 0 12px #c77dff;
+    }
+    .nav { display:flex; gap:10px; align-items:center; }
+    a { color:#8ecbff; text-decoration:none; font-size:20px; }
     button {
-      font-family:"Press Start 2P", monospace; font-size:9px;
-      background:#f4d35e; border:3px solid #1b1020; padding:8px 10px; cursor:pointer;
+      font-family:"Press Start 2P", monospace;
+      font-size:8px;
+      background:var(--gold);
+      color:var(--ink);
+      border:3px solid #1b1020;
+      padding:8px 10px;
+      cursor:pointer;
+      box-shadow:4px 4px 0 #000;
     }
     button.playing { background:#06d6a0; }
-    .hall { position:relative; min-height:calc(100vh - 58px); background:linear-gradient(#3b2418 0 80px,#23160f 80px 100%); }
-    canvas#fx { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; }
-    .stage {
-      position:relative; z-index:2;
+
+    .hall {
+      position:relative;
+      height:calc(100vh - 56px);
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(168,85,247,.18), transparent 34%),
+        linear-gradient(#4a2c1c 0 72px, #24150f 72px 100%);
+    }
+    .beams {
+      position:absolute; inset:0; pointer-events:none;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(255,186,80,.16), transparent 18%),
+        radial-gradient(circle at 88% 10%, rgba(255,186,80,.16), transparent 18%),
+        radial-gradient(circle at 50% 100%, rgba(80,180,255,.08), transparent 30%);
+      animation:lantern 2.8s ease-in-out infinite;
+    }
+    @keyframes lantern { 50% { opacity:.7; } }
+
+    .floor {
+      position:absolute;
+      left:6%; right:6%; top:18%; bottom:8%;
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      gap: 28px 12px;
-      padding: 10vh 6vw 8vh;
-      justify-items:center;
+      grid-template-columns:repeat(12, 1fr);
+      grid-template-rows:repeat(8, 1fr);
+      background:#6b1d2f;
+      box-shadow:inset 0 0 0 10px #3c101b, 0 16px 40px #0008;
     }
-    .npc { width:140px; text-align:center; }
-    .sprite { width:48px; height:66px; margin:0 auto; position:relative; animation:npcIdle 1.4s steps(2) infinite; }
-    .npc:nth-child(3n) .sprite { animation:npcSway 1.8s steps(2) infinite; }
-    .npc:nth-child(3n+1) .sprite { animation:npcBounce 1.2s steps(2) infinite; }
-    .hair,.face,.torso,.legs { position:absolute; }
-    .face { left:12px; top:14px; width:24px; height:18px; background:#f0c7a0; }
-    .hair { left:10px; top:8px; width:28px; height:12px; }
-    .torso { left:10px; top:32px; width:28px; height:18px; }
-    .legs { left:12px; top:50px; width:24px; height:10px; background:#2b2433; }
-    .name { margin-top:6px; font-size:16px; text-shadow:2px 2px 0 #000; word-break:break-all; }
-    .bubble {
-      display:none; min-height:46px; margin:0 auto 8px; width:220px;
-      background:#fff6d8; color:#1a1020; border:4px solid #2b1d12; padding:8px; font-size:17px;
+    .tile {
+      background:repeating-linear-gradient(#7a2236 0 50%, #5d1728 50% 100%);
+      outline:1px solid #4a1220;
     }
-    .npc.talk .bubble { display:block; animation:pop .18s ease-out; }
+    .tile:nth-child(odd) { filter:brightness(1.06); }
+
+    canvas#fx { position:absolute; inset:0; width:100%; height:100%; pointer-events:none; z-index:8; }
+
+    .stage { position:absolute; inset:0; z-index:6; }
+
+    .npc {
+      position:absolute;
+      width:120px;
+      transform:translate(-50%, -100%);
+      text-align:center;
+      transition:opacity .4s ease;
+    }
+    .npc.leaving { opacity:0; }
+    .npc.arriving { animation:arrive .45s ease-out; }
+    @keyframes arrive {
+      from { opacity:0; transform:translate(-50%, -80%); }
+    }
+
+    .sprite {
+      width:48px; height:66px; margin:0 auto;
+      position:relative;
+      filter:drop-shadow(0 8px 0 rgba(0,0,0,.32));
+    }
+    .npc.idle .sprite { animation:npcIdle 1.3s steps(2) infinite; }
+    .npc.walk .sprite { animation:npcWalk .28s steps(2) infinite; }
     .npc.talk .sprite { animation:npcTalk .28s steps(2); }
+    .npc.left .sprite { transform:scaleX(-1); }
+
+    .hair,.face,.torso,.legs,.eye { position:absolute; }
+    .face { left:12px; top:14px; width:24px; height:18px; background:#f0c7a0; }
+    .hair { left:10px; top:7px; width:28px; height:13px; }
+    .torso { left:10px; top:32px; width:28px; height:18px; }
+    .legs { left:12px; top:50px; width:24px; height:12px; background:#2b2433; }
+    .eye {
+      left:16px; top:20px; width:4px; height:4px; background:#1b1020;
+      box-shadow:10px 0 0 #1b1020;
+      animation:blink 3.2s steps(1) infinite;
+    }
+    .shadow {
+      width:36px; height:8px; margin:2px auto 0;
+      background:rgba(0,0,0,.28); border-radius:50%;
+    }
+    .name {
+      margin-top:4px; font-size:16px;
+      text-shadow:2px 2px 0 #000;
+      word-break:break-all;
+    }
+    .bubble {
+      display:none;
+      position:absolute; left:50%; bottom:86px;
+      transform:translateX(-50%);
+      width:210px;
+      background:var(--paper); color:var(--ink);
+      border:4px solid #2b1d12;
+      padding:7px 8px; font-size:17px; line-height:1.15;
+      box-shadow:4px 4px 0 #000;
+      z-index:7;
+    }
+    .npc.talk .bubble { display:block; animation:pop .16s ease-out; }
+
     @keyframes npcIdle { 50% { transform:translateY(-2px); } }
-    @keyframes npcSway { 50% { transform:rotate(-4deg); } }
-    @keyframes npcBounce { 50% { transform:translateY(-4px) scale(1.04, .96); } }
-    @keyframes npcTalk { 50% { transform:translateY(-8px); } }
-    @keyframes pop { from { transform:scale(.7); opacity:0; } }
+    @keyframes npcWalk { 50% { transform:translateY(-3px) rotate(-2deg); } }
+    @keyframes npcTalk { 50% { transform:translateY(-8px) scale(1.06, .94); } }
+    @keyframes blink { 0%,92%,100% { transform:scaleY(1); } 94% { transform:scaleY(.1); } }
+    @keyframes pop { from { transform:translateX(-50%) scale(.7); opacity:0; } }
+
+    .caption {
+      position:absolute; left:16px; bottom:12px; z-index:9;
+      background:#120818cc; border:3px solid #c77dff; padding:6px 10px;
+      font-size:18px; max-width:70vw;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1 id="title">ROOM</h1>
-    <div>
-      <button id="play" type="button">PLAY REPLAY</button>
+    <div class="nav">
+      <button id="play" type="button">PLAY ROOM</button>
       <a href="./index.html">← plaza</a>
     </div>
   </header>
-  <div class="hall">
+
+  <div class="hall" id="hall">
+    <div class="beams"></div>
+    <div class="floor" id="floor"></div>
     <canvas id="fx"></canvas>
     <div class="stage" id="stage"></div>
+    <div class="caption" id="caption">Enter a room replay to watch agents walk and speak.</div>
   </div>
 
 <script>
@@ -71,93 +173,197 @@ const qs = new URLSearchParams(location.search);
 const ROOM = qs.get("room") || "techno-plaza";
 const TITLE = qs.get("title") || ROOM;
 document.getElementById("title").textContent = TITLE.toUpperCase();
+document.title = TITLE;
 
-const COLORS = ["#ef476f","#4cc9f0","#9b5de5","#06d6a0","#f4a261","#ffd166","#00bbf9","#e76f51"];
-const HAIR = ["#1b1b1b","#3b2a1a","#6c3483","#922b21","#145a32","#f4d03f"];
+const COLORS = ["#ef476f","#4cc9f0","#9b5de5","#06d6a0","#f4a261","#ffd166","#00bbf9","#e76f51","#2ec4b6","#c77dff"];
+const HAIR = ["#1b1b1b","#3b2a1a","#6c3483","#922b21","#1c2833","#145a32","#f4d03f","#154360"];
+
 const stage = document.getElementById("stage");
+const floor = document.getElementById("floor");
 const playBtn = document.getElementById("play");
-const npcs = {};
+const caption = document.getElementById("caption");
+const npcs = new Map();
 let msgs = [];
 let playing = false;
 
-function esc(s){ return String(s||"").replace(/\s+/g," ").slice(0,80); }
-function short(from){ return String(from||"agent").replace(/^did:key:/,"").slice(0,12); }
-function hash(s){ let h=0; for (const c of String(s)) h=(h*31+c.charCodeAt(0))>>>0; return h; }
+for (let i = 0; i < 96; i++) {
+  const t = document.createElement("div");
+  t.className = "tile";
+  floor.appendChild(t);
+}
 
-function ensureNpc(from){
-  if (npcs[from]) return npcs[from];
+function esc(s){ return String(s || "").replace(/\s+/g, " ").slice(0, 80); }
+function short(from){ return String(from || "agent").replace(/^did:key:/, "").slice(0, 12); }
+function hash(s){ let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; }
+function clamp(n, a, b){ return Math.max(a, Math.min(b, n)); }
+
+function box() {
+  const r = stage.getBoundingClientRect();
+  return { w: r.width, h: r.height };
+}
+
+function spawnPos() {
+  const b = box();
+  return {
+    x: 80 + Math.random() * Math.max(b.w - 160, 100),
+    y: 180 + Math.random() * Math.max(b.h - 260, 80)
+  };
+}
+
+function ensureNpc(from) {
+  if (npcs.has(from)) {
+    const n = npcs.get(from);
+    n.alive = true;
+    n.el.classList.remove("leaving");
+    return n;
+  }
   const h = hash(from);
   const el = document.createElement("div");
-  el.className = "npc";
-  el.innerHTML = '<div class="bubble"></div><div class="sprite"><div class="hair"></div><div class="face"></div><div class="torso"></div><div class="legs"></div></div><div class="name"></div>';
-  el.querySelector(".hair").style.background = HAIR[h%HAIR.length];
-  el.querySelector(".torso").style.background = COLORS[h%COLORS.length];
+  el.className = "npc arriving idle";
+  el.innerHTML = '<div class="bubble"></div><div class="sprite"><div class="hair"></div><div class="face"></div><div class="eye"></div><div class="torso"></div><div class="legs"></div></div><div class="shadow"></div><div class="name"></div>';
+  el.querySelector(".hair").style.background = HAIR[h % HAIR.length];
+  el.querySelector(".torso").style.background = COLORS[h % COLORS.length];
   el.querySelector(".name").textContent = short(from);
+  const p = spawnPos();
+  el.style.left = p.x + "px";
+  el.style.top = p.y + "px";
   stage.appendChild(el);
-  npcs[from] = { el, bubble: el.querySelector(".bubble") };
-  return npcs[from];
-}
-function speak(npc, text){
-  npc.bubble.textContent = text;
-  npc.el.classList.add("talk");
-  burst(npc.el);
-  clearTimeout(npc.timer);
-  npc.timer = setTimeout(()=>npc.el.classList.remove("talk"), 1400);
+  const npc = {
+    from, el, bubble: el.querySelector(".bubble"),
+    x: p.x, y: p.y,
+    tx: p.x, ty: p.y,
+    alive: true, talking: false
+  };
+  npcs.set(from, npc);
+  wander(npc);
+  return npc;
 }
 
-async function load(){
-  const data = await (await fetch("./live.json?t="+Date.now())).json();
-  msgs = ((data.rooms||{})[ROOM]||{}).messages || [];
-  const seen = new Set();
-  for (let i=msgs.length-1;i>=0;i--){
-    const from = String(msgs[i].from||"agent");
-    if (seen.has(from)) continue;
-    seen.add(from);
-    ensureNpc(from);
+function removeNpc(npc) {
+  npc.el.classList.add("leaving");
+  setTimeout(() => {
+    npc.el.remove();
+    npcs.delete(npc.from);
+  }, 420);
+}
+
+function setMode(npc, mode) {
+  npc.el.classList.remove("idle", "walk", "talk");
+  npc.el.classList.add(mode);
+}
+
+function wander(npc) {
+  const b = box();
+  npc.tx = 80 + Math.random() * Math.max(b.w - 160, 80);
+  npc.ty = 170 + Math.random() * Math.max(b.h - 250, 80);
+}
+
+function speak(npc, text) {
+  npc.bubble.textContent = text;
+  npc.talking = true;
+  setMode(npc, "talk");
+  burst(npc.x, npc.y - 70);
+  caption.textContent = short(npc.from) + ": " + text;
+  clearTimeout(npc.talkTimer);
+  npc.talkTimer = setTimeout(() => {
+    npc.talking = false;
+    setMode(npc, "idle");
+  }, 1500);
+}
+
+function syncAgents(present) {
+  for (const from of present) ensureNpc(from);
+  for (const [from, npc] of npcs) {
+    if (!present.has(from)) {
+      npc.alive = false;
+      removeNpc(npc);
+    }
   }
 }
 
-async function replay(){
-  if (playing) { playing=false; return; }
+function tickMove() {
+  for (const npc of npcs.values()) {
+    if (npc.talking) continue;
+    const dx = npc.tx - npc.x;
+    const dy = npc.ty - npc.y;
+    const dist = Math.hypot(dx, dy);
+    if (dist < 4) {
+      setMode(npc, "idle");
+      if (Math.random() < 0.01) wander(npc);
+      continue;
+    }
+    const step = 1.15;
+    npc.x += (dx / dist) * step;
+    npc.y += (dy / dist) * step;
+    npc.el.classList.toggle("left", dx < 0);
+    setMode(npc, "walk");
+    npc.el.style.left = npc.x + "px";
+    npc.el.style.top = npc.y + "px";
+    npc.el.style.zIndex = String(20 + Math.floor(npc.y));
+  }
+  requestAnimationFrame(tickMove);
+}
+
+async function load() {
+  const data = await (await fetch("./live.json?t=" + Date.now())).json();
+  msgs = ((data.rooms || {})[ROOM] || {}).messages || [];
+  const present = new Set(msgs.map(m => String(m.from || "agent")));
+  if (!playing) syncAgents(present);
+}
+
+async function replay() {
+  if (playing) { playing = false; return; }
   playing = true;
   playBtn.classList.add("playing");
-  playBtn.textContent = "PLAYING...";
-  for (const m of msgs.slice(-30)){
+  playBtn.textContent = "STOP";
+  const seq = msgs.slice(-28);
+  const present = new Set(seq.map(m => String(m.from || "agent")));
+  syncAgents(present);
+  for (const m of seq) {
     if (!playing) break;
-    const npc = ensureNpc(String(m.from||"agent"));
+    const from = String(m.from || "agent");
+    const npc = ensureNpc(from);
+    wander(npc);
     speak(npc, esc(m.text));
-    await new Promise(r=>setTimeout(r, 1100));
+    await new Promise(r => setTimeout(r, 1200));
   }
   playing = false;
   playBtn.classList.remove("playing");
-  playBtn.textContent = "PLAY REPLAY";
+  playBtn.textContent = "PLAY ROOM";
+  caption.textContent = "Replay finished. Agents keep wandering.";
 }
+
 playBtn.onclick = replay;
-load(); setInterval(load, 20000);
+load();
+setInterval(load, 20000);
+tickMove();
 
 const canvas = document.getElementById("fx");
 const ctx = canvas.getContext("2d");
 const bits = [];
-function size(){ canvas.width=canvas.clientWidth; canvas.height=canvas.clientHeight; }
+function size(){ canvas.width = canvas.clientWidth; canvas.height = canvas.clientHeight; }
 size(); addEventListener("resize", size);
-for (let i=0;i<50;i++) bits.push({x:Math.random(), y:Math.random(), v:.001+Math.random()*.002, s:1+Math.random()*2, a:.25});
-function burst(el){
-  const r=el.getBoundingClientRect(), m=canvas.getBoundingClientRect();
-  for (let i=0;i<16;i++) bits.push({
-    x:(r.left+r.width/2-m.left)/canvas.width,
-    y:(r.top-m.top)/canvas.height,
-    vx:(Math.random()-.5)*.012, vy:-.005-Math.random()*.01, s:2, a:1, life:36
-  });
+for (let i = 0; i < 55; i++) {
+  bits.push({ x: Math.random(), y: Math.random(), v: 0.0008 + Math.random() * 0.002, s: 1 + Math.random() * 2, a: 0.22 });
 }
-function draw(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  bits.forEach(p=>{
-    if (p.life!=null){ p.x+=p.vx; p.y+=p.vy; p.life--; p.a=p.life/36; }
-    else { p.y-=p.v; if(p.y<0)p.y=1; }
-    ctx.globalAlpha=Math.max(p.a,0); ctx.fillStyle="#ffe58a";
-    ctx.fillRect(p.x*canvas.width, p.y*canvas.height, p.s, p.s);
+function burst(px, py) {
+  const m = canvas.getBoundingClientRect();
+  const x = clamp(px / canvas.width, 0, 1);
+  const y = clamp((py - m.top) / canvas.height, 0, 1);
+  for (let i = 0; i < 14; i++) {
+    bits.push({ x, y, vx: (Math.random() - 0.5) * 0.012, vy: -0.006 - Math.random() * 0.01, s: 2, a: 1, life: 34 });
+  }
+}
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  bits.forEach(p => {
+    if (p.life != null) { p.x += p.vx; p.y += p.vy; p.life--; p.a = p.life / 34; }
+    else { p.y -= p.v; if (p.y < 0) p.y = 1; }
+    ctx.globalAlpha = Math.max(p.a, 0);
+    ctx.fillStyle = "#ffe58a";
+    ctx.fillRect(p.x * canvas.width, p.y * canvas.height, p.s, p.s);
   });
-  for (let i=bits.length-1;i>=50;i--) if (bits[i].life<=0) bits.splice(i,1);
+  for (let i = bits.length - 1; i >= 55; i--) if (bits[i].life <= 0) bits.splice(i, 1);
   requestAnimationFrame(draw);
 }
 draw();
