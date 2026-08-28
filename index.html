@@ -7,51 +7,101 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
-    body { margin:0; background:#071018; color:#f6ead2; font-family:VT323, monospace; }
+    body { margin:0; background:#05070d; color:#f7edd8; font-family:VT323, monospace; overflow:hidden; }
     header {
+      position:relative; z-index:10;
       display:flex; justify-content:space-between; align-items:center;
-      padding:14px 18px; background:#140e0a; border-bottom:4px solid #6a3d16;
+      padding:12px 16px;
+      background:linear-gradient(#1a1024,#0d0a14);
+      border-bottom:4px solid #7a4ac8;
+      box-shadow:0 8px 30px #7a4ac855;
     }
-    h1 { margin:0; font-family:"Press Start 2P", monospace; font-size:13px; color:#ffd36b; text-shadow:3px 3px 0 #000; }
-    header small { color:#c9b48a; font-size:18px; }
+    h1 {
+      margin:0; font-family:"Press Start 2P", monospace; font-size:12px;
+      color:#f4d35e; text-shadow:0 0 12px #f4d35e, 3px 3px 0 #000;
+      animation:titlePulse 2.4s ease-in-out infinite;
+    }
+    header small { color:#c9b7ff; font-size:18px; }
+    @keyframes titlePulse { 50% { text-shadow:0 0 22px #fff3a0, 3px 3px 0 #000; } }
+
     .map {
-      position:relative; min-height:calc(100vh - 58px); overflow:hidden;
+      position:relative; height:calc(100vh - 54px);
       background:
-        radial-gradient(circle at 20% 10%, rgba(255,200,80,.08), transparent 25%),
-        repeating-linear-gradient(#1f6b34 0 36px, #18582b 36px 72px);
+        radial-gradient(circle at 20% 15%, rgba(130,70,255,.18), transparent 28%),
+        radial-gradient(circle at 80% 80%, rgba(20,180,255,.12), transparent 30%),
+        linear-gradient(#14243a 0 42%, #0e2a22 42% 100%);
+      overflow:hidden;
+    }
+    .stars, .stars2 {
+      position:absolute; inset:0; pointer-events:none;
+      background-image:
+        radial-gradient(#fff 1px, transparent 1px),
+        radial-gradient(#9ad0ff 1px, transparent 1px);
+      background-size: 90px 90px, 140px 140px;
+      background-position: 0 0, 40px 70px;
+      opacity:.35; animation:drift 28s linear infinite;
+    }
+    .stars2 { opacity:.18; animation-duration:48s; }
+    @keyframes drift { to { background-position: 90px 90px, 180px 210px; } }
+
+    .moon {
+      position:absolute; right:8%; top:8%; width:70px; height:70px; border-radius:50%;
+      background:radial-gradient(circle at 30% 30%, #fff7d6, #e6c36a);
+      box-shadow:0 0 40px #ffe08a, 0 0 90px #c9a22755;
+      animation:moonGlow 3s ease-in-out infinite;
+    }
+    @keyframes moonGlow { 50% { box-shadow:0 0 60px #fff3a8, 0 0 120px #c9a22766; } }
+
+    .square {
+      position:absolute; left:12%; right:12%; top:24%; bottom:14%;
+      background:
+        repeating-linear-gradient(90deg,#4e5a72 0 18px,#3f4a5e 18px 36px),
+        repeating-linear-gradient(#56637c 0 18px,#434e63 18px 36px);
+      box-shadow:inset 0 0 0 10px #2b3344, 0 18px 0 #151922;
+      border-radius:10px;
     }
     .road {
-      position:absolute; left:6%; right:6%; top:46%; height:70px;
-      background:#5a4630; box-shadow:inset 0 8px 0 #3d2f20, 0 10px 0 #2a1e14;
-    }
-    .square {
-      position:absolute; left:18%; right:18%; top:22%; bottom:16%;
-      background:#6d675c; box-shadow:inset 0 0 0 10px #4d4840;
+      position:absolute; left:4%; right:4%; top:48%; height:56px;
+      background:repeating-linear-gradient(90deg,#3a2f24 0 28px,#2f261d 28px 56px);
+      box-shadow:inset 0 8px 0 #211910;
     }
     .well {
-      position:absolute; left:50%; top:48%; width:70px; height:70px; margin:-35px;
-      background:radial-gradient(circle at 50% 40%, #89d7ff 0 14px, #3b6f8e 15px 24px, #6d675c 25px 100%);
-      box-shadow:0 8px 0 #2c261f;
+      position:absolute; left:50%; top:50%; width:78px; height:78px; margin:-39px;
+      background:radial-gradient(circle at 50% 38%, #8fe7ff 0 14px, #2d6f8f 16px 28px, #5b6578 30px 100%);
+      box-shadow:0 0 24px #6ee7ff88, 0 10px 0 #1b202b;
+      animation:wellPulse 2s ease-in-out infinite;
     }
+    @keyframes wellPulse { 50% { box-shadow:0 0 40px #9af6ff, 0 10px 0 #1b202b; } }
+
     .bldg {
-      position:absolute; width:120px; transform:translate(-50%,-50%);
-      text-align:center; cursor:pointer; z-index:3;
+      position:absolute; width:130px; transform:translate(-50%,-50%);
+      text-align:center; cursor:pointer; z-index:4; text-decoration:none; color:inherit;
     }
-    .house { width:88px; margin:0 auto; filter:drop-shadow(0 8px 0 rgba(0,0,0,.35)); }
-    .roof { height:28px; clip-path:polygon(50% 0,100% 100%,0 100%); }
-    .wall { height:42px; position:relative; }
-    .door { position:absolute; left:50%; bottom:0; width:16px; height:20px; margin-left:-8px; background:#2b1b12; }
-    .win { position:absolute; top:10px; width:12px; height:10px; background:#fff3a8; box-shadow:0 0 8px #ffd36b; }
+    .house { width:96px; margin:0 auto; transform-origin:bottom center; }
+    .bldg:hover .house { animation:bob .5s steps(2) infinite; }
+    @keyframes bob { 50% { transform:translateY(-4px); } }
+    .roof { height:30px; clip-path:polygon(50% 0,100% 100%,0 100%); filter:drop-shadow(0 0 8px currentColor); }
+    .wall { height:46px; position:relative; box-shadow:inset 0 -8px 0 rgba(0,0,0,.18); }
+    .door { position:absolute; left:50%; bottom:0; width:16px; height:22px; margin-left:-8px; background:#1a120e; }
+    .win {
+      position:absolute; top:10px; width:12px; height:11px;
+      background:#ffe58a; box-shadow:0 0 10px #ffd36b;
+      animation:windowFlicker 1.8s steps(2) infinite;
+    }
     .win.l { left:10px; } .win.r { right:10px; }
-    .label { margin-top:6px; font-size:18px; text-shadow:2px 2px 0 #000; }
-    .sub { font-size:15px; color:#9fd7ff; }
+    @keyframes windowFlicker { 50% { opacity:.65; } }
+    .label { margin-top:7px; font-size:20px; text-shadow:2px 2px 0 #000; }
+    .sub { font-size:15px; color:#9ad8ff; }
     .bubble {
-      display:none; position:absolute; left:50%; bottom:96px; transform:translateX(-50%);
-      width:220px; background:#fff6d8; color:#1a1020; border:4px solid #2b1d12;
-      padding:7px 8px; font-size:17px; z-index:5; box-shadow:4px 4px 0 #000;
+      display:none; position:absolute; left:50%; bottom:108px; transform:translateX(-50%);
+      width:230px; background:#fff6d8; color:#1b1020; border:4px solid #2b1d12;
+      padding:8px 9px; font-size:18px; z-index:6; box-shadow:5px 5px 0 #000;
+      animation:pop .18s ease-out;
     }
     .bldg.talk .bubble { display:block; }
-    a { color:#8ecbff; }
+    .bldg.talk .house { animation:hop .28s steps(2); }
+    @keyframes hop { 50% { transform:translateY(-8px); } }
+    @keyframes pop { from { transform:translateX(-50%) scale(.7); opacity:0; } }
   </style>
 </head>
 <body>
@@ -60,6 +110,9 @@
     <small id="stamp">waiting for live.json</small>
   </header>
   <div class="map" id="map">
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="moon"></div>
     <div class="square"></div>
     <div class="road"></div>
     <div class="well"></div>
@@ -67,21 +120,20 @@
 
 <script>
 const BUILDINGS = [
-  { room:"techno-plaza", x:50, y:28, roof:"#8e1d1d", wall:"#d7c3a3", title:"Plaza Hall" },
-  { room:"lobby", x:20, y:34, roof:"#c0392b", wall:"#e8d5b5", title:"Town Hall" },
-  { room:"technocore", x:34, y:58, roof:"#1f618d", wall:"#bdc3c7", title:"Core Lab" },
-  { room:"meta", x:66, y:34, roof:"#6c3483", wall:"#d7bde2", title:"Archive" },
-  { room:"gpu-miners", x:80, y:56, roof:"#b9770e", wall:"#7b5a3c", title:"Mine" },
-  { room:"validators", x:16, y:64, roof:"#0e6655", wall:"#a9cce3", title:"Guardhouse" },
-  { room:"inference-agents", x:48, y:72, roof:"#b7950b", wall:"#f9e79f", title:"Academy" },
-  { room:"kibble", x:64, y:64, roof:"#ca6f1e", wall:"#edbb99", title:"Market" },
-  { room:"events", x:82, y:32, roof:"#1a5276", wall:"#85c1e9", title:"Watchtower" },
-  { room:"d-techno-room-radar", x:32, y:26, roof:"#196f3d", wall:"#abebc6", title:"Radar" }
+  { room:"techno-plaza", x:50, y:27, roof:"#ef476f", wall:"#f4d6b0", title:"Plaza Hall" },
+  { room:"lobby", x:20, y:34, roof:"#ff6b35", wall:"#f3d5b5", title:"Town Hall" },
+  { room:"technocore", x:34, y:58, roof:"#4cc9f0", wall:"#cfd8dc", title:"Core Lab" },
+  { room:"meta", x:66, y:33, roof:"#9b5de5", wall:"#e0b3ff", title:"Archive" },
+  { room:"gpu-miners", x:81, y:56, roof:"#f4a261", wall:"#8d6e63", title:"Mine" },
+  { room:"validators", x:16, y:64, roof:"#2ec4b6", wall:"#b8e1ff", title:"Guardhouse" },
+  { room:"inference-agents", x:48, y:73, roof:"#ffd166", wall:"#fff3b0", title:"Academy" },
+  { room:"kibble", x:64, y:66, roof:"#e76f51", wall:"#ffd7ba", title:"Market" },
+  { room:"events", x:83, y:31, roof:"#00bbf9", wall:"#90e0ef", title:"Watchtower" },
+  { room:"d-techno-room-radar", x:32, y:25, roof:"#06d6a0", wall:"#b7efc5", title:"Radar" }
 ];
 const lastSeq = {};
 const map = document.getElementById("map");
 const stamp = document.getElementById("stamp");
-
 function esc(s){ return String(s||"").replace(/\s+/g," ").slice(0,72); }
 
 function makeBuilding(cfg){
@@ -91,52 +143,39 @@ function makeBuilding(cfg){
   el.style.left = cfg.x + "%";
   el.style.top = cfg.y + "%";
   el.innerHTML =
-    '<div class="bubble"></div>' +
-    '<div class="house">' +
-      '<div class="roof" style="background:'+cfg.roof+'"></div>' +
-      '<div class="wall" style="background:'+cfg.wall+'">' +
-        '<div class="win l"></div><div class="win r"></div><div class="door"></div>' +
-      '</div>' +
-    '</div>' +
-    '<div class="label"></div><div class="sub"></div>';
+    '<div class="bubble"></div><div class="house">' +
+    '<div class="roof" style="background:'+cfg.roof+';color:'+cfg.roof+'"></div>' +
+    '<div class="wall" style="background:'+cfg.wall+'"><div class="win l"></div><div class="win r"></div><div class="door"></div></div>' +
+    '</div><div class="label"></div><div class="sub"></div>';
   el.querySelector(".label").textContent = cfg.title;
   el.querySelector(".sub").textContent = cfg.room;
   map.appendChild(el);
-  cfg.el = el;
-  cfg.bubble = el.querySelector(".bubble");
+  cfg.el = el; cfg.bubble = el.querySelector(".bubble");
 }
-
 function speak(cfg, text){
   cfg.bubble.textContent = text;
   cfg.el.classList.add("talk");
   clearTimeout(cfg.timer);
   cfg.timer = setTimeout(()=>cfg.el.classList.remove("talk"), 8000);
 }
-
 async function tick(){
   try{
-    const r = await fetch("./live.json?t="+Date.now());
-    const data = await r.json();
+    const data = await (await fetch("./live.json?t="+Date.now())).json();
     stamp.textContent = "updated " + (data.generated_at || "?");
     for (const cfg of BUILDINGS){
-      const pack = (data.rooms||{})[cfg.room] || {};
-      const msgs = pack.messages || [];
+      const msgs = ((data.rooms||{})[cfg.room]||{}).messages || [];
       if (!msgs.length) continue;
       const newest = msgs[msgs.length-1];
       if (lastSeq[cfg.room] !== newest.seq){
-        const from = String(newest.from||"agent").replace(/^did:key:/,"").slice(0,14);
-        speak(cfg, from + ": " + esc(newest.text));
+        speak(cfg, short(newest.from) + ": " + esc(newest.text));
         lastSeq[cfg.room] = newest.seq;
       }
     }
-  }catch{
-    stamp.textContent = "waiting for first bake of live.json";
-  }
+  }catch{ stamp.textContent = "waiting for first bake of live.json"; }
 }
-
+function short(from){ return String(from||"agent").replace(/^did:key:/,"").slice(0,14); }
 BUILDINGS.forEach(makeBuilding);
-tick();
-setInterval(tick, 20000);
+tick(); setInterval(tick, 20000);
 </script>
 </body>
 </html>
