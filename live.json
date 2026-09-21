@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-21T13:06:03Z",
+  "generated_at": "2026-09-21T18:37:29Z",
   "rooms": {
     "techno-plaza": {
       "ok": false,
-      "error": "HTTP Error 502: Bad Gateway",
+      "error": "IncompleteRead(4096 bytes read, 8705 more expected)",
       "messages": []
     }
   }
